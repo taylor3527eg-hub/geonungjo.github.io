@@ -1,0 +1,501 @@
+{
+  "source": "https://sites.google.com/view/geonungjo/projectwork/engineering/miracle",
+  "source_html_sha256": "813975ee467907bc9cb26b0cb5986994359fea442ddf3acf87e5d86868c36a6b",
+  "original_text_blocks": 113,
+  "preserved_text_blocks": 110,
+  "missing_text_blocks": [],
+  "gallery_photographs": 21,
+  "equations": "Original local equation images, unmodified; no reconstructed math.",
+  "remote_images": "Initial source-image requests returned HTTP 403. A fresh public-page response allowed all 21 Development Gallery images to be retrieved and retained byte-for-byte. Other technical images still use the supplied local originals.",
+  "original_asset_hashes": {
+    "assets\\MIRACLE\\01_Dynamic_Model.png": "f1f700842e431303e74600c1bfba99a88fcfa2a82fcf10f09c46d651961e21d9",
+    "assets\\MIRACLE\\02_ROB_Control.png": "13c7e8c5cd6647167cfd95fe21e32d998b4ad79d08aeba43ba5cc35250c36007",
+    "assets\\MIRACLE\\03_Disturbance_Observer.png": "fea7109ac64bd31ceedabcc2797396dba4e424f246d60e079674f5840e5d8c0f",
+    "assets\\MIRACLE\\04_Lyapunov_Analysis.png": "de0bcafa9c0f608db7c1da9be33e2dca919a304b601dd413ccf270e803aae185",
+    "assets\\MIRACLE\\CRC_demo.mp4": "4fdad3a06f3d1c36c80a3bf13421261a1a011d7c71f8a6b55043f2b61819634c",
+    "assets\\MIRACLE\\CRC_Sim.mp4": "77f3feae56288641ff64090b41cf3c6b2341a4ca6c739c668112aa37caa2d3b0",
+    "assets\\MIRACLE\\CRC_Walking.mp4": "cd7c1600227cb246adbd3b987f496886e7d9924479bafe8ee8d296cc75d31203",
+    "assets\\MIRACLE\\Hardware_V1.png": "d0945d1ffe4dedd10d4f4075f70fb33424c471b172c3db747650a4542a2c2e83",
+    "assets\\MIRACLE\\Hardware_V1_Front.png": "9b8f14dc8df8eb9ec42c41deae51ba0879a823c43670d0c439c33f305b9cf4ee",
+    "assets\\MIRACLE\\Hardware_V1_Left.png": "38e74f9760377ee763338d17e9123bda20b923a6a8adaf4de60f973f622e3de5",
+    "assets\\MIRACLE\\image(20261015-002920).png": "8b560688ee3fdb0cb55e84fe50ef3dc0ce8493ec5b4d632ede85d2bcd9b32859",
+    "assets\\MIRACLE\\image(20261015-002945).png": "4338e711b4e520f4ca5c44fe78616beab2b9d33b85c46c000d8724d564913be9",
+    "assets\\MIRACLE\\image(20261015-003002).png": "c214618e9a2195d6cfeb83ad38b99e04f3702b8ac1e65aa9fdac250d0deff885",
+    "assets\\MIRACLE\\image(20261015-003044).png": "e3ac24de5428bf486f5466ce19d0fd3c0b357967cb2ad921ea59338c3e60d04a",
+    "assets\\MIRACLE\\image(20261015-003058).png": "169e1e4d7143382eb8e6d4a9f964688cc74c24c808dda0fdbc3c504f97d8be26",
+    "assets\\MIRACLE\\image(20261015-004224).png": "40c47df09d8f9626ddda48b2f84e9b14300bebcf07e252a6acbb1edabeaec371",
+    "assets\\MIRACLE\\image(20261015-004237).png": "b429c530b5908c17e501351bba763a433a60a976f1b7a0c4128c3f476d219519",
+    "assets\\MIRACLE\\image(20261015-004304).png": "74af4595e355ac1b572f4b2ab222ace4db9979120dc5307fbb3c38362137dc96",
+    "assets\\MIRACLE\\image(20261015-004317).png": "1809ebfde9f0390d1cbc6f6565ca8a27590f67851afdf181b815757898d4a572",
+    "assets\\MIRACLE\\image21.gif": "f01303a53badcb8f72170718098678ccdeef248ddbdedcfb55d00a33231e6556",
+    "assets\\MIRACLE\\image3.gif": "992ff0fa0b9eb613c37dc905e3246ff7b6466338dd9370739f2d76a9a083cc04",
+    "assets\\MIRACLE\\IMG_3632.JPG": "ab71e1905e98b270ec6ab7c0aeccd412d3472c31b581d7b1642e361db121f201",
+    "assets\\MIRACLE\\IMG_3864.JPG": "99bcff8bf01194419282adc769a0baf7786324be7e12e7a700cf27e4ece062f0",
+    "assets\\MIRACLE\\IMG_3865.JPG": "23985f645aca411545c7ebfae23be1d95b00855b4f2dfff65e5c3fc37f9d9b0d",
+    "assets\\MIRACLE\\IMG_3866.JPG": "efb5c7a9346cb399edc782c4b1f66c52b350871ecb857213533b113d93ff25ad",
+    "assets\\MIRACLE\\IMG_4035.jpg": "ac0fb5fd309ca041ce21b5fe7a9523327fb32b2b813d3ce4c9dc852411f38ebf",
+    "assets\\MIRACLE\\IMG_4036.jpg": "a1164539aa821b4bcf4dd62fd74de3166aaafd700d1ddb9cdd83628e8a3215cb",
+    "assets\\MIRACLE\\IMG_4037.jpg": "9b4d6971c061164f8065b960f8c68cb9e346c2882667abc32bfea230e3245b6d",
+    "assets\\MIRACLE\\IMG_4038.jpg": "9196897bb67c2c87a0cf3d43c45573afb5640e4d92509da7124b707f91a1518f",
+    "assets\\MIRACLE\\IMG_4102.jpg": "1681c9a507e760784b87463e28bb4adbbe13aae5e1b928879cd5d7a3e7f507c9",
+    "assets\\MIRACLE\\IMG_4110.jpg": "3f1661457c7fc3f3f7128b04a6b2faf9d7c67d43b8b9e18460ddfb25ec45bdd5",
+    "assets\\MIRACLE\\IMG_4111.jpg": "76afc581da24d0a202cdc43eb90d4d698409df8008be2df68af15950e6f2e817",
+    "assets\\MIRACLE\\IMG_4112.jpg": "87f4cc30512e2605e67f4c44ee98043d8c51c0b5d4ce9e4b94fecd261e957bbe",
+    "assets\\MIRACLE\\IMG_4113.jpg": "04c627627fbacbeefaed06f87747a07c8faba6741e6cb65b6d92f7b5063db5e3",
+    "assets\\MIRACLE\\IMG_4114.jpg": "d3b907996d6fe17a17b701ce037e45adeaa739de80c3eb56133e6fb92dfb1d6c",
+    "assets\\MIRACLE\\IMG_4115.jpg": "4c491b34625429925d41194df35bbde0a5be0d21a2d4c4a59e8bc8253c43b6f5",
+    "assets\\MIRACLE\\IMG_4116.jpg": "78dbddaef9f246f7db624cec96e6e266986bd32a3f1207d8dd71bf5b6d83ec78",
+    "assets\\MIRACLE\\IMG_4117.jpg": "1b0390c13e6a783b68390756e584ca44adc59db9f184d7131b5a6fc63d326669",
+    "assets\\MIRACLE\\IMG_4118.JPG": "c50ec3e19d9f578c065c7fb900045e63598c0e8845a8bd3e82e91a4a6cf4e593",
+    "assets\\MIRACLE\\IMG_4119.JPG": "9754f1963e2941740c16717fad53b14b0b6f38825645b14bca2d86cc69537800",
+    "assets\\MIRACLE\\IMG_4120.jpg": "2aad13940961470c89366439a40d96681fd19d8a230d6cc2ac6442e41c32dc73",
+    "assets\\MIRACLE\\IMG_4121.jpg": "4c37fa27c06605173694fee6755265391489148f3e04293591057e8a930710e2",
+    "assets\\MIRACLE\\IMG_4122(1).jpg": "b1efc9d2f658fdac9366aa0a028fd18e9b721e848c478d9e57f21247785b3ae2",
+    "assets\\MIRACLE\\IMG_4122.jpg": "8c6d7580a1db5aba4d8b93bef45ea0aff71a08c5fd2fe4214f5749508a6db3ee",
+    "assets\\MIRACLE\\IMG_4124.jpg": "433c4a0dc24e27a8a5453c14aff14a59feda117920d6313849a5d4fbd93adc8b",
+    "assets\\MIRACLE\\IMG_4125.jpg": "0e048cd95d6426c09c409e122a190d39f1e9df3895ae81a32d94931bef5e7235",
+    "assets\\MIRACLE\\IMG_4287.jpg": "5d4393c3ab89fa384f953c8b7cc28f642734c2b882e9538718003c03bdabfda0",
+    "assets\\MIRACLE\\IMG_4288.jpg": "aa7e2ed9994612cca74ba93ce9af97cf2c739809cd537b49508e9684f929cff1",
+    "assets\\MIRACLE\\IMG_4289.jpg": "6e928a732a113773afdd8dc5bf641829e03a3c9e13a7673e0473226e4090e8f5",
+    "assets\\MIRACLE\\IMG_4290.jpg": "3c15bcf4fcd8e90d97cc4b3d911784112c48d464bd544c5a12ad160dd181d134",
+    "assets\\MIRACLE\\IMG_4291.jpg": "39ebb0b6aa881e1c64813a129457b1fe1fcbd15631287ee9ab3a9b09e09b7901",
+    "assets\\MIRACLE\\IMG_4292.jpg": "44d5def45f69ab6280952d6cdce5ca456e85e17a9bf18c54b534132bd35e8987",
+    "assets\\MIRACLE\\IMG_4293.jpg": "d97d515251b0237ce68081b9e649602c8a71cc81cdf36f1392e0e3e43d92e7e8",
+    "assets\\MIRACLE\\IMG_4294.jpg": "af2d7a0f62fd978434abc324a2625a41d1d542b60e3e1fef08e9e1d1d5e3bc78",
+    "assets\\MIRACLE\\IMG_4295.jpg": "71005d38e25e2c654a213ea09fe42e11eafc02cb6f61113ceac2cd57e9dd110d",
+    "assets\\MIRACLE\\IMG_4296.jpg": "325f2eb200f05be90d572c8f57fa608abb7d25be368c0d3c15f150f8e19c7ce7",
+    "assets\\MIRACLE\\IMG_4297.jpg": "962dfb5f3f52a53ea4149ad02c98798188a80b2724539e94ec3901252f76a4ea",
+    "assets\\MIRACLE\\IMG_6474.JPG": "186ddca04ba16ed5c817c19848ba413cc5452b155a7db55edd3ab9aec46ced67",
+    "assets\\MIRACLE\\IMG_6999.JPG": "87530678fb7d415911fb1fcd96c802c74da6f8d1679097439eefab13020c0720",
+    "assets\\MIRACLE\\IMG_7001.JPG": "3ee27e37e93234fb4e87db02ca1d0504c24ffbffe11058648cbb9e8cc47353d9",
+    "assets\\MIRACLE\\IMG_7002.JPG": "82be811628f91c5a770632400ff4529acc1d18d8fec466c305806543c47c5e69",
+    "assets\\MIRACLE\\IMG_7003.JPG": "c6f511e92534fe0ae36acbaf4ba473efe305c59a0fc9844c1e96e7489c9dd645",
+    "assets\\MIRACLE\\IMG_7004.JPG": "c139d1d7c118a812ba3ac26ad2b023fc84cd5d76a43968e10cb0245bd3096b48",
+    "assets\\MIRACLE\\IMG_7005.JPG": "c62655d117d63854eee113e7407fcaf72f726ba9063d6336e3d040d17fb127c7",
+    "assets\\MIRACLE\\IMG_7006.JPG": "37458ef737035275b277c34224231b7cac9bd62c0498aa7ea0c4e153aa07a7bb",
+    "assets\\MIRACLE\\IMG_7007.PNG": "e06a7f68122f76aa845057b467fbef68a614707fed68b7ee61351ac653364f3b",
+    "assets\\MIRACLE\\KakaoTalk_20260126_140317292.jpg": "186ddca04ba16ed5c817c19848ba413cc5452b155a7db55edd3ab9aec46ced67",
+    "assets\\MIRACLE\\KakaoTalk_20260126_140323037.mp4": "07c2866385f90e2c3b7df71e1834764b93f0cc2ca3e62ae9ef821aa417a1546f",
+    "assets\\MIRACLE\\KakaoTalk_20260126_165141687_04.jpg": "186ddca04ba16ed5c817c19848ba413cc5452b155a7db55edd3ab9aec46ced67",
+    "assets\\MIRACLE\\KakaoTalk_20260126_165923249.jpg": "fab74b280b43fef27d964da1259e835b9aca5afe3755bd12ff778bd48cc2d2ec",
+    "assets\\MIRACLE\\MIRACLE_Simulation_Parameters_HighRes.png": "2bed0c5682709e006e20bb7628b3ab266df994e934e2845512e0b7a9a1e97e96",
+    "assets\\MIRACLE\\preview_contact_sheet.png": "b8c0b75f338a2e90a840a6210b1c902631bffb0e392d4a82fdff605a34857c7e",
+    "assets\\MIRACLE\\ROB_Fig3_Enhanced_Original(1).png": "9482b732d08d6a156f662493aa2bf421230a6bd6da4adfc42e40a876b38df9d1",
+    "assets\\MIRACLE\\_talkv_wwsGkKgTWo_iRVM3X6HLKHqKbsF7HQZrK_talkv_high.mp4": "e261b3115088c6dfbe1bfc7937d01e3675ce2a5104479369c78139fe0f79559e",
+    "assets\\MIRACLE\\그림1.png": "805069e84f984427a3650a60e255c504bca354a80dd7880cc79cd3fb8ccac466",
+    "assets\\MIRACLE\\그림2.png": "5b498a10d455510241b5e6350aaa8c73e9716130da635e6c2c98c4b9083d1adc",
+    "assets\\MIRACLE\\사본 - IMG_4035.jpg": "ee4b2950607a6ef36f0121e51c838647a0ab3a493cc8688d1d11579c2925c488",
+    "assets\\MIRACLE\\사본 - IMG_4110.jpg": "fda17387c742ae9b8872dc4f9e53c406d0075b5166386043bff69639c5d546c3",
+    "assets\\MIRACLE\\소프트·강성 파라미터 비교표.png": "52642ef6059c7265697d430c5c94218bbe31399933611967e45475d41c4b2a1f",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 105541.png": "412de7fc387b04dace5a092273dc9c1309e65f48b5600403694896b0081b08a9",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 111606.png": "93a44e509a09e8dd0750dc0677e631eba4e520bac40d8821b3c693a5d5b5703f",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 130543.png": "178e4f920a7bacd9bc1dae1c1e05f5b4e79b77a7bb1060e8a9167f36d69a9c20",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 131043.png": "0abee277978f96a6f028b85a379fc6b41a7dbb9f23532cb32820ba36fbaad281",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 131400.png": "92657acd6729e7116ca069a9185488ab61dd4d3c21dc4d931969e7d6ffdf397d",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 134707.png": "d71562500b74f33b7535ab7c1a1f6c8b3b2a76dc835364a925c4578d284808d1",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 135029.png": "28f872e60df5754d2209d97e910b4ce3c684931c07ea37418a46210fbb2f32ab",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 140853.png": "2f003171b0d95408b51dc0764426e3696764a3049816dbea1c2fd43c87cbbaa7",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 141317.png": "91fd601aba578d5099e0bf698d237f0035c488532d85aed9de17f514fa706d37",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 141606.png": "b22705c279ede210a92d8da74204247434bc548ea4dc95720d8cc0536619b455",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 141950.png": "2970ba132b4ddf1cb5b8f06bf24c70add343485d6737d0f9c0655a93d16856f3",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 142702.png": "bca655266176f4577457c7e441a42274985f72c5ed8f2f7ac968a7a337756dd9",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 143048.png": "a638ff5a4a9e90a80698a172b06369a47580420bb29aaecbda49a1a1e4b964a6",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 143342.png": "5408a58ed6366652a0801613cbba646073dbe9222ee2428a2cac31e0a02b62f5",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 143505.png": "1e9df0b9e143f51eebe61a2597a76f618f845bad40d726ec603d36861d230865",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 145246.png": "acf7a4e88bc71424003359fcec502451d7e188b4ec3beca2b988dd7dfa57c40e",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 150148.png": "1fd0fcece848ca754bbfc0e12ea6230665ebfa3a5dfeb0a62bc9c5daeadbe493",
+    "assets\\MIRACLE\\화면 캡처 2026-10-16 150911.png": "bda1d7edae2193aab17feb5525492915b94e4c4deafdd2bac0c8ad6d23aefa2f"
+  },
+  "used_original_assets": [
+    "01_Dynamic_Model.png",
+    "02_ROB_Control.png",
+    "03_Disturbance_Observer.png",
+    "04_Lyapunov_Analysis.png",
+    "CRC_Sim.mp4",
+    "CRC_Walking.mp4",
+    "CRC_Demo.mp4",
+    "Hardware_V1.png",
+    "Hardware_V1_Front.png",
+    "Hardware_V1_Left.png",
+    "IMG_3632.JPG",
+    "IMG_3864.JPG",
+    "IMG_3865.JPG",
+    "IMG_3866.JPG",
+    "IMG_4035.jpg",
+    "IMG_4036.jpg",
+    "IMG_4037.jpg",
+    "IMG_4038.jpg",
+    "IMG_4102.jpg",
+    "IMG_4110.jpg",
+    "IMG_4111.jpg",
+    "IMG_4112.jpg",
+    "IMG_4113.jpg",
+    "IMG_4114.jpg",
+    "IMG_4115.jpg",
+    "IMG_4116.jpg",
+    "IMG_4117.jpg",
+    "IMG_4118.JPG",
+    "IMG_4119.JPG",
+    "IMG_4120.jpg",
+    "IMG_4121.jpg",
+    "IMG_4122(1).jpg",
+    "IMG_4122.jpg",
+    "IMG_4124.jpg",
+    "IMG_4125.jpg",
+    "IMG_4287.jpg",
+    "IMG_4288.jpg",
+    "IMG_4289.jpg",
+    "IMG_4290.jpg",
+    "IMG_4291.jpg",
+    "IMG_4292.jpg",
+    "IMG_4293.jpg",
+    "IMG_4294.jpg",
+    "IMG_4295.jpg",
+    "IMG_4296.jpg",
+    "IMG_4297.jpg",
+    "IMG_6474.JPG",
+    "IMG_6999.JPG",
+    "IMG_7001.JPG",
+    "IMG_7002.JPG",
+    "IMG_7003.JPG",
+    "IMG_7004.JPG",
+    "IMG_7005.JPG",
+    "IMG_7006.JPG",
+    "IMG_7007.PNG",
+    "KakaoTalk_20260126_165923249.jpg",
+    "MIRACLE_Simulation_Parameters_HighRes.png",
+    "ROB_Fig3_Enhanced_Original(1).png",
+    "image(20261015-002920).png",
+    "image(20261015-002945).png",
+    "image(20261015-003002).png",
+    "image(20261015-003044).png",
+    "image(20261015-003058).png",
+    "image(20261015-004224).png",
+    "image(20261015-004237).png",
+    "image(20261015-004304).png",
+    "image(20261015-004317).png",
+    "image21.gif",
+    "image3.gif",
+    "그림1.png",
+    "그림2.png",
+    "사본 - IMG_4035.jpg",
+    "사본 - IMG_4110.jpg",
+    "화면 캡처 2026-10-16 105541.png",
+    "화면 캡처 2026-10-16 111606.png",
+    "화면 캡처 2026-10-16 130543.png",
+    "화면 캡처 2026-10-16 131043.png",
+    "화면 캡처 2026-10-16 131400.png",
+    "화면 캡처 2026-10-16 134707.png",
+    "화면 캡처 2026-10-16 135029.png",
+    "화면 캡처 2026-10-16 140853.png",
+    "화면 캡처 2026-10-16 141317.png",
+    "화면 캡처 2026-10-16 141606.png",
+    "화면 캡처 2026-10-16 141950.png",
+    "화면 캡처 2026-10-16 142702.png",
+    "화면 캡처 2026-10-16 143048.png",
+    "화면 캡처 2026-10-16 143342.png",
+    "화면 캡처 2026-10-16 143505.png",
+    "화면 캡처 2026-10-16 145246.png",
+    "화면 캡처 2026-10-16 150148.png",
+    "화면 캡처 2026-10-16 150911.png"
+  ],
+  "table_values": {
+    "tracking": [
+      [
+        "Hip",
+        "0.0341",
+        "0.0291",
+        "14.7%"
+      ],
+      [
+        "Knee",
+        "0.0686",
+        "0.0498",
+        "27.4%"
+      ]
+    ],
+    "parameters": [
+      [
+        "Desired inertia",
+        "5",
+        "5"
+      ],
+      [
+        "Desired damping",
+        "5",
+        "75"
+      ],
+      [
+        "Desired stiffness",
+        "10",
+        "1000"
+      ]
+    ],
+    "impedance": [
+      [
+        "Hip",
+        "0.0864",
+        "0.0240"
+      ],
+      [
+        "Knee",
+        "0.0537",
+        "0.0489"
+      ]
+    ]
+  },
+  "development_gallery": {
+    "source_page": "https://sites.google.com/view/geonungjo/projectwork/engineering/miracle",
+    "source_gallery_image_count": 21,
+    "displayed_image_count": 21,
+    "original_order_retained": true,
+    "source_gallery_assets": [
+      {
+        "source_gallery_index": 1,
+        "src": "assets/MIRACLE/Development_Gallery/Original_01.png",
+        "sha256": "0a3992885a97050ef2221432da9802f616d81b05aae9020bef45c28d2cf549e0",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 2,
+        "src": "assets/MIRACLE/Development_Gallery/Original_02.jpg",
+        "sha256": "6f009390ed1387aa8daf58b706bf16ca96ed27986fff66a45860a2747e323ca0",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 3,
+        "src": "assets/MIRACLE/Development_Gallery/Original_03.png",
+        "sha256": "74a1d0de3e891b9b2b723607e595bbdffa2a52610ebf9b23c3b2547814355898",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 4,
+        "src": "assets/MIRACLE/Development_Gallery/Original_04.png",
+        "sha256": "ed5ced113b9f43e1bf25f73a33e23023e69dea59361f2db4ff459ecf7ac1e6c6",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 5,
+        "src": "assets/MIRACLE/Development_Gallery/Original_05.jpg",
+        "sha256": "8eb4d7c9b4ec1d46f0c507615571e2fe9f2caaa2f084368943112d58b4338fb9",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 6,
+        "src": "assets/MIRACLE/Development_Gallery/Original_06.jpg",
+        "sha256": "bafada6c6b38ebf52914b1ae47e90dc9dae82a05e5065dbd30463e85d9dbb787",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 7,
+        "src": "assets/MIRACLE/Development_Gallery/Original_07.jpg",
+        "sha256": "68a9f00895d758753276d2b2ef025153483f15523faf83b738c765bca2d78968",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 8,
+        "src": "assets/MIRACLE/Development_Gallery/Original_08.jpg",
+        "sha256": "8536f51fc4e13ef73544d4dc1a44fdcf42e5a84d7a187ca47dd72948bfb445ff",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 9,
+        "src": "assets/MIRACLE/Development_Gallery/Original_09.png",
+        "sha256": "069fcc6b9590c817d70ae09d5c1c4a9a4d967c5a258ff2edd493b881cfe2a7f9",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 10,
+        "src": "assets/MIRACLE/Development_Gallery/Original_10.png",
+        "sha256": "72a67af342ddf248a9512ee1788d893a1bd8f2045f53da88f2cbfe982399af46",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 11,
+        "src": "assets/MIRACLE/Development_Gallery/Original_11.png",
+        "sha256": "22fb0f5696fc68770c7b3b95effb7c5af632602c221313ac3ab3e8fc4cdc2ede",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 12,
+        "src": "assets/MIRACLE/Development_Gallery/Original_12.jpg",
+        "sha256": "23418c1124b0e3334d9c7d80e4867d6355a8a07b6fbab1dc53d4ecededbdfbdd",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 13,
+        "src": "assets/MIRACLE/Development_Gallery/Original_13.jpg",
+        "sha256": "98a2691665a9f326ba4094fce9ac9ea8413673cad25eb1574ea172c2e5aacf28",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 14,
+        "src": "assets/MIRACLE/Development_Gallery/Original_14.jpg",
+        "sha256": "c8718d0b70bd00abcf3c1583f5f05ed91dc0faf9d9826a2e98660a33f4ed5615",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 15,
+        "src": "assets/MIRACLE/Development_Gallery/Original_15.png",
+        "sha256": "a9e8cb4d1ee81a281c6a6b7cdcfdfae677b0d856bc451dd9be642f93bf1170fe",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 16,
+        "src": "assets/MIRACLE/Development_Gallery/Original_16.png",
+        "sha256": "b6c3051afbce4fc033eef879a3037c787503ac081e8c77f4f3face682657e780",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 17,
+        "src": "assets/MIRACLE/Development_Gallery/Original_17.jpg",
+        "sha256": "2775bc38dcea1448198cadb4c7e23b456f3974cb23936b646bbedcbe894e6977",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 18,
+        "src": "assets/MIRACLE/Development_Gallery/Original_18.jpg",
+        "sha256": "df7e9d03f7ce0b4e1521e81291222eacbe95ca169591e87876fc897c04fb030c",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 19,
+        "src": "assets/MIRACLE/Development_Gallery/Original_19.jpg",
+        "sha256": "37458ef737035275b277c34224231b7cac9bd62c0498aa7ea0c4e153aa07a7bb",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 20,
+        "src": "assets/MIRACLE/Development_Gallery/Original_20.jpg",
+        "sha256": "2af3f62b75f8ed7f232cebebcc9ce0856ff6106466e997133795796782762b56",
+        "original_bytes_retained": true
+      },
+      {
+        "source_gallery_index": 21,
+        "src": "assets/MIRACLE/Development_Gallery/Original_21.png",
+        "sha256": "9a2fe074e023ee04595d2c5c8e154f70038a18db87f887b0ac33c40c36b5159f",
+        "original_bytes_retained": true
+      }
+    ],
+    "exception": {
+      "original": "assets/MIRACLE/IMG_3865.JPG",
+      "display": "assets/MIRACLE/web/IMG_3865-upright.jpg",
+      "orientation_correction": "Removed incorrect EXIF orientation metadata; JPEG pixels and scan data unchanged."
+    },
+    "other_images_removed_from_gallery": true,
+    "excluded_early_iteration_source_indices": [
+      1
+    ],
+    "retained_source_order": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  "intentionally_removed_text_blocks": [
+    {
+      "id": "source-78-0",
+      "reason": "User requested removal of the duplicate original-page email line."
+    },
+    {
+      "id": "source-1-0",
+      "reason": "User requested removal of the Prototype in Action block while keeping both navigation headers."
+    },
+    {
+      "id": "source-1-1",
+      "reason": "User requested removal of the Prototype in Action block while keeping both navigation headers."
+    }
+  ],
+  "user_requested_removed_sections": [
+    "Additional Original Technical Sheets",
+    "Original MIRACLE Portfolio closing link",
+    "Prototype in Action block"
+  ],
+  "intro_video": {
+    "file": "assets/MIRACLE/CRC_Demo.mp4",
+    "sha256": "113c2a3598a20e1aa9fdd6f13513e06fb1025120f61de9e6096696976fba7cc0",
+    "width": 720,
+    "height": 968,
+    "fps": 60.0,
+    "duration_seconds": 22.916666666666668,
+    "poster": "assets/MIRACLE/web/CRC_Demo-113c2a35-poster.jpg",
+    "user_replaced_video": true,
+    "sampled_frame_decode": "passed at 1s, midpoint and near end",
+    "browser_playback_verified": false
+  },
+  "unloaded_video": {
+    "user_source": "assets/MIRACLE/CRC_Walking.mov",
+    "user_source_sha256": "420feaefab716a3736f21e902b66542d71eb34569f34db4000ba11d9b647f669",
+    "browser_source": "assets/MIRACLE/web/CRC_Walking-420feaef.mp4",
+    "poster": "assets/MIRACLE/web/CRC_Walking-420feaef-poster.jpg",
+    "display_width": 1080,
+    "display_height": 1340,
+    "duration_seconds": 49.86,
+    "rotation_metadata_preserved": 90.0,
+    "conversion": "MP4 remux; video stream copied without re-encoding",
+    "compressed_video_stream_hash_matches": true,
+    "source_file_unmodified": true
+  },
+  "intro_content_grouping": {
+    "labels": [
+      "Overview",
+      "Mechanical Development",
+      "Dynamics & Control"
+    ],
+    "source_block_parts": {
+      "source-3-1": {
+        "parts": 2,
+        "join": "single space",
+        "verbatim_reconstruction_verified": true
+      }
+    },
+    "wording_unchanged": true,
+    "emphasis": "Only from CAD design to fabrication and assembly. in the introduction"
+  },
+  "mechanical_cad_verification": {
+    "confirmed_by": "User explicitly confirmed during this revision",
+    "final_joint_cad": [
+      "image(20261015-002920).png",
+      "image(20261015-002945).png",
+      "image(20261015-003002).png"
+    ],
+    "final_system_context_cad": "image3.gif",
+    "removed_early_leg_images": [
+      "assets/MIRACLE/Hardware_V1.png",
+      "assets/MIRACLE/Hardware_V1_Front.png",
+      "assets/MIRACLE/Hardware_V1_Left.png"
+    ],
+    "removed_original_gallery_v1_image": "assets/MIRACLE/Development_Gallery/Original_01.png",
+    "final_scope": "User narrowed the change to removing only the white / light-green / black standalone V1 leg CAD. Remaining layout and CAD were preserved."
+  },
+  "linkage_mass_properties_correction": {
+    "evidence": "HARDWARE_V2_LINKAGE_1 and HARDWARE_V2_LINKAGE_2 labels printed in the original reports",
+    "linkage_1": [
+      "image(20261015-004304).png",
+      "image(20261015-004317).png"
+    ],
+    "linkage_2": [
+      "image(20261015-004224).png",
+      "image(20261015-004237).png"
+    ],
+    "within_report_order": "original first sheet then inertia sheet",
+    "source_images_and_values_unmodified": true
+  }
+}

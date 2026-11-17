@@ -1,0 +1,107 @@
+{
+  "scope": "Only Dynamic Modeling & Equations of Motion within Full Dynamic Model Derivation",
+  "renderer": "Existing local KaTeX 0.19.1, HTML and accessible MathML",
+  "equations": [
+    {
+      "number": "01",
+      "title": "Equation 01 — Jacobian-Based Inertia Matrix",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 111606.png",
+      "source_sha256": "93a44e509a09e8dd0750dc0677e631eba4e520bac40d8821b3c693a5d5b5703f",
+      "expressions": [
+        "M(q) = m_1 J_{v1}^{T} J_{v1} + m_2 J_{v2}^{T} J_{v2} + \\begin{bmatrix} I_1 + I_2 & I_2 \\\\ I_2 & I_2 \\end{bmatrix}"
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Equation 02 — Inertia Matrix",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 111606.png",
+      "source_sha256": "93a44e509a09e8dd0750dc0677e631eba4e520bac40d8821b3c693a5d5b5703f",
+      "expressions": [
+        "M(q) = \\begin{bmatrix} M_{11} & M_{12} \\\\ M_{21} & M_{22} \\end{bmatrix}"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Equation 03 — Expanded Matrix Elements",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 111606.png",
+      "source_sha256": "93a44e509a09e8dd0750dc0677e631eba4e520bac40d8821b3c693a5d5b5703f",
+      "expressions": [
+        "M_{11} = m_1 l_{c1}^{2} + m_2 \\bigl(l_1^{2} + l_{c2}^{2} + 2 l_1 l_{c2} \\cos q_2\\bigr) + I_1 + I_2",
+        "M_{12} = M_{21} = m_2 \\bigl(l_1 l_{c2} \\cos q_2 + l_{c2}^{2}\\bigr) + I_2",
+        "M_{22} = m_2 l_{c2}^{2} + I_2"
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Equation 04 — Christoffel Symbols",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 130543.png",
+      "source_sha256": "178e4f920a7bacd9bc1dae1c1e05f5b4e79b77a7bb1060e8a9167f36d69a9c20",
+      "expressions": [
+        "\\Gamma_{ijk} = \\frac{1}{2} \\left( \\frac{\\partial M_{ij}}{\\partial q_k} + \\frac{\\partial M_{ik}}{\\partial q_j} - \\frac{\\partial M_{jk}}{\\partial q_i} \\right)"
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Equation 05 — Coriolis and Centrifugal Matrix",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 130543.png",
+      "source_sha256": "178e4f920a7bacd9bc1dae1c1e05f5b4e79b77a7bb1060e8a9167f36d69a9c20",
+      "expressions": [
+        "C(q,\\dot{q}) = \\begin{bmatrix} -h\\dot{q}_2 & -h(\\dot{q}_1 + \\dot{q}_2) \\\\ h\\dot{q}_1 & 0 \\end{bmatrix}",
+        "h = m_2 l_1 l_{c2} \\sin(q_2)"
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Equation 06 — Gravitational Potential Energy",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 131043.png",
+      "source_sha256": "0abee277978f96a6f028b85a379fc6b41a7dbb9f23532cb32820ba36fbaad281",
+      "expressions": [
+        "P(q) = -m_1 g l_{c1} \\cos q_1 - m_2 g \\bigl(l_1 \\cos q_1 + l_{c2} \\cos(q_1 + q_2)\\bigr)"
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Equation 07 — Gravitational Vector",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 131043.png",
+      "source_sha256": "0abee277978f96a6f028b85a379fc6b41a7dbb9f23532cb32820ba36fbaad281",
+      "expressions": [
+        "G(q) = \\frac{\\partial P(q)}{\\partial q}",
+        "G_1 = m_1 g l_{c1} \\sin q_1 + m_2 g \\bigl(l_1 \\sin q_1 + l_{c2} \\sin(q_1 + q_2)\\bigr)",
+        "G_2 = m_2 g l_{c2} \\sin(q_1 + q_2)"
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Equation 08 — Equation of Motion",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 131400.png",
+      "source_sha256": "92657acd6729e7116ca069a9185488ab61dd4d3c21dc4d931969e7d6ffdf397d",
+      "expressions": [
+        "M(q)\\ddot{q} + C(q,\\dot{q})\\dot{q} + G(q) + u_{\\mathrm{ext}} = \\tau"
+      ]
+    }
+  ],
+  "verification": {
+    "equation_numbers_and_original_titles": "01-08, checked against original source images",
+    "all_expressions_retained": 13,
+    "paragraphs_preserved_in_order": 5,
+    "paragraph_html_sha256": [
+      "f99380608683075231975be2311041bf59f5a8d1672f349a3e59cc5c711ec9b5",
+      "7cabf03e29ddeb9a5e2108b121d652c9c723f0a5f1dd5328e2ee2a2e4de73dd8",
+      "2efe50316ff82502aceb27171df7cc3d02d03d869f19e1c0dc1e20424d85d9ce",
+      "2a0f816300751d7436082158d3abde8009ec506f0c3807d11ec3175948326565",
+      "a4600cc4e258b92dac20e771ebe61b1f227beb39070c91ac5a87649443f02eef"
+    ],
+    "paragraph_text_and_inline_bold_comparison": "Exact serialized paragraph HTML equality passed",
+    "mathml_annotations_match_transcribed_tex": true,
+    "matrix_shapes": "Equations 01, 02 and 05 retain their original 2x2 matrices",
+    "uncertain_symbols": [],
+    "original_source_images_unmodified": true,
+    "browser_visual_qa": false,
+    "final_saved_paragraph_html_comparison": "passed: all five paragraphs, punctuation and bold spans exactly equal",
+    "outside_subsection_dom_comparison": "passed",
+    "main_equation_and_linkage_controls": "unchanged",
+    "existing_javascript": "byte-identical",
+    "css_parse_and_scoped_overflow": "passed",
+    "equation_08_matches_main_unnumbered_expression": true
+  }
+}

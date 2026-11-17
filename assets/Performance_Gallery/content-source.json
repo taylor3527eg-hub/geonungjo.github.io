@@ -1,0 +1,482 @@
+{
+  "source": "https://sites.google.com/view/geonungjo/projectwork/music/performance-gallery",
+  "text_blocks": {
+    "source-3-0": "Measurement Module #2 – Digital Audio Effects",
+    "source-3-1": "Teaching Assistant | Yonsei University | Fall 2024, 2025, 2026",
+    "source-1-0": "Welcome to my musical journey!",
+    "source-1-1": "Here are some moments from my years in music, including live performances, experiments with sound, and everything in between.",
+    "source-1-2": "I hope you enjoy looking around!",
+    "source-21-0": "Here are some moments from my live performances over the years, from my early days in bands to more recent shows.",
+    "source-21-1": "These photos capture the stages I've performed on, the musicians I've played with, and the memories I've made along the way.",
+    "source-19-0": "CTAG-FX grew out of my interest in exploring and shaping guitar tones through audio effects. It uses AI to interpret text prompts and generate synthesizer parameter configurations, which are then reinterpreted as controls for a tone-shaping audio FX processor.",
+    "source-19-1": "This video demonstrates how the resulting audio effects can be used in actual guitar performance.",
+    "source-19-2": "For more details about the research, please visit the project page below.",
+    "source-19-3": "CTAG-FX — Full Project Details",
+    "source-4-0": "As a teaching assistant, I introduced students to the engineering principles behind audio effects through hands-on demonstrations.",
+    "source-4-1": "I conducted in-person laboratory instruction in Fall 2024 and provided video-based demonstrations in Fall 2025 and 2026.",
+    "source-9-0": "This video introduces various guitar effects, including wah, overdrive, compression, distortion, fuzz, delay, reverb, and flanger, combining technical explanations with live guitar demonstrations.",
+    "source-10-0": "Original Korean-language video",
+    "source-16-0": "Live guitar demonstration at Yonsei University (Fall 2024)",
+    "source-23-0": "When I Was in Middle School...☺️"
+  },
+  "themes": [
+    {
+      "id": "club",
+      "label": "University Band Club",
+      "source_heading": 24,
+      "heading": "My University Band Days!👊",
+      "photos": [
+        {
+          "src": "assets/Performance_Gallery/University_Band_01.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/University_Band_01-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/University_Band_01-view.webp",
+          "width": 796,
+          "height": 769,
+          "alt": "University Band Club — photograph 01"
+        },
+        {
+          "src": "assets/Performance_Gallery/10373.JPEG",
+          "thumbnail": "assets/Performance_Gallery/web/10373-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/10373-view.webp",
+          "width": 681,
+          "height": 1440,
+          "alt": "University Band Club — photograph 02"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_2185.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_2185-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_2185-view.webp",
+          "width": 1224,
+          "height": 1632,
+          "alt": "University Band Club — photograph 03"
+        },
+        {
+          "src": "assets/Performance_Gallery/10419.JPEG",
+          "thumbnail": "assets/Performance_Gallery/web/10419-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/10419-view.webp",
+          "width": 4032,
+          "height": 3024,
+          "alt": "University Band Club — photograph 04"
+        },
+        {
+          "src": "assets/Performance_Gallery/10386.JPEG",
+          "thumbnail": "assets/Performance_Gallery/web/10386-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/10386-view.webp",
+          "width": 4032,
+          "height": 3024,
+          "alt": "University Band Club — photograph 05"
+        },
+        {
+          "src": "assets/Performance_Gallery/University_Band_02.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/University_Band_02-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/University_Band_02-view.webp",
+          "width": 800,
+          "height": 1107,
+          "alt": "University Band Club — photograph 06"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_2191.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_2191-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_2191-view.webp",
+          "width": 3024,
+          "height": 4032,
+          "alt": "University Band Club — photograph 07"
+        },
+        {
+          "src": "assets/Performance_Gallery/University_Band_03.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/University_Band_03-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/University_Band_03-view.webp",
+          "width": 945,
+          "height": 759,
+          "alt": "University Band Club — photograph 08"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_2182.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_2182-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_2182-view.webp",
+          "width": 1224,
+          "height": 1632,
+          "alt": "University Band Club — photograph 09"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3533.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3533-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3533-view.webp",
+          "width": 4000,
+          "height": 6000,
+          "alt": "University Band Club — photograph 10"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3536.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3536-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3536-view.webp",
+          "width": 4000,
+          "height": 6000,
+          "alt": "University Band Club — photograph 11"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3558.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3558-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3558-view.webp",
+          "width": 811,
+          "height": 1440,
+          "alt": "University Band Club — photograph 12"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3565.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3565-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3565-view.webp",
+          "width": 811,
+          "height": 1440,
+          "alt": "University Band Club — photograph 13"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3529.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3529-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3529-view.webp",
+          "width": 3024,
+          "height": 4032,
+          "alt": "University Band Club — photograph 14"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3538.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3538-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3538-view.webp",
+          "width": 4000,
+          "height": 6000,
+          "alt": "University Band Club — photograph 15"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3553.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3553-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3553-view.webp",
+          "width": 3024,
+          "height": 4032,
+          "alt": "University Band Club — photograph 16"
+        }
+      ],
+      "initial": 9
+    },
+    {
+      "id": "festival",
+      "label": "University Festival",
+      "source_heading": 35,
+      "heading": "On Stage at the University Festival😎",
+      "photos": [
+        {
+          "src": "assets/Performance_Gallery/University_Festival_01.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/University_Festival_01-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/University_Festival_01-view.webp",
+          "width": 1280,
+          "height": 1707,
+          "alt": "University Festival — photograph 01"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_2686.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_2686-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_2686-view.webp",
+          "width": 4032,
+          "height": 3024,
+          "alt": "University Festival — photograph 02"
+        },
+        {
+          "src": "assets/Performance_Gallery/KakaoTalk_20260126_100615432.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/KakaoTalk_20260126_100615432-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/KakaoTalk_20260126_100615432-view.webp",
+          "width": 1290,
+          "height": 2302,
+          "alt": "University Festival — photograph 03"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_2695.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_2695-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_2695-view.webp",
+          "width": 3024,
+          "height": 3024,
+          "alt": "University Festival — photograph 04"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_2693.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_2693-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_2693-view.webp",
+          "width": 3024,
+          "height": 3024,
+          "alt": "University Festival — photograph 05"
+        }
+      ],
+      "initial": 1
+    },
+    {
+      "id": "local",
+      "label": "Local Band Days (Seoul & Busan)",
+      "source_heading": 41,
+      "heading": "🎼My Local Band Days (Seoul & Busan)",
+      "photos": [
+        {
+          "src": "assets/Performance_Gallery/IMG_3063.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3063-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3063-view.webp",
+          "width": 3648,
+          "height": 3648,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 01"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3067.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3067-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3067-view.webp",
+          "width": 3648,
+          "height": 3648,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 02"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3059.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3059-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3059-view.webp",
+          "width": 3648,
+          "height": 3648,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 03"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3064.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3064-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3064-view.webp",
+          "width": 3648,
+          "height": 3648,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 04"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3120.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3120-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3120-view.webp",
+          "width": 4624,
+          "height": 2084,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 05"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3123.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3123-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3123-view.webp",
+          "width": 907,
+          "height": 1613,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 06"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3124.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3124-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3124-view.webp",
+          "width": 681,
+          "height": 726,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 07"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3125.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3125-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3125-view.webp",
+          "width": 1290,
+          "height": 725,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 08"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3706.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3706-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3706-view.webp",
+          "width": 1050,
+          "height": 1400,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 09"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3711.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3711-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3711-view.webp",
+          "width": 811,
+          "height": 1440,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 10"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3710.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3710-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3710-view.webp",
+          "width": 811,
+          "height": 1440,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 11"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3708.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3708-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3708-view.webp",
+          "width": 3024,
+          "height": 4032,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 12"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_3715.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_3715-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_3715-view.webp",
+          "width": 1170,
+          "height": 2080,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 13"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_4195.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_4195-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_4195-view.webp",
+          "width": 960,
+          "height": 1440,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 14"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_4198.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_4198-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_4198-view.webp",
+          "width": 1050,
+          "height": 1400,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 15"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_7033.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_7033-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_7033-view.webp",
+          "width": 3000,
+          "height": 4000,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 16"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_7026.JPG",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_7026-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_7026-view.webp",
+          "width": 3376,
+          "height": 6000,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 17"
+        },
+        {
+          "src": "assets/Performance_Gallery/IMG_7025.jpg",
+          "thumbnail": "assets/Performance_Gallery/web/IMG_7025-thumb.webp",
+          "preview": "assets/Performance_Gallery/web/IMG_7025-view.webp",
+          "width": 1290,
+          "height": 2279,
+          "alt": "Local Band Days (Seoul & Busan) — photograph 18"
+        }
+      ],
+      "initial": 4
+    }
+  ],
+  "recovered_original_photos": {
+    "14": "Teaching_Equipment_Setup.jpg",
+    "25": "University_Band_01.jpg",
+    "28": "University_Band_02.jpg",
+    "29": "University_Band_03.jpg",
+    "36": "University_Festival_01.jpg"
+  },
+  "unused_duplicate_files": [
+    "KakaoTalk_20260126_101122549.jpg",
+    "KakaoTalk_20260126_102018494.jpg",
+    "f2177ad4b22702d7186e9d2479212c0ce5a7de79.JPG"
+  ],
+  "videos": [
+    {
+      "id": "tk83MP09sbQ",
+      "title": "Digital Audio Effects | Guitar Pedal Demonstration (English Subtitles)",
+      "author": "Wilt"
+    },
+    {
+      "id": "6vLP4XBltj4",
+      "title": "CTAG FX Demo",
+      "author": "Wilt"
+    },
+    {
+      "id": "x52Dp8PjtV4",
+      "title": "간단한 기타 이펙터 원리 가이드 | 종합 Overview 및 기타 입문자에게도 추천!(feat.연세대 기계공학부 실험 실습 ‘참고자료’)",
+      "author": "Wilt"
+    }
+  ],
+  "original_photo_mapping": {
+    "13": "IMG_4366.jpg",
+    "14": "Teaching_Equipment_Setup.jpg",
+    "22": "IMG_4299.jpg",
+    "25": "University_Band_01.jpg",
+    "26": "10373.JPEG",
+    "27": "10419.JPEG",
+    "28": "University_Band_02.jpg",
+    "29": "University_Band_03.jpg",
+    "30": "IMG_2182.JPG",
+    "31": "IMG_3533.JPG",
+    "32": "IMG_3558.JPG",
+    "33": "IMG_3529.JPG",
+    "34": "IMG_3538.JPG",
+    "36": "University_Festival_01.jpg",
+    "37": "IMG_2686.JPG",
+    "38": "KakaoTalk_20260126_100615432.jpg",
+    "39": "IMG_2695.JPG",
+    "40": "IMG_2693.JPG",
+    "42": "IMG_3063.JPG",
+    "43": "IMG_3067.JPG",
+    "44": "IMG_3059.JPG",
+    "45": "IMG_3064.JPG",
+    "46": "IMG_3120.JPG",
+    "47": "IMG_3123.JPG",
+    "48": "IMG_3124.jpg",
+    "49": "IMG_3125.jpg",
+    "50": "IMG_3706.JPG",
+    "51": "IMG_3711.JPG",
+    "52": "IMG_3710.JPG",
+    "53": "IMG_3707.JPG",
+    "54": "IMG_4195.JPG",
+    "55": "IMG_4198.JPG",
+    "56": "IMG_7033.JPG",
+    "57": "IMG_7026.JPG",
+    "58": "IMG_7025.jpg"
+  },
+  "additional_photos": {
+    "club": [
+      "IMG_2185.JPG",
+      "10386.JPEG",
+      "IMG_2191.JPG",
+      "IMG_3536.JPG",
+      "IMG_3565.JPG",
+      "IMG_3553.JPG"
+    ],
+    "local": [
+      "IMG_3708.JPG",
+      "IMG_3715.JPG"
+    ]
+  },
+  "intro_photos": [
+    {
+      "src": "assets/Performance_Gallery/KakaoTalk_20260126_165141687.jpg",
+      "preview": "assets/Performance_Gallery/web/KakaoTalk_20260126_165141687-view.webp",
+      "width": 4000,
+      "height": 6000,
+      "alt": "Geonung Jo under warm indoor lighting"
+    },
+    {
+      "src": "assets/Performance_Gallery/IMG_3707.JPG",
+      "thumbnail": "assets/Performance_Gallery/web/IMG_3707-thumb.webp",
+      "preview": "assets/Performance_Gallery/web/IMG_3707-view.webp",
+      "width": 3024,
+      "height": 4032,
+      "alt": "Geonung Jo seated on the floor with a guitar"
+    }
+  ],
+  "intro_memory_photo": {
+    "src": "assets/Performance_Gallery/IMG_4299.jpg",
+    "preview": "assets/Performance_Gallery/web/IMG_4299-thumb.webp",
+    "width": 1290,
+    "height": 738,
+    "caption": "When I Was in Middle School...☺️",
+    "placement": "Above IMG_3707 within the existing introduction height"
+  },
+  "in_person_demonstration": {
+    "src": "assets/Performance_Gallery/KakaoTalk_20261030_140907677.mp4",
+    "poster": "assets/Performance_Gallery/web/In_Person_Demonstration-poster.jpg",
+    "width": 1280,
+    "height": 720,
+    "duration_seconds": 22.0833,
+    "original_drive_preview": "https://drive.google.com/file/d/1A_lwkO0yjGhfuUuPqCjgJUNYsMNamDNA/preview"
+  },
+  "page_overrides": {
+    "ctag_project_reference": {
+      "label": "View CTAG-FX Project",
+      "href": "ctag-fx.html"
+    }
+  }
+}

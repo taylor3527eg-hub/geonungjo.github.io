@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff">
+<meta name="description" content="CTAG-FX — a musical research showcase exploring synthesizer parameter roles as controls for expressive tone-shaping audio effects. Listen to original RAW/FX comparisons and guitar performance.">
+<title>CTAG-FX — Geonung Jo / Wilt</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="ctag-fx.css">
+<script src="site-header.js" defer></script><script src="ctag-fx.js" defer></script><script src="image-viewer.js" defer></script><script src="section-navigation.js" defer></script>
+</head>
+<body id="top" class="ctag-page has-section-nav">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="page-shell">
+<header class="site-header">
+<a aria-label="Geonung Jo, home" class="wordmark" href="index.html"><span>WILT</span><span class="wordmark-slash">/</span>GEONUNG JO</a>
+<nav aria-label="Main navigation" class="site-nav">
+<a data-work-link="" href="index.html#work">WORK</a>
+<a href="about.html">ABOUT</a>
+<a href="vision.html">MY VISION</a>
+</nav>
+</header>
+<main id="main-content">
+<section class="ctag-hero" aria-labelledby="ctag-title">
+<a class="project-reference ctag-back" href="index.html#work-ctag-fx">&#8592; Back To Work</a>
+<div class="ctag-hero-layout">
+<div class="ctag-intro">
+<h1 id="ctag-title">CTAG<span class="hero-line-sound">-FX</span></h1>
+<p class="ctag-research-title">Reinterpreting Synthesizer Parameter Spaces for Expressive Tone-Shaping Audio FX Design</p>
+<p class="ctag-hero-copy">CTAG-FX grew out of my interest in exploring and shaping guitar tones through audio effects.</p>
+<p class="ctag-hero-copy">Each configuration defines a reusable tone-shaping processor for new audio inputs.</p>
+<div class="ctag-links"><a class="project-reference" href="https://taylor3527eg-hub.github.io/ctag-fx-platform-demo/">Open Research Demo <span aria-hidden="true">↗</span></a><a class="project-reference" href="https://arxiv.org/abs/2610.08182">Read arXiv Preprint <span aria-hidden="true">↗</span></a></div>
+<p class="ctag-research-credit">Geonung Jo · Jongeun Choi</p>
+</div>
+<figure class="ctag-performance">
+<h3 class="ctag-performance-title">JAM Performance</h3>
+<div class="ctag-video"><iframe src="https://www.youtube-nocookie.com/embed/6vLP4XBltj4" title="CTAG-FX guitar JAM performance" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe></div>
+</figure>
+</div>
+</section>
+<nav class="section-navigation" data-section-nav aria-label="On this page"><a href="#listen">Explore the Tones</a><a href="#idea">The Idea</a><a href="#explore">Sound Exploration</a><a href="#research">Evaluation</a><a href="#contribution">My Contribution</a></nav>
+<section class="section-block ctag-listening-section" id="listen" aria-labelledby="listen-title">
+<div class="practice-heading"><span class="practice-number">01</span><h2 class="section-label" id="listen-title">Explore the Tones</h2></div>
+<h3 class="ctag-section-title">From text.<br><span>To tone.</span></h3>
+<div class="ctag-section-intro"><p>Explore four text-guided tone-shaping configurations and listen to their resulting guitar sounds.<br>Original recordings are also available for reference.</p></div>
+<div class="ctag-listener" data-listener="tones">
+<div class="ctag-preset-list" role="group" aria-label="Select a tone"><button type="button" data-preset="0" aria-pressed="true" aria-controls="tones-player"><span class="ctag-preset-number">01</span><span>Soft Creamy Clean</span></button><button type="button" data-preset="1" aria-pressed="false" aria-controls="tones-player"><span class="ctag-preset-number">02</span><span>Chewy Amp Crunch</span></button><button type="button" data-preset="2" aria-pressed="false" aria-controls="tones-player"><span class="ctag-preset-number">03</span><span>RAT-style Distortion</span></button><button type="button" data-preset="3" aria-pressed="false" aria-controls="tones-player"><span class="ctag-preset-number">04</span><span>Germanium Fuzz</span></button>
+<p class="ctag-listening-note" role="note"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor"/><path d="M8 7v4M8 4.75v.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg><span>RAW recordings are quieter than the processed FX outputs.<br><strong>Start with a low volume.</strong></span></p>
+</div>
+<div class="ctag-listening-deck" id="tones-player" role="group" aria-labelledby="tones-selected-title">
+<div class="ctag-deck-heading"><p class="ctag-small-label">RECORDED AUDIO</p></div>
+<h3 id="tones-selected-title" data-selected-title>Soft Creamy Clean</h3>
+<div class="ctag-listening-options"><div aria-label="Guitar recording" class="ctag-segmented ctag-variant-controls" data-variant-controls="" role="group"><button aria-pressed="true" data-variant="melody" type="button">Melody</button><button aria-pressed="false" data-variant="chord" type="button">Chords</button></div></div>
+<div class="ctag-tone-row" data-tone-player="raw" role="group" aria-labelledby="tones-raw-label"><p class="ctag-player-label" id="tones-raw-label"><strong>RAW</strong><span>Reference Recording</span></p>
+<audio aria-labelledby="tones-selected-title tones-raw-label" controls="" data-listening-audio="" preload="none" src="assets/CTAG-FX/audio/RAW 1.wav"></audio>
+<div class="ctag-transport" data-transport="" hidden="">
+<button aria-label="Play RAW recording" class="ctag-play" data-play="" type="button"><span aria-hidden="true" data-play-symbol="">▶</span><span data-play-label="">Play</span></button>
+<div class="ctag-progress"><input aria-label="RAW playback position" data-seek="" disabled="" max="1000" min="0" step="1" type="range" value="0"/><div class="ctag-time"><span data-elapsed="">0:00</span><span data-duration="">—</span></div></div>
+<label class="ctag-volume">Volume<input aria-label="RAW playback volume" data-volume="" max="1" min="0" step="0.01" type="range" value="0.8"/></label>
+</div>
+<div class="ctag-deck-footer"><p aria-live="polite" data-playback-status="" role="status"></p><a class="ctag-file-link" data-audio-file="" href="assets/CTAG-FX/audio/RAW 1.wav">Open Audio File <span aria-hidden="true">↗</span></a></div>
+</div>
+<div class="ctag-tone-row" data-tone-player="fx" role="group" aria-labelledby="tones-fx-label"><p class="ctag-player-label" id="tones-fx-label"><strong>FX</strong><span>CTAG-FX Output</span></p>
+<audio aria-labelledby="tones-selected-title tones-fx-label" controls="" data-listening-audio="" preload="none" src="assets/CTAG-FX/audio/Clean_1.wav"></audio>
+<div class="ctag-transport" data-transport="" hidden="">
+<button aria-label="Play FX recording" class="ctag-play" data-play="" type="button"><span aria-hidden="true" data-play-symbol="">▶</span><span data-play-label="">Play</span></button>
+<div class="ctag-progress"><input aria-label="FX playback position" data-seek="" disabled="" max="1000" min="0" step="1" type="range" value="0"/><div class="ctag-time"><span data-elapsed="">0:00</span><span data-duration="">—</span></div></div>
+<label class="ctag-volume">Volume<input aria-label="FX playback volume" data-volume="" max="1" min="0" step="0.01" type="range" value="0.8"/></label>
+</div>
+<div class="ctag-deck-footer"><p aria-live="polite" data-playback-status="" role="status"></p><a class="ctag-file-link" data-audio-file="" href="assets/CTAG-FX/audio/Clean_1.wav">Open Audio File <span aria-hidden="true">↗</span></a></div>
+</div>
+</div></div>
+<details class="ctag-details ctag-input-details"><summary>Recording Session Notes</summary>
+<div class="ctag-session-notes"><div><p class="ctag-small-label">INSTRUMENT / PICKUP</p><p class="ctag-session-instrument"><strong>Fender American Vintage Reissue 65 Strat</strong></p><p>Fender Custom Shop Fat 50's Pickups / Neck</p></div>
+<div><p class="ctag-small-label">INPUT RECORDING CHAIN</p><ol class="ctag-recording-chain" aria-label="Input recording chain used to prepare the guitar recordings"><li>Channel EQ</li><li>UA 1176 Classic FET Compressor</li><li>T-Racks EQ 73</li><li>Teletronix LA-2A Leveler</li></ol></div></div>
+</details>
+</section>
+<section class="section-block ctag-idea" id="idea" aria-labelledby="idea-title">
+<div class="practice-heading"><span class="practice-number">02</span><h2 class="section-label" id="idea-title">The Idea Behind CTAG-FX</h2></div>
+<div class="ctag-idea-intro"><h3 class="ctag-section-title">A sound description.<br><span>A new control space.</span></h3><p>CTAG-FX explores a different approach to text-guided audio effects: constructing the control space of an FX processor rather than adjusting parameters within a predefined FX chain.</p></div>
+<ol class="ctag-pipeline" aria-label="From a sound description to a tone-shaping processor"><li><span>01 / DESCRIBE</span><strong>Textual Sound Description</strong></li><li><span>02 / A&amp;R-CTAG</span><strong>Synthesizer Parameter Configuration</strong></li><li><span>03 / CTAG-FX</span><strong>Role-Based Synth-to-FX Reinterpretation</strong></li><li><span>04 / PROCESS</span><strong>Tone-Shaping Audio FX</strong></li></ol>
+<figure class="ctag-figure ctag-workflow"><button class="ctag-image" type="button" data-image-zoom data-image-title="CTAG-FX overall workflow" aria-label="Enlarge CTAG-FX overall workflow"><img src="assets/CTAG-FX/figures/Workflow.svg" alt="CTAG-FX overall workflow" width="1138" height="473" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><figcaption>Original workflow from the research demo. A&R-CTAG generates the synth-side representation; CTAG-FX constructs the processor controls.</figcaption></figure>
+<p class="ctag-small-label ctag-mapping-label">REPRESENTATIVE SYNTH-TO-FX REINTERPRETATIONS</p>
+<div class="ctag-mapping-notes">
+<article><h4 aria-label="ADSR reinterpreted as Pre-EQ / Tone Stack"><span class="ctag-synth-role">ADSR</span><span class="ctag-role-arrow" aria-hidden="true">↓</span><span class="ctag-fx-role">Pre-EQ / Tone Stack</span></h4><p>Envelope roles become fixed spectral contours, rather than time-varying envelope generators.</p></article>
+<article><h4 aria-label="VCO reinterpreted as Drive / Fuzz"><span class="ctag-synth-role">VCO</span><span class="ctag-role-arrow" aria-hidden="true">↓</span><span class="ctag-fx-role">Drive / Fuzz</span></h4><p>Contrasting source roles become smooth and aggressive nonlinear coloration; no oscillator audio is transferred.</p></article>
+<article><h4 aria-label="Mod Matrix reinterpreted as Static Routing"><span class="ctag-synth-role">Mod Matrix</span><span class="ctag-role-arrow" aria-hidden="true">↓</span><span class="ctag-fx-role">Static Routing</span></h4><p>Influence relationships become bounded offsets across drive, EQ and noise controls.</p></article>
+</div>
+<details class="ctag-details ctag-processor-details"><summary>Inside the Tone-Shaping Processor</summary>
+<div class="ctag-processor-layout">
+<figure class="ctag-figure"><button class="ctag-image" type="button" data-image-zoom data-image-title="CTAG-FX processor architecture — original Figure 6" aria-label="Enlarge CTAG-FX processor architecture — original Figure 6"><img src="assets/CTAG-FX/figures/Figure_CTAGFX.png" alt="CTAG-FX processor architecture — original Figure 6" width="617" height="520" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><figcaption>Original Figure 6 · Audio paths and synth-derived control routing.</figcaption></figure>
+<div class="ctag-processor-copy">
+<article><h4><span>01 /</span> AUDIO PATHS</h4><p>The mixer combines a clean path, a processed path, and an independent noise path before the final output stages.</p></article>
+<article><h4><span>02 /</span> SYNTH-DERIVED CONTROLS</h4><p>Synthesizer parameter roles become controls for EQ, drive, saturation, mixing, and input/output gain.<br>External audio supplies the signal; oscillator output is not transferred.</p></article>
+<article><h4><span>03 /</span> CONTROL ROUTING</h4><p>The Mod Matrix links four static character axes to five targets through bounded control offsets.<br>It shapes control relationships, rather than adding time-varying modulation to the audio path.</p></article>
+</div>
+</div>
+</details>
+</section>
+<section class="section-block ctag-exploration" id="explore" aria-labelledby="explore-title">
+<div class="practice-heading"><span class="practice-number">03</span><h2 class="section-label" id="explore-title">Sound Exploration</h2></div>
+<h3 class="ctag-section-title">Beyond Conventional<br><span>Sound Descriptions</span></h3>
+<div class="ctag-section-intro"><p>Explore how sonic character can be reinterpreted as FX behavior.<br>Compare a reference, its A&R-CTAG synth representation, and the resulting guitar FX.</p><span class="ctag-small-label">CHARACTER → INTERPRETATION</span></div>
+<div class="ctag-listener" data-listener="characters">
+<div class="ctag-preset-list" role="group" aria-label="Select a sound character"><button type="button" data-preset="0" aria-pressed="true" aria-controls="characters-player"><span class="ctag-preset-number">01</span><span>Little Birds Chirping</span></button><button type="button" data-preset="1" aria-pressed="false" aria-controls="characters-player"><span class="ctag-preset-number">02</span><span>Cow Moo</span></button><button type="button" data-preset="2" aria-pressed="false" aria-controls="characters-player"><span class="ctag-preset-number">03</span><span>Emergency Police Siren</span></button><button type="button" data-preset="3" aria-pressed="false" aria-controls="characters-player"><span class="ctag-preset-number">04</span><span>Wooden Box Open</span></button>
+<p class="ctag-listening-note" role="note"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor"/><path d="M8 7v4M8 4.75v.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg><span>These examples explore character correspondence, rather than recreating the reference sound with a guitar.</span></p>
+</div>
+<div class="ctag-listening-deck" id="characters-player" role="group" aria-labelledby="characters-selected-title">
+<div class="ctag-deck-heading"><p class="ctag-small-label">RECORDED AUDIO</p></div>
+<h3 id="characters-selected-title" data-selected-title>Little Birds Chirping</h3>
+<div class="ctag-character-columns">
+<div class="ctag-character-group" role="group" aria-labelledby="character-source-title"><div class="ctag-character-group-header"><p class="ctag-small-label" id="character-source-title">SOURCE &amp; INTERPRETATION</p></div>
+<div aria-labelledby="characters-reference-label" class="ctag-character-row" data-character-player="reference" role="group"><p class="ctag-character-player-label" id="characters-reference-label">Reference</p>
+<audio aria-labelledby="characters-selected-title characters-reference-label" controls="" data-listening-audio="" preload="none" src="assets/CTAG-FX/audio/Little Birds Chirping_Reference.mp3"></audio>
+<div class="ctag-transport" data-transport="" hidden="">
+<button aria-label="Play Reference" class="ctag-play" data-play="" type="button"><span aria-hidden="true" data-play-symbol="">▶</span><span data-play-label="">Play</span></button>
+<div class="ctag-progress"><input aria-label="Reference playback position" data-seek="" disabled="" max="1000" min="0" step="1" type="range" value="0"/><div class="ctag-time"><span data-elapsed="">0:00</span><span data-duration="">—</span></div></div>
+<label class="ctag-volume">Volume<input aria-label="Reference playback volume" data-volume="" max="1" min="0" step="0.01" type="range" value="0.8"/></label>
+</div>
+<div class="ctag-deck-footer"><p aria-live="polite" data-playback-status="" role="status"></p><a class="ctag-file-link" data-audio-file="" href="assets/CTAG-FX/audio/Little Birds Chirping_Reference.mp3">Open Audio File <span aria-hidden="true">↗</span></a></div>
+</div><div aria-labelledby="characters-synth-label" class="ctag-character-row" data-character-player="synth" role="group"><p class="ctag-character-player-label" id="characters-synth-label">A&amp;R-CTAG Synth</p>
+<audio aria-labelledby="characters-selected-title characters-synth-label" controls="" data-listening-audio="" preload="none" src="assets/CTAG-FX/audio/A_cheerful_chorus_of_delicate_bird_chirps_greeting_576772_000_-0.7963.wav"></audio>
+<div class="ctag-transport" data-transport="" hidden="">
+<button aria-label="Play A&amp;R-CTAG Synth" class="ctag-play" data-play="" type="button"><span aria-hidden="true" data-play-symbol="">▶</span><span data-play-label="">Play</span></button>
+<div class="ctag-progress"><input aria-label="A&amp;R-CTAG Synth playback position" data-seek="" disabled="" max="1000" min="0" step="1" type="range" value="0"/><div class="ctag-time"><span data-elapsed="">0:00</span><span data-duration="">—</span></div></div>
+<label class="ctag-volume">Volume<input aria-label="A&amp;R-CTAG Synth playback volume" data-volume="" max="1" min="0" step="0.01" type="range" value="0.8"/></label>
+</div>
+<div class="ctag-deck-footer"><p aria-live="polite" data-playback-status="" role="status"></p><a class="ctag-file-link" data-audio-file="" href="assets/CTAG-FX/audio/A_cheerful_chorus_of_delicate_bird_chirps_greeting_576772_000_-0.7963.wav">Open Audio File <span aria-hidden="true">↗</span></a></div>
+</div>
+</div>
+<div class="ctag-character-group" role="group" aria-labelledby="character-guitar-title"><div class="ctag-character-group-header"><p class="ctag-small-label" id="character-guitar-title">GUITAR APPLICATION</p><div aria-label="Guitar recording" class="ctag-segmented ctag-variant-controls" data-variant-controls="" role="group"><button aria-pressed="true" data-variant="melody" type="button">Melody</button><button aria-pressed="false" data-variant="chord" type="button">Chords</button></div></div>
+<div aria-labelledby="characters-raw-label" class="ctag-character-row" data-character-player="raw" role="group"><p class="ctag-character-player-label" id="characters-raw-label">Guitar RAW</p>
+<audio aria-labelledby="characters-selected-title characters-raw-label" controls="" data-listening-audio="" preload="none" src="assets/CTAG-FX/audio/RAW 1.wav"></audio>
+<div class="ctag-transport" data-transport="" hidden="">
+<button aria-label="Play Guitar RAW" class="ctag-play" data-play="" type="button"><span aria-hidden="true" data-play-symbol="">▶</span><span data-play-label="">Play</span></button>
+<div class="ctag-progress"><input aria-label="Guitar RAW playback position" data-seek="" disabled="" max="1000" min="0" step="1" type="range" value="0"/><div class="ctag-time"><span data-elapsed="">0:00</span><span data-duration="">—</span></div></div>
+<label class="ctag-volume">Volume<input aria-label="Guitar RAW playback volume" data-volume="" max="1" min="0" step="0.01" type="range" value="0.8"/></label>
+</div>
+<div class="ctag-deck-footer"><p aria-live="polite" data-playback-status="" role="status"></p><a class="ctag-file-link" data-audio-file="" href="assets/CTAG-FX/audio/RAW 1.wav">Open Audio File <span aria-hidden="true">↗</span></a></div>
+</div><div aria-labelledby="characters-fx-label" class="ctag-character-row" data-character-player="fx" role="group"><p class="ctag-character-player-label" id="characters-fx-label">Guitar FX</p>
+<audio aria-labelledby="characters-selected-title characters-fx-label" controls="" data-listening-audio="" preload="none" src="assets/CTAG-FX/audio/bird_1.wav"></audio>
+<div class="ctag-transport" data-transport="" hidden="">
+<button aria-label="Play Guitar FX" class="ctag-play" data-play="" type="button"><span aria-hidden="true" data-play-symbol="">▶</span><span data-play-label="">Play</span></button>
+<div class="ctag-progress"><input aria-label="Guitar FX playback position" data-seek="" disabled="" max="1000" min="0" step="1" type="range" value="0"/><div class="ctag-time"><span data-elapsed="">0:00</span><span data-duration="">—</span></div></div>
+<label class="ctag-volume">Volume<input aria-label="Guitar FX playback volume" data-volume="" max="1" min="0" step="0.01" type="range" value="0.8"/></label>
+</div>
+<div class="ctag-deck-footer"><p aria-live="polite" data-playback-status="" role="status"></p><a class="ctag-file-link" data-audio-file="" href="assets/CTAG-FX/audio/bird_1.wav">Open Audio File <span aria-hidden="true">↗</span></a></div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="ctag-explore-footer"><a class="project-reference" href="https://taylor3527eg-hub.github.io/ctag-fx-platform-demo/#sample">Explore All Audio Examples <span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="section-block ctag-research" id="research" aria-labelledby="research-title">
+<div class="practice-heading"><span class="practice-number">04</span><h2 class="section-label" id="research-title">Evaluation</h2></div>
+<div class="ctag-research-layout"><div class="ctag-research-copy"><h3 class="ctag-section-title">Different roles.<br><span>Measurable differences.</span></h3>
+<div class="ctag-key-finding"><h4 class="ctag-small-label">KEY FINDING</h4><p>Role-based mapping produced prompt-specific spectral and nonlinear behavior; scrambling reduced separation.</p></div>
+<div class="ctag-prose ctag-experimental-setup"><h4 class="ctag-small-label">EXPERIMENTAL SETUP</h4><p>The processor test bypassed A&R-CTAG: GPT-4o directly instantiated configurations from four tone prompts. Ten configurations per prompt were evaluated on a held-out 10-second guitar recording.</p><p>The ablation retained parameter values and permuted their control assignments, using 30 shared permutations.</p></div><a class="project-reference" href="https://arxiv.org/html/2610.08182v1#S4">Read the Full Evaluation <span aria-hidden="true">↗</span></a></div>
+<div class="ctag-evidence"><div class="ctag-segmented ctag-evidence-tabs" role="group" aria-label="Research figures"><button type="button" data-evidence-index="0" aria-pressed="true">Spectrum & Ablation</button><button type="button" data-evidence-index="1" aria-pressed="false">Nonlinear Behavior</button></div>
+<figure class="ctag-figure ctag-evidence-figure"><button class="ctag-image" type="button" data-image-zoom data-image-title="Original Figure 7 comparing prompt-conditioned spectral behavior and role-based versus scrambled mappings" aria-label="Enlarge Original Figure 7 comparing prompt-conditioned spectral behavior and role-based versus scrambled mappings"><img src="assets/CTAG-FX/figures/fig7_spectral_and_scrambled_ablation.svg" alt="Original Figure 7 comparing prompt-conditioned spectral behavior and role-based versus scrambled mappings" width="516" height="227" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><figcaption>Figure 7 · Spectral responses and the scrambled-mapping comparison. Shading: 95% confidence intervals.</figcaption></figure>
+</div></div>
+<details class="ctag-details ctag-generator-details"><summary>A&R-CTAG: A Separate Synth-Side Evaluation</summary>
+<p>Ten prompts, equal 300-iteration budgets. These LAION-CLAP results concern synth-side generation, not processed-guitar perceptual quality.</p>
+<div class="ctag-generator-layout"><figure class="ctag-figure "><button class="ctag-image" type="button" data-image-zoom data-image-title="A&amp;R-CTAG synth-side generation pipeline — original Figure 3" aria-label="Enlarge A&amp;R-CTAG synth-side generation pipeline — original Figure 3"><img src="assets/CTAG-FX/figures/Figure_AR_CTAG.png" alt="A&amp;R-CTAG synth-side generation pipeline — original Figure 3" width="1307" height="802" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></figure>
+<div class="ctag-table-scroll"><table><caption>Original Table 3 · LAION-CLAP similarity</caption><thead><tr><th scope="col">Metric</th><th scope="col">CTAG</th><th scope="col">A&R-CTAG</th><th scope="col">Change</th></tr></thead><tbody><tr><th scope="row">Initial score mean</th><td>0.1449</td><td>0.2981</td><td>+105.7%</td></tr><tr><th scope="row">Final score mean</th><td>0.6166</td><td>0.7545</td><td>+22.4%</td></tr><tr><th scope="row">Final score SD</th><td>0.1246</td><td>0.0595</td><td>−52.2%</td></tr><tr><th scope="row">Score change mean</th><td>0.4718</td><td>0.4564</td><td>−3.3%</td></tr></tbody></table></div></div>
+</details>
+<aside class="ctag-deployment" aria-labelledby="deployment-title"><h3 id="deployment-title">Real-Time Use via NAM</h3><p>Once a CTAG-FX configuration is fixed, its input-output response can be captured with Neural Amp Modeler (NAM) and loaded into a compatible host for real-time processing.</p></aside>
+<p class="ctag-research-scope">Signal-level analysis and embedding similarity are reported here; perceptual correspondence remains to be evaluated. <a href="https://arxiv.org/abs/2610.08182">See the preprint.</a></p>
+</section>
+<section class="section-block" id="contribution" aria-labelledby="contribution-title">
+<div class="ctag-contribution-layout">
+<div class="ctag-contribution-intro">
+<div class="practice-heading"><span class="practice-number">05</span><h2 class="section-label" id="contribution-title">My Contribution</h2></div>
+<h3 class="ctag-section-title">What I<br><span>contributed.</span></h3>
+</div>
+<div class="ctag-contributions">
+<article class="ctag-contribution-card ctag-role-creator"><p class="ctag-small-label">01 / CREATOR</p><h4>Concept &amp; Experience</h4><ul><li data-source-role="0">Developed the original CTAG-FX concept and creative direction.</li><li data-source-role="4">Developed the interactive research demo website.</li></ul></article>
+<svg class="ctag-contribution-arrow ctag-contribution-arrow-to-engineer" viewBox="0 0 32 18" fill="none" aria-hidden="true"><path d="M2 9h27m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<article class="ctag-contribution-card ctag-role-engineer"><p class="ctag-small-label">02 / ENGINEER</p><h4>System &amp; Evaluation</h4><ul><li data-source-role="1">Extended CTAG into A&amp;R-CTAG through LLM-based prompt refinement and retrieval-enhanced initialization.</li><li data-source-role="2">Designed and implemented the role-based synthesizer-to-FX mapping and integrated tone-shaping processor.</li><li data-source-role="3">Conducted signal-level analyses and scrambled-mapping ablation experiments.</li><li data-source-role="4">Demonstrated the resulting audio effects through NAM-based implementations.</li></ul></article>
+<svg class="ctag-contribution-arrow ctag-contribution-arrow-to-musician" viewBox="0 0 32 18" fill="none" aria-hidden="true"><path d="M30 9H3m6-6-6 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<article class="ctag-contribution-card ctag-role-musician"><p class="ctag-small-label">03 / MUSICIAN</p><h4>Sound &amp; Performance</h4><ul><li>Explored guitar tones using the resulting audio effects.</li><li data-source-role="4">Demonstrated the resulting audio effects through guitar performances.</li></ul></article>
+</div>
+</div>
+</section>
+<section class="ctag-closing" aria-labelledby="closing-title"><div><p class="ctag-small-label">EXPLORE THE FULL RESEARCH</p><h2 id="closing-title">Keep exploring sound.</h2></div><div class="ctag-closing-links"><a class="project-reference" href="https://taylor3527eg-hub.github.io/ctag-fx-platform-demo/">Open Research Demo <span aria-hidden="true">↗</span></a><a class="project-reference" href="https://arxiv.org/abs/2610.08182">Read arXiv Preprint <span aria-hidden="true">↗</span></a><a class="project-reference" href="index.html#work-ctag-fx">&#8592; Back To Work</a></div></section>
+</main>
+<footer aria-labelledby="contact-title" class="site-footer" id="contact">
+<div class="contact-block">
+<div>
+<p class="section-number">GET IN TOUCH</p>
+<h2 id="contact-title">Let’s connect.</h2>
+</div>
+<div class="contact-copy">
+<p>For research discussions, creative collaborations, or music-related projects, feel free to reach out.</p>
+<a class="contact-email" href="mailto:taylor3527eg@gmail.com">taylor3527eg@gmail.com <span aria-hidden="true">↗</span></a>
+<div class="footer-references"><span class="footer-reference"><svg aria-hidden="true" fill="none" viewbox="0 0 16 16"><path d="M4 2.5h5.5L12 5v8.5H4zM9.5 2.5V5H12M6 7.5h4M6 10h3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"></path></svg>CV <span aria-hidden="true">↗</span></span>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>© 2026 Geonung Jo / Wilt</span><a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+</div>
+</footer>
+</div>
+<dialog aria-labelledby="image-viewer-caption" class="image-viewer" data-image-viewer="">
+<button aria-label="Close image" class="image-viewer-close" data-image-close="" type="button"><svg aria-hidden="true" fill="none" focusable="false" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></button>
+<figure><img alt="" data-full-image=""><figcaption id="image-viewer-caption"></figcaption>
+</figure>
+</dialog>
+<script type="application/json" id="ctag-data">{
+  "raw": {
+    "melody": "assets/CTAG-FX/audio/RAW 1.wav",
+    "chord": "assets/CTAG-FX/audio/RAW 2.wav"
+  },
+  "tones": [
+    {
+      "name": "Soft Creamy Clean",
+      "kind": "Clean",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/Clean_1.wav",
+        "chord": "assets/CTAG-FX/audio/Clean_2.wav"
+      }
+    },
+    {
+      "name": "Chewy Amp Crunch",
+      "kind": "Crunch",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/Chewy_1.wav",
+        "chord": "assets/CTAG-FX/audio/Chewy_2.wav"
+      }
+    },
+    {
+      "name": "RAT-style Distortion",
+      "kind": "Distortion",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/RAT_1.wav",
+        "chord": "assets/CTAG-FX/audio/RAT_2.wav"
+      }
+    },
+    {
+      "name": "Germanium Fuzz",
+      "kind": "Fuzz",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/Fuzz_1.wav",
+        "chord": "assets/CTAG-FX/audio/Fuzz_2.wav"
+      }
+    }
+  ],
+  "characters": [
+    {
+      "name": "Little Birds Chirping",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/bird_1.wav",
+        "chord": "assets/CTAG-FX/audio/Bird_2.wav"
+      },
+      "reference": "assets/CTAG-FX/audio/Little Birds Chirping_Reference.mp3",
+      "synth": "assets/CTAG-FX/audio/A_cheerful_chorus_of_delicate_bird_chirps_greeting_576772_000_-0.7963.wav"
+    },
+    {
+      "name": "Cow Moo",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/cow_1.wav",
+        "chord": "assets/CTAG-FX/audio/cow_2.wav"
+      },
+      "reference": "assets/CTAG-FX/audio/Cow Moo_Reference.mp3",
+      "synth": "assets/CTAG-FX/audio/A_gentle_and_friendly_cartoon_cow_moo_constructed_fefaf7_000_-0.7591.wav"
+    },
+    {
+      "name": "Emergency Police Siren",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/siren_1.wav",
+        "chord": "assets/CTAG-FX/audio/siren_2.wav"
+      },
+      "reference": "assets/CTAG-FX/audio/Police siren.mp3",
+      "synth": "assets/CTAG-FX/audio/A_classic_emergency_siren_sound_conveying_urgent_d_c97478_000_-0.7544.wav"
+    },
+    {
+      "name": "Wooden Box Open",
+      "files": {
+        "melody": "assets/CTAG-FX/audio/wooden_box_1.wav",
+        "chord": "assets/CTAG-FX/audio/wooden_box_2.wav"
+      },
+      "reference": "assets/CTAG-FX/audio/wooden box.mp3",
+      "synth": "assets/CTAG-FX/audio/A_rustic_wooden_box_being_opened_with_a_creaky_hin_8a0d40_000_-0.6556.wav"
+    }
+  ],
+  "evidence": [
+    {
+      "name": "Spectrum & Ablation",
+      "src": "assets/CTAG-FX/figures/fig7_spectral_and_scrambled_ablation.svg",
+      "caption": "Figure 7 · Spectral responses and the scrambled-mapping comparison. Shading: 95% confidence intervals.",
+      "alt": "Original Figure 7 comparing prompt-conditioned spectral behavior and role-based versus scrambled mappings"
+    },
+    {
+      "name": "Nonlinear Behavior",
+      "src": "assets/CTAG-FX/figures/fig8_nonlinear_descriptors.svg",
+      "caption": "Figure 8 · Nonlinear descriptors under role-based and scrambled mappings. N = 10 configurations per prompt; 95% confidence intervals.",
+      "alt": "Original Figure 8 comparing nonlinear descriptors for role-based and scrambled parameter assignments"
+    }
+  ]
+}</script>
+</body></html>

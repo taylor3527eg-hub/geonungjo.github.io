@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="UMI-F/T — mechanical design, fabrication, and preliminary verification of a wireless two-axis force-sensing extension for the Universal Manipulation Interface.">
+  <title>UMI-F/T — Geonung Jo / Wilt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="umi-ft.css">
+  <script src="site-header.js" defer></script>
+  <script src="image-viewer.js" defer></script>
+  <script src="section-navigation.js" defer></script>
+</head>
+<body id="top" class="umi-page has-section-nav">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Geonung Jo, home"><span>WILT</span><span class="wordmark-slash">/</span>GEONUNG JO</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html#work" data-work-link>WORK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="vision.html">MY VISION</a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="project-hero" aria-labelledby="project-title">
+        <div class="project-intro">
+          <a class="project-reference project-back" href="index.html#work-umi-ft"><span aria-hidden="true">←</span> Back To Work</a>
+          <h1 id="project-title">UMI-F/T</h1>
+          <p class="project-subtitle">Wireless Force-Sensing Hardware Extension for the Universal Manipulation Interface</p>
+          <p class="project-tagline">Making physical interaction measurable.</p>
+          <p class="project-body">I designed and prototyped a wireless two-axis force-sensing hardware extension for the Universal Manipulation Interface (UMI), focusing on mechanical integration, fabrication, and preliminary functional verification.</p>
+          <ul class="project-disciplines" aria-label="Project disciplines"><li>Mechanical Design</li><li>Prototyping</li><li>Force Sensing</li></ul>
+          <a class="project-reference project-hero-link" href="#demonstration">Watch The Prototype <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="project-hero-figure">
+          <button class="project-image cad-image hero-assembly" type="button" data-image-zoom data-image-title="Full Assembly — CAD Model" aria-label="Enlarge full assembly CAD model">
+            <img src="assets/UMI-FT/cad/Full_Hardware.png" alt="Full hardware CAD assembly showing the gripper, black force sensor, handle and supporting frame" width="510" height="452" decoding="async">
+            <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <figcaption><strong>Full Assembly — CAD Model</strong></figcaption>
+        </figure>
+      </section>
+
+      <nav class="section-navigation" data-section-nav aria-label="On this page">
+        <a href="#overview">Overview</a>
+        <a href="#mechanical-design">Mechanical Design</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#demonstration">Demonstrations</a>
+        <a href="#contribution">My Contribution</a>
+        <a href="#references">References</a>
+      </nav>
+
+      <section class="project-overview section-block" id="overview" aria-labelledby="overview-title">
+        <div class="practice-heading"><span class="practice-number">01</span><h2 class="section-label" id="overview-title">Overview &amp; Research Objective</h2></div>
+        <div class="project-text-split">
+          <div class="overview-lead">
+            <h3 class="project-section-title">Adding a sense<br><span>of force.</span></h3>
+            <figure class="project-figure overview-context-figure">
+              <button class="project-image overview-context-image" type="button" data-image-zoom data-image-title="UMI prototype in the experimental setup" aria-label="Enlarge UMI prototype photograph in the experimental setup">
+                <img src="assets/UMI-FT/Prototype_Context.jpg" alt="White UMI-F/T gripper and a target object on a whiteboard in the tabletop experimental setup" width="4032" height="3024" loading="lazy" decoding="async">
+                <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <figcaption><strong>UMI prototype in the experimental setup</strong></figcaption>
+            </figure>
+          </div>
+          <div class="project-prose">
+            <p>Accessible, low-cost demonstration collection tools are important for building the datasets used in robot learning. The original <a class="inline-reference" href="https://www.roboticsproceedings.org/rss20/p045.html">Universal Manipulation Interface</a>, developed by Shuran Song’s research group, provides a practical platform for collecting visual observations and manipulation demonstrations.</p>
+            <p>Our team explored extending this platform with physical interaction measurements. My focus was a wireless module for measuring X–Y loads at the gripper’s wrist-mounting interface.</p>
+            <p>The objective was to support future synchronized vision-and-force data collection, force-aware robot learning, and contact-rich manipulation. In this project, our work focused on hardware development and preliminary functional verification.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-design section-block" id="mechanical-design" aria-labelledby="design-title">
+        <div class="practice-heading"><span class="practice-number">02</span><h2 class="section-label" id="design-title">Mechanical Design</h2></div>
+        <div class="mechanical-design-layout">
+          <div class="design-copy">
+            <h3 class="project-section-title">From concept<br><span>to mechanism.</span></h3>
+            <div class="assembly-notes project-prose">
+              <h4>Designed around the interface.</h4>
+              <p>The mechanical work centered on integrating a two-axis force-sensing extension at the UMI gripper’s wrist interface.</p>
+              <p>The CAD views illustrate the finger mechanism and handle/frame design.</p>
+            </div>
+          </div>
+          <div class="design-gallery">
+            <section class="cad-group" aria-labelledby="finger-mechanism-title">
+              <div class="practice-heading cad-group-heading"><span class="practice-number">01</span><h4 id="finger-mechanism-title">Finger Mechanism</h4></div>
+              <div class="cad-details">
+                <figure class="project-figure cad-fingers">
+                  <button class="project-image cad-image" type="button" data-image-zoom data-image-title="Rack & Pinion Finger Mechanism" aria-label="Enlarge rack and pinion finger mechanism">
+                    <img src="assets/UMI-FT/cad/Rack_Pinion_Front.png" alt="Updated front CAD view isolating the opposing finger racks and central pinion" width="664" height="300" loading="lazy" decoding="async">
+                    <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </button>
+                  <figcaption><strong>Rack &amp; Pinion</strong></figcaption>
+                </figure>
+                <figure class="project-figure cad-finger-assembly">
+                  <button class="project-image cad-image" type="button" data-image-zoom data-image-title="Finger Mechanism — Assembly View" aria-label="Enlarge angled finger mechanism assembly view">
+                    <img src="assets/UMI-FT/cad/Finger_Assembly.png" alt="Angled CAD view of the gripper finger assembly, central pinion, racks and mounting layout" width="510" height="350" loading="lazy" decoding="async">
+                    <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </button>
+                  <figcaption><strong>Assembly View</strong></figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="cad-group" aria-labelledby="handle-frame-title">
+              <div class="practice-heading cad-group-heading"><span class="practice-number">02</span><h4 id="handle-frame-title">Handle &amp; Structural Frame</h4></div>
+              <div class="cad-details">
+                <figure class="project-figure cad-handle">
+                  <button class="project-image cad-image" type="button" data-image-zoom data-image-title="Handle Design & Structural Frame" aria-label="Enlarge open handle and structural frame CAD view">
+                    <img src="assets/UMI-FT/cad/Full_Structure_Open.png" alt="Updated open-structure CAD view showing the gripper, handle frame, internal plate and housing layout" width="653" height="510" loading="lazy" decoding="async">
+                    <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </button>
+                  <figcaption><strong>Structural Design</strong></figcaption>
+                </figure>
+                <figure class="project-figure cad-handle-exterior">
+                  <button class="project-image cad-image" type="button" data-image-zoom data-image-title="Handle & Frame — Exterior View" aria-label="Enlarge handle and frame exterior CAD view">
+                    <img src="assets/UMI-FT/cad/Handle_Exterior.png" alt="Exterior CAD view of the handle housing, grip rails and structural frame" width="540" height="481" loading="lazy" decoding="async">
+                    <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </button>
+                  <figcaption><strong>Exterior View</strong></figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-prototype section-block" id="prototype" aria-labelledby="prototype-title">
+        <div class="practice-heading"><span class="practice-number">03</span><h2 class="section-label" id="prototype-title">Prototype Fabrication &amp; Integration</h2></div>
+        <div class="prototype-layout">
+          <div class="prototype-copy">
+            <h3 class="project-section-title">From CAD<br><span>to hardware.</span></h3>
+            <div class="prototype-notes project-prose">
+              <p>I fabricated the mechanical components using 3D printing, assembled the prototype, and integrated the sensing hardware into the mechanical structure.</p>
+              <p>Software development was handled by a Ph.D. researcher on the team.</p>
+            </div>
+          </div>
+          <div class="prototype-integration">
+            <figure class="project-figure prototype-printing">
+              <button class="project-image prototype-image" type="button" data-image-zoom data-image-title="3D Print Preparation" aria-label="Enlarge 3D print preparation photograph">
+                <img src="assets/UMI-FT/Printing_Preparation.jpg" alt="Slicer workspace with gripper and housing components arranged on the virtual print bed" width="3024" height="4032" loading="lazy" decoding="async">
+                <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <figcaption><strong>3D Print Preparation</strong></figcaption>
+            </figure>
+            <figure class="project-figure prototype-hardware">
+              <button class="project-image prototype-image" type="button" data-image-zoom data-image-title="Fabricated Hardware" aria-label="Enlarge fabricated hardware photograph">
+                <img src="assets/UMI-FT/Gripper_inReal.jpeg" alt="Handheld fabricated UMI-F/T prototype with white printed frame, pink gripper fingers and a green handle button" width="1080" height="1440" loading="lazy" decoding="async">
+                <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <figcaption><strong>Fabricated Hardware</strong></figcaption>
+            </figure>
+            <figure class="project-figure prototype-electronics">
+              <button class="project-image prototype-image" type="button" data-image-zoom data-image-title="Electronics Integration" aria-label="Enlarge electronics integration photograph">
+                <img src="assets/UMI-FT/Electronics_Mount.jpeg" alt="Opened prototype showing electronics boards and wiring mounted within the printed mechanical frame" width="1080" height="1440" loading="lazy" decoding="async">
+                <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <figcaption><strong>Electronics Integration</strong></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="camera-observations">
+          <div class="camera-intro project-prose">
+            <h4 class="project-section-title">A view from<br><span>the interface.</span></h4>
+            <p>Fisheye observations show the UMI gripper in its open and closed states.</p>
+            <p>Two states, captured from the same viewpoint.</p>
+          </div>
+          <div class="camera-pair">
+            <figure class="project-figure">
+              <button class="project-image camera-image" type="button" data-image-zoom data-image-title="Fisheye Observation — Fingers Open" aria-label="Enlarge fisheye observation with fingers open">
+                <img src="assets/UMI-FT/Fisheye_Open.jpeg" alt="Fisheye view of a workbench with the handheld gripper fingers open in the foreground" width="1536" height="1152" loading="lazy" decoding="async">
+                <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <figcaption><strong>Fingers Open</strong></figcaption>
+            </figure>
+            <figure class="project-figure">
+              <button class="project-image camera-image" type="button" data-image-zoom data-image-title="Fisheye Observation — Fingers Closed" aria-label="Enlarge fisheye observation with fingers closed">
+                <img src="assets/UMI-FT/Fisheye_close.jpeg" alt="Fisheye view of the same workbench with the gripper fingers closed in the foreground" width="1536" height="1152" loading="lazy" decoding="async">
+                <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <figcaption><strong>Fingers Closed</strong></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-demonstration section-block" id="demonstration" aria-labelledby="demonstration-title">
+        <div class="practice-heading"><span class="practice-number">04</span><h2 class="section-label" id="demonstration-title">Prototype Demonstration</h2></div>
+        <div class="mechanical-tests">
+          <div class="demo-intro">
+            <h3 class="project-section-title">Seeing it<br><span>in action.</span></h3>
+            <h4>Mechanical Function Tests</h4>
+            <p>Hands-on tests of the fabricated finger mechanism and handle button.</p>
+            <aside class="verification-note" aria-labelledby="verification-title">
+              <h4 id="verification-title">Preliminary Verification</h4>
+              <p>Initial hardware testing confirmed basic X–Y load-measurement functionality. These checks focused on basic sensing and mechanical operation; quantitative measurement accuracy and robot-learning performance were not established.</p>
+            </aside>
+          </div>
+          <div class="mechanical-test-results">
+            <div class="mechanical-video-pair">
+              <figure class="project-video">
+                <video controls playsinline preload="none" poster="assets/UMI-FT/posters/Gripper_Test.jpg" width="512" height="910" aria-labelledby="gripper-video-title" aria-describedby="gripper-video-description">
+                  <source src="assets/UMI-FT/Gripper_Test.mp4" type="video/mp4">
+                  <a href="assets/UMI-FT/Gripper_Test.mp4">Open The Gripper Test Video</a>
+                </video>
+                <figcaption><strong id="gripper-video-title">Gripper Finger Test</strong><span id="gripper-video-description">Prototype finger motion and grasping.</span></figcaption>
+              </figure>
+              <figure class="project-video">
+                <video controls playsinline preload="none" poster="assets/UMI-FT/posters/Button_Test.jpg" width="512" height="910" aria-labelledby="button-video-title" aria-describedby="button-video-description">
+                  <source src="assets/UMI-FT/Button_Test.mp4" type="video/mp4">
+                  <a href="assets/UMI-FT/Button_Test.mp4">Open The Button Test Video</a>
+                </video>
+                <figcaption><strong id="button-video-title">Button Operation Test</strong><span id="button-video-description">Handle button operation checked by hand.</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="platform-demos">
+          <div class="demo-intro">
+            <p class="platform-kicker">UMI Platform Demonstrations</p>
+            <h3 class="project-section-title">From prototype<br><span>to platform.</span></h3>
+            <p>The following videos show how the prototype was used within the broader UMI setup.</p>
+            <p><strong>Robot-arm control software and robot-learning implementation were handled by a Ph.D. researcher on the team.</strong></p>
+          </div>
+          <div class="platform-video-pair">
+            <figure class="project-video platform-arm">
+              <video controls playsinline preload="none" poster="assets/UMI-FT/posters/Operation_Test.jpg" width="512" height="910" aria-labelledby="arm-video-title" aria-describedby="arm-video-description">
+                <source src="assets/UMI-FT/Operation_Test.mp4" type="video/mp4">
+                <a href="assets/UMI-FT/Operation_Test.mp4">Open The Robot Arm Video</a>
+              </video>
+              <figcaption><strong id="arm-video-title">Robotic Arm Motion Demonstration</strong><span id="arm-video-description">Robot-arm motion shown with the assembled hardware in the platform setup.</span></figcaption>
+            </figure>
+            <figure class="project-video platform-data">
+              <video controls playsinline preload="none" poster="assets/UMI-FT/posters/Data_Collection.jpg" width="910" height="512" aria-labelledby="data-video-title" aria-describedby="data-video-description">
+                <source src="assets/UMI-FT/Data_Collection.mp4" type="video/mp4">
+                <a href="assets/UMI-FT/Data_Collection.mp4">Open The Data Collection Video</a>
+              </video>
+              <figcaption><strong id="data-video-title">Data Collection Process</strong><span id="data-video-description">A demonstration of the data collection process within the UMI platform.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-contribution section-block" id="contribution" aria-labelledby="contribution-title">
+        <div class="practice-heading"><span class="practice-number">05</span><h2 class="section-label" id="contribution-title">My Contribution</h2></div>
+        <div class="project-text-split">
+          <h3 class="project-section-title">What I<br><span>contributed.</span></h3>
+          <div>
+            <dl class="contribution-list">
+              <div><dt>Mechanical Design &amp; Hardware Development</dt><dd>Designed the wireless two-axis force-sensing hardware extension, including the gripper and wrist-mounting interface, with a focus on measuring X–Y loads.</dd></div>
+              <div><dt>Prototype Fabrication &amp; Integration</dt><dd>Fabricated mechanical components using 3D printing, assembled the prototype, and integrated the sensing hardware into the mechanical structure.</dd></div>
+              <div><dt>Preliminary Verification</dt><dd>Tested the mechanical operation of the gripper fingers and handle button, and confirmed basic X–Y force-measurement functionality during initial hardware testing.</dd></div>
+            </dl>
+            <p class="contribution-scope">My contributions focused on mechanical design, prototype fabrication, and preliminary hardware verification.<br>Robot-arm control and robot-learning software were developed by another team member.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-references section-block" id="references" aria-labelledby="references-title">
+        <div class="practice-heading"><span class="practice-number">06</span><h2 class="section-label" id="references-title">References</h2></div>
+        <ol class="reference-list">
+          <li>Chi, C., Xu, Z., Pan, C., Cousineau, E., Burchfiel, B., Feng, S., Tedrake, R., &amp; Song, S. (2024). <a href="https://doi.org/10.15607/RSS.2024.XX.045">Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots.</a> <em>Robotics: Science and Systems (RSS).</em> DOI: 10.15607/RSS.2024.XX.045.</li>
+          <li>Zhao, T. Z., Kumar, V., Levine, S., &amp; Finn, C. (2023). <a href="https://arxiv.org/abs/2304.13705">Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware.</a> <em>ICML 2023 Workshops: Frontiers4LCD.</em> arXiv:2304.13705.</li>
+          <li>Kamijo, T., Beltran-Hernandez, C. C., &amp; Hamaya, M. (2024). <a href="https://doi.org/10.1109/IROS58592.2024.10801731">Learning Variable Compliance Control From a Few Demonstrations for Bimanual Robot with Haptic Feedback Teleoperation System.</a> <em>2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 12663–12670. DOI: 10.1109/IROS58592.2024.10801731.</li>
+        </ol>
+        <a class="project-reference project-return" href="index.html#work-umi-ft"><span aria-hidden="true">←</span> Back To Work</a>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact" aria-labelledby="contact-title">
+      <div class="contact-block">
+        <div><p class="section-number">GET IN TOUCH</p><h2 id="contact-title">Let’s connect.</h2></div>
+        <div class="contact-copy">
+          <p>For research discussions, creative collaborations, or music-related projects, feel free to reach out.</p>
+          <a class="contact-email" href="mailto:taylor3527eg@gmail.com">taylor3527eg@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="footer-references"><span class="footer-reference"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4zM9.5 2.5V5H12M6 7.5h4M6 10h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>CV <span aria-hidden="true">↗</span></span></div>
+        </div>
+      </div>
+      <div class="footer-meta"><span>© 2026 Geonung Jo / Wilt</span><a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+    </footer>
+  </div>
+  <dialog class="image-viewer" data-image-viewer aria-labelledby="image-viewer-caption">
+    <button class="image-viewer-close" type="button" data-image-close aria-label="Close image"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    <figure><img data-full-image alt=""><figcaption id="image-viewer-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>

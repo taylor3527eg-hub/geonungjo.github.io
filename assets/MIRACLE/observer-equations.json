@@ -1,0 +1,171 @@
+{
+  "scope": "Observer Design & Stability Analysis accordion only; Equations 09–27",
+  "rendering": "Static KaTeX HTML and MathML, using the same local KaTeX 0.19.1 as Equations 01–08.",
+  "verification": "Transcribed and visually compared with each supplied original equation image. Original wording, notation, matrix entries and inequality directions retained without re-derivation.",
+  "source_images": {
+    "assets/MIRACLE/화면 캡처 2026-10-16 134707.png": "d71562500b74f33b7535ab7c1a1f6c8b3b2a76dc835364a925c4578d284808d1",
+    "assets/MIRACLE/화면 캡처 2026-10-16 135029.png": "28f872e60df5754d2209d97e910b4ce3c684931c07ea37418a46210fbb2f32ab",
+    "assets/MIRACLE/화면 캡처 2026-10-16 141317.png": "91fd601aba578d5099e0bf698d237f0035c488532d85aed9de17f514fa706d37",
+    "assets/MIRACLE/화면 캡처 2026-10-16 141606.png": "b22705c279ede210a92d8da74204247434bc548ea4dc95720d8cc0536619b455",
+    "assets/MIRACLE/화면 캡처 2026-10-16 141950.png": "2970ba132b4ddf1cb5b8f06bf24c70add343485d6737d0f9c0655a93d16856f3",
+    "assets/MIRACLE/화면 캡처 2026-10-16 142702.png": "bca655266176f4577457c7e441a42274985f72c5ed8f2f7ac968a7a337756dd9",
+    "assets/MIRACLE/화면 캡처 2026-10-16 143048.png": "a638ff5a4a9e90a80698a172b06369a47580420bb29aaecbda49a1a1e4b964a6",
+    "assets/MIRACLE/화면 캡처 2026-10-16 143342.png": "5408a58ed6366652a0801613cbba646073dbe9222ee2428a2cac31e0a02b62f5",
+    "assets/MIRACLE/화면 캡처 2026-10-16 143505.png": "1e9df0b9e143f51eebe61a2597a76f618f845bad40d726ec603d36861d230865"
+  },
+  "equations": [
+    {
+      "number": "09",
+      "title": "Reaction Torque Estimation",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 134707.png",
+      "expressions": [
+        "\\hat{u}_{\\mathrm{ext}} = \\frac{g}{s+g}\\left(u_a - \\hat{M}(q)s\\dot{q}\\right)"
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Desired Impedance Model",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 135029.png",
+      "expressions": [
+        "Z_d(s) = M_d s^2 + B_d s + K_d"
+      ]
+    },
+    {
+      "number": "11",
+      "title": "Impedance Tracking Error",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 135029.png",
+      "expressions": [
+        "e_{\\mathrm{imp}} = q_d - Z_d^{-1}\\hat{u}_{\\mathrm{ext}} - q"
+      ]
+    },
+    {
+      "number": "12",
+      "title": "Impedance Error Derivative",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 135029.png",
+      "expressions": [
+        "\\dot{e}_{\\mathrm{imp}} = \\dot{q}_d - s Z_d^{-1}\\hat{u}_{\\mathrm{ext}} - \\dot{q}"
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Commanded Acceleration",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 135029.png",
+      "expressions": [
+        "a_q = \\ddot{q}_d + K_p e_{\\mathrm{imp}} + K_v\\dot{e}_{\\mathrm{imp}}"
+      ]
+    },
+    {
+      "number": "14",
+      "title": "Commanded Joint Torque",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 135029.png",
+      "expressions": [
+        "u = \\hat{M}(q)a_q + \\hat{u}_{\\mathrm{ext}} + \\hat{C}(q,\\dot{q})\\dot{q} + \\hat{G}(q)"
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Disturbance Model",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 141317.png",
+      "expressions": [
+        "d = M(q)\\ddot{q} + C(q,\\dot{q})\\dot{q} + G(q) - u"
+      ]
+    },
+    {
+      "number": "16",
+      "title": "Auxiliary Vector",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 141317.png",
+      "expressions": [
+        "z = \\hat{d} - p(q,\\dot{q})"
+      ]
+    },
+    {
+      "number": "17",
+      "title": "Auxiliary Function",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 141606.png",
+      "expressions": [
+        "p(q,\\dot{q}) = c\\begin{bmatrix} \\dot{q}_1 \\\\ \\dot{q}_1 + \\dot{q}_2 \\end{bmatrix}"
+      ]
+    },
+    {
+      "number": "18",
+      "title": "Observer Gain Matrix",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 141606.png",
+      "expressions": [
+        "L(q) = c\\begin{bmatrix} 1 & 0 \\\\ 1 & 1 \\end{bmatrix}M(q)^{-1}"
+      ]
+    },
+    {
+      "number": "19",
+      "title": "Disturbance Observer Dynamics",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 141950.png",
+      "expressions": [
+        "\\dot{z} = L(q)\\bigl[C(q,\\dot{q})\\dot{q} + G(q) - u - z - p(q,\\dot{q})\\bigr]"
+      ]
+    },
+    {
+      "number": "20",
+      "title": "Estimated Disturbance",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 141950.png",
+      "expressions": [
+        "\\hat{d} = z + p(q,\\dot{q})"
+      ]
+    },
+    {
+      "number": "21",
+      "title": "Disturbance Estimation Error",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 142702.png",
+      "expressions": [
+        "e = d - \\hat{d}"
+      ]
+    },
+    {
+      "number": "22",
+      "title": "Estimation Error Dynamics",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 142702.png",
+      "expressions": [
+        "\\dot{e} + L(q)e = 0"
+      ]
+    },
+    {
+      "number": "23",
+      "title": "Inertia Matrix Transformation",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 143048.png",
+      "expressions": [
+        "\\bar{M}(q) = A^T\\widetilde{M}(q)A,\\qquad A = \\begin{bmatrix} 1 & 0 \\\\ 1 & 1 \\end{bmatrix}"
+      ]
+    },
+    {
+      "number": "24",
+      "title": "Lyapunov Candidate Function",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 143048.png",
+      "expressions": [
+        "V(e,q) = e^T\\bar{M}(q)e"
+      ]
+    },
+    {
+      "number": "25",
+      "title": "Lyapunov Derivative",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 143342.png",
+      "expressions": [
+        "\\dot{V}(e,q) = -e^T Q(q,\\dot{q})e"
+      ]
+    },
+    {
+      "number": "26",
+      "title": "Positive-Definiteness Condition",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 143342.png",
+      "expressions": [
+        "Q(q,\\dot{q}) = \\begin{bmatrix} 2c & -c + \\eta \\\\ -c + \\eta & 2c \\end{bmatrix} > 0",
+        "\\eta = m_2 l_1 l_{c2}\\dot{q}_2\\sin(q_2)"
+      ]
+    },
+    {
+      "number": "27",
+      "title": "Observer Gain Condition",
+      "source_image": "assets/MIRACLE/화면 캡처 2026-10-16 143505.png",
+      "expressions": [
+        "c > m_2 l_1 l_{c2}\\dot{q}_{2,\\max}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "original_text_blocks": 113,
+  "verbatim_text_check": "passed for all 112 retained source blocks; duplicate email line removed at user request",
+  "original_assets_unchanged": 97,
+  "mathematical_and_result_images_checked": 18,
+  "table_value_checks": "passed",
+  "unique_ids_and_anchor_aria_checks": "passed",
+  "local_file_reference_checks": "passed",
+  "css_parse_check": "passed",
+  "existing_modified_files": [
+    "index.html",
+    "site-header.js"
+  ],
+  "new_files": [
+    "miracle.html",
+    "miracle.css",
+    "miracle.js"
+  ],
+  "gallery_photographs": 21,
+  "interaction_check": "Shared gallery implementation unchanged. Initial full-gallery mock-DOM interaction checks passed; current 22-image source membership, ordering, paths and initial selection checked separately.",
+  "http": {
+    "miracle.html": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "range": null
+    },
+    "miracle.css": {
+      "status": 200,
+      "type": "text/css; charset=UTF-8",
+      "range": null
+    },
+    "miracle.js": {
+      "status": 200,
+      "type": "application/javascript; charset=UTF-8",
+      "range": null
+    },
+    "assets/MIRACLE/web/CRC_demo-poster.jpg": {
+      "status": 200,
+      "type": "image/jpeg",
+      "range": null
+    },
+    "assets/MIRACLE/CRC_demo.mp4": {
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1023/6963476"
+    },
+    "assets/MIRACLE/CRC_Walking.mp4": {
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1023/245764862"
+    },
+    "assets/MIRACLE/CRC_Sim.mp4": {
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1023/895117"
+    }
+  },
+  "browser_rendering_verified": false,
+  "actual_audio_video_playback_verified": false,
+  "remote_image_identity_verified": false,
+  "source_retrieval_limit": "Initial source-image requests returned HTTP 403. A fresh public-page response allowed all 21 Development Gallery images to be retrieved and retained byte-for-byte. Other technical images still use the supplied local originals.",
+  "gallery_refinement": {
+    "original_source_images": 21,
+    "user_retained_exceptions": 1,
+    "membership_and_order_check": "passed",
+    "downloaded_original_image_hashes": "passed",
+    "exception_orientation": "upright landscape, 4224 x 2376",
+    "exception_decoded_pixels_identical_to_original": true,
+    "source_text_verbatim_check": "113 blocks passed",
+    "supplied_original_asset_hashes": "97 unchanged",
+    "thumbnail_preview_original_paths": "passed"
+  },
+  "displayed_original_text_blocks": 110,
+  "intentionally_removed_text_blocks": [
+    "source-78-0",
+    "source-1-0",
+    "source-1-1"
+  ],
+  "user_requested_removed_technical_sheets": 4,
+  "intro_video_update": {
+    "file": "assets/MIRACLE/CRC_Demo.mp4",
+    "sha256": "113c2a3598a20e1aa9fdd6f13513e06fb1025120f61de9e6096696976fba7cc0",
+    "width": 720,
+    "height": 968,
+    "fps": 60.0,
+    "duration_seconds": 22.916666666666668,
+    "poster": "assets/MIRACLE/web/CRC_Demo-113c2a35-poster.jpg",
+    "user_replaced_video": true,
+    "sampled_frame_decode": "passed at 1s, midpoint and near end",
+    "browser_playback_verified": false,
+    "http_range_request": "206 video/mp4",
+    "file_case_matches_reference": true
+  },
+  "unloaded_video_update": {
+    "user_source": "assets/MIRACLE/CRC_Walking.mov",
+    "user_source_sha256": "420feaefab716a3736f21e902b66542d71eb34569f34db4000ba11d9b647f669",
+    "browser_source": "assets/MIRACLE/web/CRC_Walking-420feaef.mp4",
+    "poster": "assets/MIRACLE/web/CRC_Walking-420feaef-poster.jpg",
+    "display_width": 1080,
+    "display_height": 1340,
+    "duration_seconds": 49.86,
+    "rotation_metadata_preserved": 90.0,
+    "conversion": "MP4 remux; video stream copied without re-encoding",
+    "compressed_video_stream_hash_matches": true,
+    "source_file_unmodified": true
+  },
+  "intro_content_grouping": {
+    "labels": [
+      "Overview",
+      "Mechanical Development",
+      "Dynamics & Control"
+    ],
+    "source_block_parts": {
+      "source-3-1": {
+        "parts": 2,
+        "join": "single space",
+        "verbatim_reconstruction_verified": true
+      }
+    },
+    "wording_unchanged": true,
+    "emphasis": "Only from CAD design to fabrication and assembly. in the introduction"
+  },
+  "prototype_action_removal": {
+    "site_header_preserved": true,
+    "section_navigation_preserved": true,
+    "development_gallery_preserved": true
+  },
+  "v1_cad_removal": {
+    "removed_mechanical_figure_instances": 4,
+    "removed_gallery_image": "assets/MIRACLE/Development_Gallery/Original_01.png",
+    "remaining_final_cad_user_confirmed": true,
+    "all_original_written_content_unchanged": true,
+    "hero_and_other_sections_unchanged": true,
+    "original_asset_files_deleted": false,
+    "gallery_count": 21,
+    "gallery_initial_selection_preserved": true
+  },
+  "linkage_mass_properties_correction": {
+    "evidence": "HARDWARE_V2_LINKAGE_1 and HARDWARE_V2_LINKAGE_2 labels printed in the original reports",
+    "linkage_1": [
+      "image(20261015-004304).png",
+      "image(20261015-004317).png"
+    ],
+    "linkage_2": [
+      "image(20261015-004224).png",
+      "image(20261015-004237).png"
+    ],
+    "within_report_order": "original first sheet then inertia sheet",
+    "source_images_and_values_unmodified": true
+  }
+}

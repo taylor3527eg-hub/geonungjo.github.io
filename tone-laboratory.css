@@ -1,0 +1,206 @@
+.tone-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; gap: 54px; padding: 32px 0 38px; }
+.tone-intro { min-width: 0; }
+.tone-back { margin: 0 0 24px; font-size: 11px; }
+.tone-intro h1 { max-width: 540px; }
+.tone-welcome { margin: 15px 0 0; color: #71876a; font-size: clamp(23px, 2.3vw, 31px); font-weight: 500; line-height: 1.3; letter-spacing: -.025em; }
+.tone-intro-body { max-width: 515px; margin-top: 25px; }
+.tone-prose p { margin: 0; color: #5d7063; font-size: 14px; line-height: 1.9; overflow-wrap: anywhere; }
+.tone-prose p + p { margin-top: 13px; }
+.tone-prose strong { color: var(--page-ink); font-weight: 600; }
+.tone-intro-body p { color: #68776c; }
+.tone-intro-body p + p { margin-top: 15px; }
+.tone-workspace { width: 100%; max-width: 440px; min-width: 0; margin: 0; justify-self: end; }
+.tone-image { position: relative; display: block; width: 100%; padding: 0; overflow: hidden; border: 0; border-radius: 8px; background: var(--page-soft); cursor: zoom-in; }
+.tone-image > img { display: block; width: 100%; height: auto; object-fit: contain; image-orientation: from-image; }
+.tone-image:focus-visible { outline: 2px solid #78956c; outline-offset: 4px; }
+.tone-image:hover .image-zoom-mark, .tone-image:focus-visible .image-zoom-mark { opacity: 1; }
+.tone-workspace-image { aspect-ratio: 5 / 4; }
+.tone-workspace-image > img { height: 100%; object-fit: cover; object-position: center 40%; }
+.tone-system-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 44px; margin-top: 28px; }
+.tone-system > .practice-heading > .section-label,
+.tone-bass > .practice-heading > .section-label,
+.tone-routing > .practice-heading > .section-label,
+#guitar-components > .practice-heading > .section-label,
+#bass-components > .practice-heading > .section-label,
+#my-guitars > .practice-heading > .section-label,
+#my-bass-guitars > .practice-heading > .section-label,
+.other-gear-heading .section-label { color: var(--page-ink); font-size: clamp(26px, 2.8vw, 34px); font-weight: 500; line-height: 1.3; letter-spacing: -.035em; }
+.tone-system > .practice-heading > .section-label span,
+.tone-bass > .practice-heading > .section-label span,
+.tone-routing > .practice-heading > .section-label span,
+#guitar-components > .practice-heading > .section-label span,
+#bass-components > .practice-heading > .section-label span,
+#my-guitars > .practice-heading > .section-label span,
+#my-bass-guitars > .practice-heading > .section-label span,
+.other-gear-heading .section-label span { color: #71876a; }
+.tone-system-layout > .tone-prose p, .tone-bass-layout .tone-prose p { color: #68776c; }
+.tone-system-layout > .tone-prose p + p, .tone-bass-layout .tone-prose p + p { margin-top: 15px; }
+.tone-routing-point { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--page-line); }
+.tone-routing-point h3 { margin: 0 0 8px; color: #526d50; font-size: 10px; font-weight: 600; line-height: 1.5; letter-spacing: .09em; }
+.tone-diagram-link { margin-top: 16px; font-size: 12px; }
+.tone-feature-figure { width: 100%; max-width: 510px; min-width: 0; margin: 0; }
+.tone-feature-figure > .tone-image { aspect-ratio: 4032 / 2562; }
+.tone-feature-figure img { height: 100%; }
+.tone-routing-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; gap: 44px; margin-top: 28px; }
+.tone-routing-content { grid-column: 2; grid-row: 1; min-width: 0; }
+.tone-routing-content > .tone-routing-copy { margin-top: 0; }
+.tone-routing-reference { grid-column: 1; grid-row: 1; position: sticky; top: calc(var(--header-height, 88px) + var(--section-nav-height, 62px) + 24px); align-self: start; width: 100%; max-width: 520px; min-width: 0; justify-self: start; }
+.tone-diagram { width: 100%; min-width: 0; margin: 0; }
+.tone-diagram-image { border: 1px solid var(--page-line); background: #ffffff; }
+.tone-diagram-image > img { max-height: 420px; }
+.tone-diagram figcaption { margin-top: 12px; text-align: right; font-size: 11px; }
+.tone-diagram figcaption .project-reference { margin-top: 0; }
+.tone-flow, .tone-bass-flow { margin-top: 20px; padding: 12px 16px; border-left: 2px solid #91a585; background: var(--page-soft); }
+.tone-flow h3, .tone-bass-flow h3 { margin: 0; font-size: 13px; font-weight: 600; line-height: 1.6; }
+.tone-flow h3 > strong, .tone-bass-flow h3 > strong { font-weight: inherit; }
+.tone-flow-lines { margin-top: 6px; }
+.tone-flow-lines p { display: inline; margin: 0; font-size: 12px; line-height: 1.9; overflow-wrap: anywhere; }
+.tone-routing-copy { margin-top: 24px; }
+.tone-routing-intro, .tone-routing-row > p { margin: 0; color: #68776c; font-size: 14px; line-height: 1.9; }
+.tone-routing-label { margin: 28px 0 12px; color: #526d50; font-size: 10px; font-weight: 600; line-height: 1.5; letter-spacing: .09em; }
+.tone-routing-list { margin: 0; padding: 0; list-style: none; counter-reset: routing-detail; }
+.tone-routing-row { display: grid; grid-template-columns: 1fr; align-items: start; gap: 10px; padding: 20px 0; border-top: 1px solid var(--page-line); counter-increment: routing-detail; }
+.tone-routing-row > p { padding-left: 42px; }
+.tone-routing-row > h4 { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 12px; margin: 0; font-size: 15px; font-weight: 600; line-height: 1.65; letter-spacing: -.015em; }
+.tone-routing-row > h4::before { content: counter(routing-detail, decimal-leading-zero) " /"; padding-top: 3px; color: #526d50; font-size: 11px; font-weight: 400; letter-spacing: 0; }
+.tone-routing-copy strong { color: var(--page-ink); font-weight: 600; }
+.gear-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 30px 38px; margin-top: 30px; }
+.gear-entry { display: grid; grid-template-columns: 132px minmax(0, 1fr); align-items: start; gap: 22px; min-width: 0; padding-top: 24px; border-top: 1px solid var(--page-line); }
+.gear-photos, .gear-copy { min-width: 0; }
+.gear-photos .tone-image { aspect-ratio: 1; }
+.gear-photos .tone-image > img { height: 100%; }
+.gear-name { margin: 0 0 13px; font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; overflow-wrap: anywhere; }
+.gear-name-part { display: block; }
+.gear-name-part > strong { font-weight: inherit; }
+.gear-name-part + .gear-name-part { margin-top: 3px; }
+.gear-name-part:not(:last-child) { color: #526d50; font-size: 13px; font-weight: 500; letter-spacing: 0; }
+.gear-zigzag .gear-brand { display: block; margin-bottom: 3px; color: #526d50; font-size: 13px; font-weight: 500; line-height: 1.6; letter-spacing: 0; }
+.gear-zigzag .gear-product { display: block; color: var(--page-ink); font-size: inherit; font-weight: 600; }
+.gear-zigzag .gear-variant { margin: -5px 0 13px; color: #68776c; font-size: 12px; font-weight: 400; line-height: 1.6; }
+.gear-entry-power { grid-column: 1 / -1; grid-template-columns: minmax(200px, .8fr) minmax(0, 1.2fr); gap: 38px; }
+.gear-entry-power .gear-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.gear-entry-power .tone-image { aspect-ratio: 4 / 3; }
+.gear-grid.gear-zigzag { grid-template-columns: 1fr; gap: 32px; }
+.gear-zigzag > .gear-entry { display: block; width: 78%; max-width: 940px; padding: 0; border: 0; justify-self: start; }
+.gear-zigzag > .gear-entry:nth-child(even) { justify-self: end; }
+.gear-orbit-pin { width: 100%; min-width: 0; }
+.gear-roll-content { display: grid; grid-template-columns: clamp(150px, 17vw, 210px) minmax(0, 1fr); align-items: start; gap: 34px; min-width: 0; padding-top: 24px; border-top: 1px solid var(--page-line); }
+.gear-zigzag > .gear-entry-power .gear-roll-content { grid-template-columns: clamp(220px, 25vw, 310px) minmax(0, 1fr); }
+.tone-instrument-intro { max-width: 900px; margin-top: 25px; padding-left: 18px; border-left: 2px solid #91a585; }
+.tone-instrument-intro > p:first-child > strong { display: block; margin-bottom: 12px; font-size: 16px; font-weight: 500; line-height: 1.7; }
+.tone-instrument-intro > p:last-child > strong { display: block; }
+.instrument-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 38px; margin-top: 30px; }
+.gear-entry-instrument { grid-template-columns: minmax(145px, .8fr) minmax(0, 1.2fr); gap: 25px; }
+.gear-entry-instrument .tone-image { aspect-ratio: 3 / 4; }
+.instrument-grid.instrument-sequence { grid-template-columns: 1fr; gap: 44px; width: 100%; max-width: 900px; margin: 30px auto 0; counter-reset: guitar-entry; }
+.instrument-sequence > .gear-entry { display: block; width: 100%; padding: 0; border: 0; counter-increment: guitar-entry; }
+.guitar-entry-content { display: grid; grid-template-columns: clamp(210px, 22vw, 260px) minmax(0, 1fr); align-items: start; gap: 44px; padding-top: 24px; border-top: 1px solid var(--page-line); }
+.instrument-sequence .gear-name-part:first-child::before { content: counter(guitar-entry, decimal-leading-zero) " / "; color: #68776c; font-size: 11px; font-weight: 400; }
+.tone-bass-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; gap: 44px; margin-top: 28px; }
+.tone-bass-copy { min-width: 0; }
+.tone-bass-copy-label { margin: 0 0 8px; color: #526d50; font-size: 10px; font-weight: 600; line-height: 1.5; letter-spacing: .09em; }
+.tone-sound-philosophy { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--page-line); }
+.tone-bass-copy .tone-prose .tone-sound-goal { margin-top: 10px; color: var(--page-ink); font-size: 16.5px; font-weight: 500; line-height: 1.65; letter-spacing: -.015em; }
+.tone-bass-copy .tone-sound-goal > strong { color: inherit; font-weight: inherit; }
+.tone-bass-copy .tone-sound-preference > strong { color: inherit; font-weight: 400; }
+.tone-bass-copy .tone-sound-implementation { margin-top: 14px; }
+.tone-bass-flow h3 { font-size: 10px; letter-spacing: .09em; text-transform: uppercase; }
+.tone-bass-flow p { margin: 6px 0 0; color: var(--page-ink); font-size: 12px; line-height: 1.9; overflow-wrap: anywhere; }
+.tone-demo { min-width: 0; width: 100%; max-width: 540px; margin: 0; }
+.tone-video-frame { overflow: hidden; aspect-ratio: 16 / 9; border-radius: 8px; background: #f5f7f2; }
+.tone-video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.tone-demo figcaption { margin-top: 13px; font-size: 11px; }
+.tone-bass-instruments > .gear-entry { max-width: 850px; grid-template-columns: 230px minmax(0, 1fr); gap: 44px; margin-top: 28px; padding-top: 0; border: 0; }
+.other-gear-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.gear-rail-toggle { padding: 6px 0; border: 0; color: #526d50; background: none; font-size: 11px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.gear-rail-toggle[hidden] { display: none; }
+.gear-rail-toggle:focus-visible, .other-gear-viewport:focus-visible { outline: 2px solid #78956c; outline-offset: 4px; border-radius: 4px; }
+.other-gear-viewport { --gear-rail-card-width: clamp(210px, 22vw, 270px); width: 100%; min-width: 0; margin-top: 24px; padding: 6px 8px 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 8px; scrollbar-width: none; touch-action: pan-x pan-y; cursor: grab; }
+.other-gear-viewport::-webkit-scrollbar { display: none; }
+.other-gear-track { position: relative; display: flex; align-items: start; gap: 28px; width: max-content; }
+.other-gear-track > .gear-entry { flex: 0 0 var(--gear-rail-card-width); width: var(--gear-rail-card-width); scroll-snap-align: start; }
+.other-gear-viewport.is-manual { scroll-snap-type: x proximity; }
+.other-gear-viewport.is-dragging { scroll-snap-type: none; }
+.other-gear-viewport.is-dragging, .other-gear-viewport.is-dragging * { cursor: grabbing; user-select: none; }
+.other-gear-track .gear-brand { display: block; margin-bottom: 3px; color: #526d50; font-size: 12px; font-weight: 500; line-height: 1.6; letter-spacing: 0; }
+.other-gear-track .gear-product { display: block; color: var(--page-ink); font-size: 17px; font-weight: 600; }
+.gear-entry-studio { display: block; padding-top: 0; border: 0; }
+.gear-entry-studio .tone-image { aspect-ratio: 16 / 9; }
+.gear-entry-studio .gear-copy { margin-top: 16px; }
+.gear-entry-studio .gear-name { margin-bottom: 7px; font-size: 17px; }
+.gear-entry-studio .tone-prose p { font-size: 12px; }
+.tone-closing { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 0 0 36px; }
+.tone-original-contact { margin: 0; color: #5d7063; font-size: 12px; line-height: 1.7; }
+.tone-closing .project-reference { font-size: 12px; }
+@media (prefers-reduced-motion: no-preference) {
+  .instrument-sequence.is-scrolling .guitar-entry-content { opacity: var(--guitar-opacity, 1); transform: translate3d(0, var(--guitar-y, 0px), 0); }
+  .instrument-sequence[data-guitar-focus].is-scrolling .guitar-entry-content { transform: translateY(var(--guitar-y, 0px)) scale(var(--guitar-scale, 1)); transform-origin: center center; }
+  .instrument-sequence.is-scrolling > .gear-entry:focus-within .guitar-entry-content { opacity: 1; transform: none; }
+  .gear-zigzag.is-rolling > .gear-entry { height: var(--gear-stage-height, auto); }
+  .gear-zigzag.is-rolling > .gear-entry:not(:last-child) { margin-bottom: calc(-1 * var(--gear-overlap, 0px)); }
+  .gear-zigzag.is-rolling .gear-orbit-pin { position: sticky; top: var(--gear-pin-top); }
+  .gear-zigzag.is-rolling .gear-roll-content { opacity: var(--gear-opacity, 1); transform: translate3d(var(--gear-x, 0px), var(--gear-y, 0px), 0) scale(var(--gear-scale, 1)); transform-origin: center; }
+  .gear-zigzag.is-rolling > .gear-entry:focus-within .gear-roll-content { opacity: 1; transform: none; }
+  .tone-intro { animation: hero-enter .65s cubic-bezier(.22, 1, .36, 1) backwards; }
+}
+@media (max-width: 1080px) {
+  .tone-hero { gap: 32px; }
+  .tone-system-layout, .tone-bass-layout, .tone-routing-layout { gap: 30px; }
+  .gear-grid { gap: 26px; }
+  .gear-entry { grid-template-columns: 112px minmax(0, 1fr); gap: 18px; }
+  .gear-entry-power { grid-template-columns: minmax(180px, .8fr) minmax(0, 1.2fr); gap: 30px; }
+  .instrument-grid { grid-template-columns: 1fr; }
+  .gear-entry-instrument { grid-template-columns: 210px minmax(0, 1fr); gap: 32px; }
+}
+@media (max-width: 900px) {
+  .gear-grid.gear-zigzag { gap: 28px; }
+  .gear-zigzag > .gear-entry { width: 92%; }
+  .tone-routing-layout { grid-template-columns: 1fr; gap: 28px; }
+  .tone-routing-reference { position: static; grid-column: auto; grid-row: auto; max-width: 600px; }
+  .tone-routing-content { grid-column: auto; grid-row: auto; }
+  .tone-hero { gap: 25px; padding-top: 28px; }
+  .tone-welcome { font-size: 23px; }
+  .tone-intro-body p { font-size: 13px; }
+  .gear-grid { grid-template-columns: 1fr; }
+  .gear-entry-pedal { grid-template-columns: 160px minmax(0, 1fr); gap: 28px; }
+  .gear-entry-power { grid-template-columns: minmax(200px, .8fr) minmax(0, 1.2fr); }
+}
+@media (max-width: 740px) {
+  .tone-bass-copy .tone-prose .tone-sound-goal { font-size: 15px; }
+  .instrument-grid.instrument-sequence { gap: 34px; }
+  .guitar-entry-content { grid-template-columns: 180px minmax(0, 1fr); gap: 25px; }
+  .gear-zigzag > .gear-entry { width: 100%; }
+  .gear-roll-content, .gear-zigzag > .gear-entry-power .gear-roll-content { grid-template-columns: 130px minmax(0, 1fr); gap: 22px; }
+  .gear-zigzag > .gear-entry-power .gear-photos { grid-template-columns: 1fr; gap: 12px; }
+  .tone-hero { grid-template-columns: 1fr; gap: 25px; padding: 25px 0 30px; }
+  .tone-welcome { font-size: clamp(23px, 4vw, 28px); }
+  .tone-intro-body { max-width: 100%; margin-top: 22px; }
+  .tone-workspace { justify-self: start; margin: 0; }
+  .tone-system-layout, .tone-bass-layout { grid-template-columns: 1fr; gap: 25px; }
+  .tone-prose p, .tone-routing-intro, .tone-routing-row > p { font-size: 13px; }
+  .gear-entry-pedal { grid-template-columns: 130px minmax(0, 1fr); gap: 22px; }
+  .gear-entry-power { grid-template-columns: 1fr; }
+  .gear-entry-power .gear-photos { max-width: 360px; }
+  .gear-entry-instrument, .tone-bass-instruments > .gear-entry { grid-template-columns: 180px minmax(0, 1fr); gap: 25px; }
+}
+@media (max-width: 640px) {
+  .guitar-entry-content { grid-template-columns: 1fr; gap: 24px; }
+  .instrument-sequence .guitar-entry-content > .gear-photos { width: 100%; max-width: 260px; }
+}
+@media (max-width: 520px) {
+  .gear-roll-content, .gear-zigzag > .gear-entry-power .gear-roll-content { grid-template-columns: 90px minmax(0, 1fr); gap: 18px; }
+  .gear-entry-pedal { grid-template-columns: 100px minmax(0, 1fr); gap: 18px; }
+  .gear-entry-power { grid-template-columns: 1fr; }
+  .gear-name { font-size: 17px; }
+  .gear-entry-instrument, .tone-bass-instruments > .gear-entry { grid-template-columns: 1fr; gap: 22px; }
+  .gear-entry-instrument .gear-photos { width: 100%; max-width: 250px; }
+  .other-gear-viewport { --gear-rail-card-width: min(240px, 76vw); }
+  .gear-entry-studio .tone-image { aspect-ratio: 4 / 3; }
+  .gear-entry-studio .gear-name { font-size: 15px; }
+}
+@media (max-width: 380px) {
+  .gear-roll-content, .gear-zigzag > .gear-entry-power .gear-roll-content { grid-template-columns: 80px minmax(0, 1fr); gap: 16px; }
+  .gear-entry-pedal { grid-template-columns: 1fr; }
+  .gear-entry-pedal .gear-photos { max-width: 160px; }
+  .gear-entry-power .gear-photos { max-width: 100%; }
+}

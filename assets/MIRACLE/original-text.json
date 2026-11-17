@@ -1,0 +1,906 @@
+[
+  {
+    "id": "source-0-0",
+    "section": 0,
+    "block": 0,
+    "tag": "h1",
+    "text": "MIRACLE",
+    "html": "<h1>MIRACLE</h1>"
+  },
+  {
+    "id": "source-0-1",
+    "section": 0,
+    "block": 1,
+    "tag": "h2",
+    "text": "Lower-Limb Exoskeleton   ",
+    "html": "<h2><strong>Lower-Limb Exoskeleton</strong><strong>  </strong> </h2>"
+  },
+  {
+    "id": "source-0-2",
+    "section": 0,
+    "block": 2,
+    "tag": "p",
+    "text": "Mechanical Design, Dynamic Modeling & Sensorless Impedance Control ",
+    "html": "<p><strong>Mechanical Design, Dynamic Modeling &amp; Sensorless Impedance Control </strong></p>"
+  },
+  {
+    "id": "source-1-0",
+    "section": 1,
+    "block": 0,
+    "tag": "h1",
+    "text": "Prototype in Action",
+    "html": "<h1>Prototype in Action</h1>"
+  },
+  {
+    "id": "source-1-1",
+    "section": 1,
+    "block": 1,
+    "tag": "p",
+    "text": "Demonstrations of the MIRACLE lower-limb exoskeleton prototype, including unloaded walking and on-body gait assistance.",
+    "html": "<p><strong>Demonstrations of the MIRACLE lower-limb exoskeleton prototype, including unloaded walking and on-body gait assistance.</strong></p>"
+  },
+  {
+    "id": "source-2-0",
+    "section": 2,
+    "block": 0,
+    "tag": "h2",
+    "text": "Unloaded Walking Test ",
+    "html": "<h2>Unloaded Walking Test </h2>"
+  },
+  {
+    "id": "source-2-1",
+    "section": 2,
+    "block": 1,
+    "tag": "h2",
+    "text": "On-Body Gait Demonstration ",
+    "html": "<h2>On-Body Gait Demonstration </h2>"
+  },
+  {
+    "id": "source-3-0",
+    "section": 3,
+    "block": 0,
+    "tag": "h1",
+    "text": "Overview",
+    "html": "<h1>Overview</h1>"
+  },
+  {
+    "id": "source-3-1",
+    "section": 3,
+    "block": 1,
+    "tag": "p",
+    "text": "MIRACLE is a government-funded interdisciplinary research project focused on developing robotic systems to assist individuals with walking impairments. As a member of the Robotics Team at Yonsei University's MLCS Lab, I contributed to the mechanical development of a pediatric lower-limb exoskeleton, from CAD design to fabrication and assembly.",
+    "html": "<p><strong>MIRACLE</strong> is a government-funded interdisciplinary research project focused on developing robotic systems to assist individuals with walking impairments. As a member of the Robotics Team at Yonsei University's MLCS Lab, I contributed to the mechanical development of a pediatric lower-limb exoskeleton, <strong>from CAD design to fabrication and assembly.</strong></p>"
+  },
+  {
+    "id": "source-3-2",
+    "section": 3,
+    "block": 2,
+    "tag": "p",
+    "text": "Building on the physical prototype, I modeled the exoskeleton's dynamics and investigated sensorless impedance control. I subsequently designed a disturbance-observer-enhanced control architecture and evaluated its tracking performance in MATLAB simulations.",
+    "html": "<p>Building on the physical prototype, <strong>I modeled the exoskeleton's dynamics and investigated sensorless impedance control. I subsequently designed a disturbance-observer-enhanced control architecture and evaluated its tracking performance in MATLAB simulations.</strong></p>"
+  },
+  {
+    "id": "source-4-0",
+    "section": 4,
+    "block": 0,
+    "tag": "h1",
+    "text": "Mechanical Design & Integration ",
+    "html": "<h1>Mechanical Design &amp; Integration </h1>"
+  },
+  {
+    "id": "source-5-0",
+    "section": 5,
+    "block": 0,
+    "tag": "h2",
+    "text": "Exoskeleton CAD Assembly ",
+    "html": "<h2>Exoskeleton CAD Assembly </h2>"
+  },
+  {
+    "id": "source-6-0",
+    "section": 6,
+    "block": 0,
+    "tag": "h2",
+    "text": "Full-System CAD Assembly ",
+    "html": "<h2>Full-System CAD Assembly </h2>"
+  },
+  {
+    "id": "source-6-1",
+    "section": 6,
+    "block": 1,
+    "tag": "h2",
+    "text": "Joint Assembly ",
+    "html": "<h2>Joint Assembly </h2>"
+  },
+  {
+    "id": "source-8-0",
+    "section": 8,
+    "block": 0,
+    "tag": "h2",
+    "text": "Integrated Prototype ",
+    "html": "<h2>Integrated Prototype </h2>"
+  },
+  {
+    "id": "source-10-0",
+    "section": 10,
+    "block": 0,
+    "tag": "h2",
+    "text": "Assembled MIRACLE Prototype — Multiple Views ",
+    "html": "<h2>Assembled MIRACLE Prototype — Multiple Views </h2>"
+  },
+  {
+    "id": "source-11-0",
+    "section": 11,
+    "block": 0,
+    "tag": "h1",
+    "text": "Dynamic Modeling & Robust Control  ",
+    "html": "<h1>Dynamic Modeling &amp; Robust Control  </h1>"
+  },
+  {
+    "id": "source-12-0",
+    "section": 12,
+    "block": 0,
+    "tag": "h2",
+    "text": "CAD-Based Dynamic Modeling",
+    "html": "<h2>CAD-Based Dynamic Modeling</h2>"
+  },
+  {
+    "id": "source-12-1",
+    "section": 12,
+    "block": 1,
+    "tag": "p",
+    "text": "I first modeled each exoskeleton leg as a two-link system representing the thigh and shank, with hip and knee joints. Using Creo, I extracted the mass, center of mass, and moment of inertia of each linkage from the mechanical design.",
+    "html": "<p>I first modeled each exoskeleton leg <strong>as a two-link system representing the thigh and shank, with hip and knee joints.</strong> Using Creo, I extracted the mass, center of mass, and moment of inertia of each linkage from the mechanical design.</p>"
+  },
+  {
+    "id": "source-13-0",
+    "section": 13,
+    "block": 0,
+    "tag": "h2",
+    "text": "Linkage 1 Assembly ",
+    "html": "<h2>Linkage 1 Assembly </h2>"
+  },
+  {
+    "id": "source-13-1",
+    "section": 13,
+    "block": 1,
+    "tag": "h2",
+    "text": "Linkage 1 Mass Properties",
+    "html": "<h2>Linkage 1 Mass Properties</h2>"
+  },
+  {
+    "id": "source-15-0",
+    "section": 15,
+    "block": 0,
+    "tag": "h2",
+    "text": "Linkage 2 Assembly",
+    "html": "<h2>Linkage 2 Assembly</h2>"
+  },
+  {
+    "id": "source-15-1",
+    "section": 15,
+    "block": 1,
+    "tag": "h2",
+    "text": "Linkage 2 Mass Properties",
+    "html": "<h2>Linkage 2 Mass Properties</h2>"
+  },
+  {
+    "id": "source-16-0",
+    "section": 16,
+    "block": 0,
+    "tag": "h2",
+    "text": "Dynamic Modeling & Equations of Motion ",
+    "html": "<h2>Dynamic Modeling &amp; Equations of Motion </h2>"
+  },
+  {
+    "id": "source-17-0",
+    "section": 17,
+    "block": 0,
+    "tag": "h2",
+    "text": "Two-Link Dynamic Model ",
+    "html": "<h2>Two-Link Dynamic Model </h2>"
+  },
+  {
+    "id": "source-17-1",
+    "section": 17,
+    "block": 1,
+    "tag": "p",
+    "text": "I then constructed a double-pendulum model and derived its dynamics using the Euler–Lagrange formulation. Based on the Jacobian matrices of each link's center of mass and their rotational inertias, I obtained the following inertia matrix.",
+    "html": "<p>I then constructed <strong>a double-pendulum model</strong> and derived its dynamics using <strong>the Euler–Lagrange formulation.</strong> Based on the Jacobian matrices of each link's center of mass and their rotational inertias, I obtained the following inertia matrix.</p>"
+  },
+  {
+    "id": "source-19-0",
+    "section": 19,
+    "block": 0,
+    "tag": "p",
+    "text": "Using the inertia matrix, I derived the Coriolis and centrifugal matrix through the Christoffel symbols of the first kind. This matrix describes the velocity-dependent forces and dynamic coupling between the hip and knee joints.",
+    "html": "<p>Using the inertia matrix, I derived <strong>the Coriolis and centrifugal matrix</strong> through <strong>the Christoffel symbols of the first kind.</strong> This matrix describes the velocity-dependent forces and dynamic coupling between the hip and knee joints.</p>"
+  },
+  {
+    "id": "source-22-0",
+    "section": 22,
+    "block": 0,
+    "tag": "p",
+    "text": "I then derived the gravitational vector from the potential energy of both links. By differentiating the potential energy with respect to the joint angles, I obtained the gravitational torque acting on each joint.",
+    "html": "<p>I then derived <strong>the gravitational vector</strong> from the potential energy of both links. By differentiating the potential energy with respect to the joint angles, I obtained the gravitational torque acting on each joint.</p>"
+  },
+  {
+    "id": "source-25-0",
+    "section": 25,
+    "block": 0,
+    "tag": "p",
+    "text": "Finally, I combined the inertia, Coriolis and centrifugal, and gravitational terms to obtain the complete equation of motion for the two-link exoskeleton.",
+    "html": "<p>Finally, I combined the inertia, Coriolis and centrifugal, and gravitational terms <strong>to obtain the complete equation of motion</strong> for the two-link exoskeleton.</p>"
+  },
+  {
+    "id": "source-25-1",
+    "section": 25,
+    "block": 1,
+    "tag": "p",
+    "text": "This model describes the joint dynamics under applied and external disturbance torques and provided the foundation for developing the sensorless impedance controller and disturbance observer.",
+    "html": "<p>This model describes the joint dynamics under applied and external disturbance torques and provided <strong>the foundation for developing the sensorless impedance controller and disturbance observer.</strong></p>"
+  },
+  {
+    "id": "source-27-0",
+    "section": 27,
+    "block": 0,
+    "tag": "h2",
+    "text": "ROB-Based Sensorless Impedance Control ",
+    "html": "<h2>ROB-Based Sensorless Impedance Control </h2>"
+  },
+  {
+    "id": "source-27-1",
+    "section": 27,
+    "block": 1,
+    "tag": "p",
+    "text": "For a wearable robot, following a predefined trajectory alone is insufficient. The robot must also respond to external forces generated through interaction with the wearer.",
+    "html": "<p>For a wearable robot, following a predefined trajectory alone is insufficient. <strong>The robot must also respond to external forces generated through interaction with the wearer.</strong></p>"
+  },
+  {
+    "id": "source-27-2",
+    "section": 27,
+    "block": 2,
+    "tag": "p",
+    "text": "To address this, I implemented a sensorless impedance control framework based on a Reaction Torque Observer (ROB), following the approach proposed by Tran et al. Instead of relying on additional force/torque sensors, the ROB estimates external interaction torque using motor encoder feedback and the robot's dynamic model.",
+    "html": "<p>To address this, I implemented <strong>a sensorless impedance control framework based on a Reaction Torque Observer (ROB),</strong> following the approach proposed by Tran et al. Instead of relying on additional force/torque sensors, <strong>the ROB estimates external interaction torque using motor encoder feedback and the robot's dynamic model.</strong></p>"
+  },
+  {
+    "id": "source-28-0",
+    "section": 28,
+    "block": 0,
+    "tag": "h2",
+    "text": "ROB-Based Sensorless Impedance Control Architecture ",
+    "html": "<h2><strong>ROB-Based Sensorless Impedance Control Architecture </strong></h2>"
+  },
+  {
+    "id": "source-28-1",
+    "section": 28,
+    "block": 1,
+    "tag": "h2",
+    "text": "(Adapted from Tran et al. https://doi.org/10.1109/AIM.2015.7222611) ",
+    "html": "<h2><strong>(Adapted from Tran et al.</strong><strong> </strong><a href=\"https://doi.org/10.1109/AIM.2015.7222611\">https://doi.org/10.1109/AIM.2015.7222611</a><strong>) </strong></h2>"
+  },
+  {
+    "id": "source-30-0",
+    "section": 30,
+    "block": 0,
+    "tag": "p",
+    "text": "Based on the derived dynamic model, I formulated the external torque estimation process under the model compensation assumptions. However, directly differentiating encoder measurements can amplify noise. To address this, the ROB uses a low-pass filter to estimate external interaction torque while reducing the effects of measurement noise.",
+    "html": "<p>Based on the derived dynamic model, I formulated the external torque estimation process under the model compensation assumptions. However, directly differentiating encoder measurements can amplify noise. To address this, <strong>the ROB uses a low-pass filter to estimate external interaction torque while reducing the effects of measurement noise.</strong></p>"
+  },
+  {
+    "id": "source-33-0",
+    "section": 33,
+    "block": 0,
+    "tag": "p",
+    "text": "I then incorporated the estimated interaction torque into the desired impedance model. By defining the desired inertia, damping, and stiffness, the controller can adjust the exoskeleton's mechanical response to external interaction.",
+    "html": "<p>I then incorporated the estimated interaction torque into the desired impedance model. <strong>By defining the desired inertia, damping, and stiffness, the controller can adjust the exoskeleton's mechanical response to external interaction.</strong></p>"
+  },
+  {
+    "id": "source-33-1",
+    "section": 33,
+    "block": 1,
+    "tag": "p",
+    "text": "Using the impedance tracking error, I derived the commanded acceleration and joint torque to achieve trajectory tracking while maintaining the desired impedance behavior.",
+    "html": "<p>Using the impedance tracking error, <strong>I derived the commanded acceleration and joint torque</strong> to achieve trajectory tracking while maintaining the desired impedance behavior.</p>"
+  },
+  {
+    "id": "source-36-0",
+    "section": 36,
+    "block": 0,
+    "tag": "p",
+    "text": "Although this framework enables sensorless impedance control, its performance can be affected by uncertainties in the dynamic model. During the development of the baseline controller, I observed a delay between the reference gait trajectory and the actual joint motion. This motivated me to investigate an additional disturbance compensation method to improve tracking performance.",
+    "html": "<p>Although this framework enables sensorless impedance control, its performance can be affected by uncertainties in the dynamic model. During the development of the baseline controller, I observed a delay between the reference gait trajectory and the actual joint motion. <strong>This motivated me to investigate an additional disturbance compensation method to improve tracking performance.</strong></p>"
+  },
+  {
+    "id": "source-37-0",
+    "section": 37,
+    "block": 0,
+    "tag": "h2",
+    "text": "Disturbance Observer-Enhanced Robust Control",
+    "html": "<h2>Disturbance Observer-Enhanced Robust Control</h2>"
+  },
+  {
+    "id": "source-38-0",
+    "section": 38,
+    "block": 0,
+    "tag": "p",
+    "text": "To address this, I integrated a nonlinear Disturbance Observer (DO) into the existing ROB-based sensorless impedance control framework.",
+    "html": "<p>To address this, I integrated <strong>a nonlinear Disturbance Observer (DO)</strong> into the existing ROB-based sensorless impedance control framework.</p>"
+  },
+  {
+    "id": "source-38-1",
+    "section": 38,
+    "block": 1,
+    "tag": "p",
+    "text": "Unlike previous approaches that combine the two observers in parallel, I proposed a serial architecture in which the DO first estimates and compensates for disturbances and model uncertainties. The ROB then estimates the remaining external interaction torque using the compensated system dynamics.",
+    "html": "<p>Unlike previous approaches that combine the two observers in parallel, I proposed <strong>a serial architecture in which the DO first estimates and compensates for disturbances and model uncertainties.</strong> The ROB then estimates the remaining external interaction torque using the compensated system dynamics.</p>"
+  },
+  {
+    "id": "source-38-2",
+    "section": 38,
+    "block": 2,
+    "tag": "p",
+    "text": "My goal was to improve the accuracy of external torque estimation and reduce trajectory-tracking errors.",
+    "html": "<p><strong>My goal was to improve the accuracy of external torque estimation and reduce trajectory-tracking errors.</strong></p>"
+  },
+  {
+    "id": "source-39-0",
+    "section": 39,
+    "block": 0,
+    "tag": "p",
+    "text": "Proposed serial DO–ROB control architecture. The DO compensates for disturbances and model uncertainties before the ROB estimates the remaining external interaction torque.",
+    "html": "<p><strong>Proposed serial DO–ROB control architecture. The DO compensates for disturbances and model uncertainties before the ROB estimates the remaining external interaction torque.</strong></p>"
+  },
+  {
+    "id": "source-41-0",
+    "section": 41,
+    "block": 0,
+    "tag": "p",
+    "text": "Starting from the previously derived equation of motion, I formulated the disturbance model and designed a nonlinear observer to estimate the disturbance torque.",
+    "html": "<p>Starting from the previously derived equation of motion, I formulated the disturbance model and designed a nonlinear observer to estimate the disturbance torque.</p>"
+  },
+  {
+    "id": "source-41-1",
+    "section": 41,
+    "block": 1,
+    "tag": "p",
+    "text": "To avoid directly using joint acceleration measurements, which can amplify encoder noise through numerical differentiation, I introduced an auxiliary vector. This allowed me to formulate the observer using the robot's dynamic model and joint velocity information.",
+    "html": "<p>To avoid directly using joint acceleration measurements, which can amplify encoder noise through numerical differentiation, I introduced <strong>an auxiliary vector.</strong> This allowed me to formulate the observer using the robot's dynamic model and joint velocity information.</p>"
+  },
+  {
+    "id": "source-44-0",
+    "section": 44,
+    "block": 0,
+    "tag": "p",
+    "text": "I then designed the auxiliary function based on the joint velocities and derived the corresponding observer gain matrix using the inertia matrix.",
+    "html": "<p>I then designed <strong>the auxiliary function </strong>based on the joint velocities and derived <strong>the corresponding observer gain matrix</strong> using the inertia matrix.</p>"
+  },
+  {
+    "id": "source-47-0",
+    "section": 47,
+    "block": 0,
+    "tag": "p",
+    "text": "By substituting the auxiliary function into the observer formulation, I derived the observer dynamics without explicitly requiring joint acceleration measurements.",
+    "html": "<p>By substituting the auxiliary function into the observer formulation, <strong>I derived the observer dynamics without explicitly requiring joint acceleration measurements.</strong></p>"
+  },
+  {
+    "id": "source-47-1",
+    "section": 47,
+    "block": 1,
+    "tag": "p",
+    "text": "The estimated disturbance can then be reconstructed from the auxiliary vector and the designed function. This estimate is used for disturbance compensation in the proposed controller.",
+    "html": "<p><strong>The estimated disturbance can then be reconstructed from the auxiliary vector and the designed function.</strong> This estimate is used for disturbance compensation in the proposed controller.</p>"
+  },
+  {
+    "id": "source-50-0",
+    "section": 50,
+    "block": 0,
+    "tag": "p",
+    "text": "To ensure that the disturbance observer could provide a reliable estimate, I further analyzed its estimation-error dynamics using Lyapunov theory. This analysis allowed me to derive a sufficient condition for selecting the observer gain based on the mechanical parameters of the exoskeleton.",
+    "html": "<p>To ensure that the disturbance observer could provide a reliable estimate, I further analyzed its estimation-error dynamics using <strong>Lyapunov theory.</strong> This analysis allowed me <strong>to derive a sufficient condition for selecting the observer gain</strong> based on the mechanical parameters of the exoskeleton.</p>"
+  },
+  {
+    "id": "source-51-0",
+    "section": 51,
+    "block": 0,
+    "tag": "h2",
+    "text": "Lyapunov-Based Stability Analysis ",
+    "html": "<h2>Lyapunov-Based Stability Analysis </h2>"
+  },
+  {
+    "id": "source-51-1",
+    "section": 51,
+    "block": 1,
+    "tag": "p",
+    "text": "To examine the stability of the proposed disturbance observer, I first defined the disturbance estimation error as the difference between the actual and estimated disturbances.",
+    "html": "<p>To examine the stability of the proposed disturbance observer, I first defined <strong>the disturbance estimation error</strong> as the difference between the actual and estimated disturbances.</p>"
+  },
+  {
+    "id": "source-51-2",
+    "section": 51,
+    "block": 2,
+    "tag": "p",
+    "text": "Assuming that the disturbance remains approximately constant over the observer's estimation timescale, I derived the estimation-error dynamics. This provided the foundation for analyzing whether the observer error converges to zero.",
+    "html": "<p><strong>Assuming that the disturbance remains approximately constant over the observer's estimation timescale,</strong> I derived <strong>the estimation-error dynamics.</strong> This provided the foundation for analyzing whether the observer error converges to zero.</p>"
+  },
+  {
+    "id": "source-54-0",
+    "section": 54,
+    "block": 0,
+    "tag": "p",
+    "text": "To analyze the estimation-error dynamics, I introduced a coordinate transformation of the inertia matrix. This allowed me to express the observer dynamics in a form suitable for Lyapunov analysis.",
+    "html": "<p>To analyze the estimation-error dynamics, I introduced <strong>a coordinate transformation of the inertia matrix.</strong> This allowed me to express the observer dynamics in a form suitable for Lyapunov analysis.</p>"
+  },
+  {
+    "id": "source-54-1",
+    "section": 54,
+    "block": 1,
+    "tag": "p",
+    "text": "Using the transformed inertia matrix, I constructed a positive-definite Lyapunov candidate function to examine the convergence of the disturbance estimation error.",
+    "html": "<p>Using the transformed inertia matrix, I constructed <strong>a positive-definite Lyapunov candidate function</strong> to examine the convergence of the disturbance estimation error.</p>"
+  },
+  {
+    "id": "source-57-0",
+    "section": 57,
+    "block": 0,
+    "tag": "p",
+    "text": "I then differentiated the Lyapunov function with respect to time and substituted the estimation-error dynamics.",
+    "html": "<p>I then differentiated <strong>the Lyapunov function</strong> with respect to time and substituted the estimation-error dynamics.</p>"
+  },
+  {
+    "id": "source-57-1",
+    "section": 57,
+    "block": 1,
+    "tag": "p",
+    "text": "By expressing its derivative as a quadratic form, I examined the conditions required for the derivative to remain negative definite. This led to a sufficient observer gain condition based on the mechanical parameters and the maximum angular velocity of the second link.",
+    "html": "<p>By expressing its derivative as a quadratic form, I examined <strong>the conditions required for the derivative to remain negative definite.</strong> <strong>This led to a sufficient observer gain condition based on the mechanical parameters and the maximum angular velocity of the second link.</strong></p>"
+  },
+  {
+    "id": "source-60-0",
+    "section": 60,
+    "block": 0,
+    "tag": "p",
+    "text": "The resulting condition relates the observer gain to the mass, geometry, and maximum angular velocity of the second link.",
+    "html": "<p>The resulting condition relates the observer gain to the mass, geometry, and maximum angular velocity of the second link.</p>"
+  },
+  {
+    "id": "source-60-1",
+    "section": 60,
+    "block": 1,
+    "tag": "p",
+    "text": "Under the assumptions used in the analysis, satisfying this condition provides a sufficient basis for asymptotic convergence of the disturbance estimation error.",
+    "html": "<p>Under the assumptions used in the analysis, <strong>satisfying this condition provides a sufficient basis for asymptotic convergence of the disturbance estimation error.</strong></p>"
+  },
+  {
+    "id": "source-60-2",
+    "section": 60,
+    "block": 2,
+    "tag": "p",
+    "text": "This analysis allowed me to establish a theoretical criterion for selecting the observer gain rather than relying solely on empirical tuning. The proposed controller was subsequently evaluated through MATLAB simulations.",
+    "html": "<p>This analysis allowed me <strong>to establish a theoretical criterion for selecting the observer gain rather than relying solely on empirical tuning.</strong> The proposed controller was subsequently evaluated through <strong>MATLAB simulations.</strong></p>"
+  },
+  {
+    "id": "source-61-0",
+    "section": 61,
+    "block": 0,
+    "tag": "h1",
+    "text": "Results & Evaluation",
+    "html": "<h1>Results &amp; Evaluation</h1>"
+  },
+  {
+    "id": "source-62-0",
+    "section": 62,
+    "block": 0,
+    "tag": "h2",
+    "text": "Trajectory Tracking Performance",
+    "html": "<h2>Trajectory Tracking Performance</h2>"
+  },
+  {
+    "id": "source-62-1",
+    "section": 62,
+    "block": 1,
+    "tag": "p",
+    "text": "I evaluated the proposed control architecture in MATLAB by comparing the baseline ROB-only controller with the enhanced DO+ROB controller.",
+    "html": "<p>I evaluated the proposed control architecture in MATLAB by comparing the baseline ROB-only controller with the enhanced DO+ROB controller.</p>"
+  },
+  {
+    "id": "source-62-2",
+    "section": 62,
+    "block": 2,
+    "tag": "p",
+    "text": "The animated plot below compares the reference trajectory and the simulated joint response for the hip and knee joints. Compared with the ROB-only baseline, the DO+ROB controller followed the reference trajectory more closely, particularly at the knee joint.",
+    "html": "<p>The animated plot below compares the reference trajectory and the simulated joint response for the hip and knee joints. Compared with the ROB-only baseline, the DO+ROB controller followed the reference trajectory more closely, particularly at the knee joint.</p>"
+  },
+  {
+    "id": "source-62-3",
+    "section": 62,
+    "block": 3,
+    "tag": "p",
+    "text": "This improvement is also reflected in the RMS tracking error. The enhanced controller reduced the RMS error by 14.7% at the hip joint and 27.4% at the knee joint, indicating improved trajectory-tracking performance in simulation.",
+    "html": "<p>This improvement is also reflected in the RMS tracking error. The enhanced controller reduced the RMS error by <strong>14.7% at the hip joint</strong> and <strong>27.4% at the knee joint</strong>, indicating improved trajectory-tracking performance in simulation.</p>"
+  },
+  {
+    "id": "source-63-0",
+    "section": 63,
+    "block": 0,
+    "tag": "h2",
+    "text": "3D Motion Simulation ",
+    "html": "<h2>3D Motion Simulation </h2>"
+  },
+  {
+    "id": "source-63-1",
+    "section": 63,
+    "block": 1,
+    "tag": "h2",
+    "text": "Animated comparison of trajectory tracking performance",
+    "html": "<h2>Animated comparison of trajectory tracking performance</h2>"
+  },
+  {
+    "id": "source-66-0",
+    "section": 66,
+    "block": 0,
+    "tag": "h2",
+    "text": "Impedance Behavior under External Disturbances",
+    "html": "<h2>Impedance Behavior under External Disturbances</h2>"
+  },
+  {
+    "id": "source-66-1",
+    "section": 66,
+    "block": 1,
+    "tag": "p",
+    "text": "To evaluate whether the proposed DO+ROB controller could maintain the desired impedance behavior under external disturbances, I conducted additional MATLAB simulations using two impedance settings: Soft and Stiff.",
+    "html": "<p><strong>To evaluate whether the proposed DO+ROB controller could maintain the desired impedance behavior under external disturbances,</strong> <strong>I conducted additional MATLAB simulations using two impedance settings: Soft and Stiff.</strong></p>"
+  },
+  {
+    "id": "source-66-2",
+    "section": 66,
+    "block": 2,
+    "tag": "p",
+    "text": "I applied simulated random disturbances and compared the joint responses under different damping and stiffness parameters while maintaining the same desired inertia. The Soft setting was designed to allow greater compliance, whereas the Stiff setting was intended to provide greater resistance to external disturbances.",
+    "html": "<p>I applied simulated random disturbances and compared the joint responses under different damping and stiffness parameters while maintaining the same desired inertia. The Soft setting was designed to allow greater compliance, whereas the Stiff setting was intended to provide greater resistance to external disturbances.</p>"
+  },
+  {
+    "id": "source-67-0",
+    "section": 67,
+    "block": 0,
+    "tag": "h2",
+    "text": "Simulation parameters ",
+    "html": "<h2>Simulation parameters </h2>"
+  },
+  {
+    "id": "source-69-0",
+    "section": 69,
+    "block": 0,
+    "tag": "p",
+    "text": "The results showed that the Soft setting allowed larger deviations from the reference trajectories, while the Stiff setting maintained closer tracking, particularly at the hip joint. This behavior was consistent with the expected relationship between mechanical impedance and disturbance response.",
+    "html": "<p>The results showed that <strong>the Soft setting allowed larger deviations from the reference trajectories, while the Stiff setting maintained closer tracking, particularly at the hip joint.</strong> This behavior was consistent with the expected relationship between mechanical impedance and disturbance response.</p>"
+  },
+  {
+    "id": "source-69-1",
+    "section": 69,
+    "block": 1,
+    "tag": "p",
+    "text": "The RMS tracking errors further confirmed these differences. Overall, the simulations demonstrated that the proposed DO+ROB controller retained the expected impedance-dependent behavior under external disturbances.",
+    "html": "<p>The RMS tracking errors further confirmed these differences. <strong>Overall, the simulations demonstrated that the proposed DO+ROB controller retained the expected impedance-dependent behavior under external disturbances.</strong></p>"
+  },
+  {
+    "id": "source-70-0",
+    "section": 70,
+    "block": 0,
+    "tag": "h2",
+    "text": "Soft Impedance Response ",
+    "html": "<h2>Soft Impedance Response </h2>"
+  },
+  {
+    "id": "source-70-1",
+    "section": 70,
+    "block": 1,
+    "tag": "h2",
+    "text": "Stiff Impedance Response  ",
+    "html": "<h2>Stiff Impedance Response  </h2>"
+  },
+  {
+    "id": "source-73-0",
+    "section": 73,
+    "block": 0,
+    "tag": "h2",
+    "text": "Evaluation Summary",
+    "html": "<h2>Evaluation Summary</h2>"
+  },
+  {
+    "id": "source-73-1",
+    "section": 73,
+    "block": 1,
+    "tag": "p",
+    "text": "Through these simulations, I demonstrated that integrating the DO with the ROB-based controller reduced trajectory-tracking errors while maintaining the expected impedance behavior.",
+    "html": "<p>Through these simulations, I demonstrated that <strong>integrating the DO with the ROB-based controller reduced trajectory-tracking errors while maintaining the expected impedance behavior.</strong></p>"
+  },
+  {
+    "id": "source-73-2",
+    "section": 73,
+    "block": 2,
+    "tag": "p",
+    "text": "Although the enhanced controller has not yet been experimentally validated on the physical prototype, these results provide a basis for future implementation and evaluation on the MIRACLE exoskeleton.",
+    "html": "<p>Although the enhanced controller has not yet been experimentally validated on the physical prototype, <strong>these results provide a basis for future implementation and evaluation on the MIRACLE exoskeleton.</strong></p>"
+  },
+  {
+    "id": "source-74-0",
+    "section": 74,
+    "block": 0,
+    "tag": "h1",
+    "text": "My Role",
+    "html": "<h1>My Role</h1>"
+  },
+  {
+    "id": "source-74-1",
+    "section": 74,
+    "block": 1,
+    "tag": "h2",
+    "text": "🔩Mechanical Design & Hardware Development",
+    "html": "<h2>🔩Mechanical Design &amp; Hardware Development</h2>"
+  },
+  {
+    "id": "source-74-2",
+    "section": 74,
+    "block": 2,
+    "tag": "p",
+    "text": "I was responsible for the mechanical design of the lower-limb exoskeleton, excluding the walker frame. I developed the CAD models of its structural and joint components and collaborated with manufacturing partners to fabricate and assemble the physical prototype.",
+    "html": "<p><strong>I was responsible for the mechanical design of the lower-limb exoskeleton, excluding the walker frame. I developed the CAD models of its structural and joint components and collaborated with manufacturing partners to fabricate and assemble the physical prototype.</strong></p>"
+  },
+  {
+    "id": "source-74-3",
+    "section": 74,
+    "block": 3,
+    "tag": "h2",
+    "text": "📐Dynamic Modeling & Sensorless Control",
+    "html": "<h2>📐Dynamic Modeling &amp; Sensorless Control</h2>"
+  },
+  {
+    "id": "source-74-4",
+    "section": 74,
+    "block": 4,
+    "tag": "p",
+    "text": "Using the CAD-derived physical parameters, I formulated the two-link dynamic model through the Euler–Lagrange method. Based on previous research, I also developed and evaluated a ROB-based sensorless impedance controller.",
+    "html": "<p><strong>Using the CAD-derived physical parameters, I formulated the two-link dynamic model through the Euler–Lagrange method. Based on previous research, I also developed and evaluated a ROB-based sensorless impedance controller.</strong></p>"
+  },
+  {
+    "id": "source-74-5",
+    "section": 74,
+    "block": 5,
+    "tag": "h2",
+    "text": "☑️Robust Control & Stability Analysis",
+    "html": "<h2>☑️Robust Control &amp; Stability Analysis</h2>"
+  },
+  {
+    "id": "source-74-6",
+    "section": 74,
+    "block": 6,
+    "tag": "p",
+    "text": "To address the observed trajectory-tracking delay, I proposed a serial DO–ROB control architecture and derived the corresponding disturbance observer equations. I analyzed the observer's estimation-error convergence using Lyapunov theory and evaluated the proposed controller through MATLAB simulations, achieving 14.7% and 27.4% reductions in RMS tracking error at the hip and knee joints, respectively.",
+    "html": "<p><strong>To address the observed trajectory-tracking delay, I proposed a serial DO–ROB control architecture and derived the corresponding disturbance observer equations. I analyzed the observer's estimation-error convergence using Lyapunov theory and evaluated the proposed controller through MATLAB simulations, achieving 14.7% and 27.4% reductions in RMS tracking error at the hip and knee joints, respectively.</strong></p>"
+  },
+  {
+    "id": "source-75-0",
+    "section": 75,
+    "block": 0,
+    "tag": "h1",
+    "text": "Research Materials & References",
+    "html": "<h1>Research Materials &amp; References</h1>"
+  },
+  {
+    "id": "source-75-1",
+    "section": 75,
+    "block": 1,
+    "tag": "p",
+    "text": "The following materials provide additional context for the MIRACLE project, including its hardware development, dynamic modeling, and control research. The technical references also acknowledge the foundational methods used to develop and evaluate the sensorless impedance control framework.",
+    "html": "<p>The following materials provide additional context for the MIRACLE project, including its hardware development, dynamic modeling, and control research. The technical references also acknowledge the foundational methods used to develop and evaluate the sensorless impedance control framework.</p>"
+  },
+  {
+    "id": "source-75-2",
+    "section": 75,
+    "block": 2,
+    "tag": "h2",
+    "text": "Research Materials",
+    "html": "<h2>Research Materials</h2>"
+  },
+  {
+    "id": "source-75-3",
+    "section": 75,
+    "block": 3,
+    "tag": "p",
+    "text": "1. Technical Research Report — Geonung Jo (2024)",
+    "html": "<p><strong>1. Technical Research Report — Geonung Jo (2024)</strong></p>"
+  },
+  {
+    "id": "source-75-4",
+    "section": 75,
+    "block": 4,
+    "tag": "p",
+    "text": "Enhancing the Performance of Sensorless Impedance Control for Lower Limb Exoskeleton using Robust Control",
+    "html": "<p>Enhancing the Performance of Sensorless Impedance Control for Lower Limb Exoskeleton using Robust Control</p>"
+  },
+  {
+    "id": "source-75-5",
+    "section": 75,
+    "block": 5,
+    "tag": "p",
+    "text": "Research Report",
+    "html": "<p><a href=\"https://drive.google.com/file/d/1ULBPI1K45yt4wIHGOjxwCjv838qWuzPf/view?usp=sharing\">Research Report</a></p>"
+  },
+  {
+    "id": "source-75-6",
+    "section": 75,
+    "block": 6,
+    "tag": "p",
+    "text": "2. Related MIRACLE Publication — Park et al. (2025)",
+    "html": "<p><strong>2. Related MIRACLE Publication — Park et al. (2025)</strong></p>"
+  },
+  {
+    "id": "source-75-7",
+    "section": 75,
+    "block": 7,
+    "tag": "p",
+    "text": "Validity and Test–Retest Reliability of an Independent Self-Balanced, Socially Integrated Gait-Assisted Robotic System for Hip and Knee Joint Kinematics in Rehabilitation.",
+    "html": "<p>Validity and Test–Retest Reliability of an Independent Self-Balanced, Socially Integrated Gait-Assisted Robotic System for Hip and Knee Joint Kinematics in Rehabilitation.</p>"
+  },
+  {
+    "id": "source-75-8",
+    "section": 75,
+    "block": 8,
+    "tag": "p",
+    "text": "Journal of Mechanics in Medicine and Biology, 25(10), 2540109.",
+    "html": "<p>Journal of Mechanics in Medicine and Biology, 25(10), 2540109.</p>"
+  },
+  {
+    "id": "source-75-9",
+    "section": 75,
+    "block": 9,
+    "tag": "p",
+    "text": "Publication · Yonsei University Research Portal ",
+    "html": "<p><a href=\"https://doi.org/10.1142/S0219519425401098?utm_source=chatgpt.com\">Publication</a> ·<a href=\"https://yonsei.elsevierpure.com/en/publications/validity-and-testretest-reliability-of-an-independent-self-balanc/?utm_source=chatgpt.com\"> Yonsei University Research Portal</a> </p>"
+  },
+  {
+    "id": "source-75-10",
+    "section": 75,
+    "block": 10,
+    "tag": "p",
+    "text": "3. MIRACLE — Government-Funded Research Project",
+    "html": "<p><strong>3. MIRACLE — Government-Funded Research Project</strong></p>"
+  },
+  {
+    "id": "source-75-11",
+    "section": 75,
+    "block": 11,
+    "tag": "p",
+    "text": "Research Center for the Development of MIRACLE, an Autonomous Walking Robot to Improve the Quality of Life and Social Integration of Children and Older Adults with Gait Impairments.",
+    "html": "<p>Research Center for the Development of MIRACLE, an Autonomous Walking Robot to Improve the Quality of Life and Social Integration of Children and Older Adults with Gait Impairments.</p>"
+  },
+  {
+    "id": "source-75-12",
+    "section": 75,
+    "block": 12,
+    "tag": "p",
+    "text": "Funding Agency: Ministry of Science and ICT (MSIT), Republic of KoreaLead Institution: Yonsei UniversityResearch Program: Group Research Support Program",
+    "html": "<p>Funding Agency: Ministry of Science and ICT (MSIT), Republic of Korea<br/>Lead Institution: Yonsei University<br/>Research Program: Group Research Support Program</p>"
+  },
+  {
+    "id": "source-75-13",
+    "section": 75,
+    "block": 13,
+    "tag": "p",
+    "text": "Project Information: https://app.rndcircle.io/project/d567189a-9dcf-53a1-8e0a-c3fecf2009b0",
+    "html": "<p>Project Information:<a href=\"https://app.rndcircle.io/project/d567189a-9dcf-53a1-8e0a-c3fecf2009b0\"> https://app.rndcircle.io/project/d567189a-9dcf-53a1-8e0a-c3fecf2009b0</a></p>"
+  },
+  {
+    "id": "source-75-14",
+    "section": 75,
+    "block": 14,
+    "tag": "h2",
+    "text": "References",
+    "html": "<h2>References</h2>"
+  },
+  {
+    "id": "source-75-15",
+    "section": 75,
+    "block": 15,
+    "tag": "p",
+    "text": "[1] Dhand, S., Singla, A., & Virk, G. S. (2016). “A Brief Review on Human-Powered Lower-Limb Exoskeletons.” Conference on Mechanical Engineering and Technology (COMET-2016), IIT (BHU), Varanasi, India.",
+    "html": "<p>[1] Dhand, S., Singla, A., &amp; Virk, G. S. (2016). “A Brief Review on Human-Powered Lower-Limb Exoskeletons.” <em>Conference on Mechanical Engineering and Technology (COMET-2016)</em>, IIT (BHU), Varanasi, India.</p>"
+  },
+  {
+    "id": "source-75-16",
+    "section": 75,
+    "block": 16,
+    "tag": "p",
+    "text": "[2] Chen, W. H., Ballance, D. J., Gawthrop, P. J., & O'Reilly, J. (2000). “A Nonlinear Disturbance Observer for Robotic Manipulators.” IEEE Transactions on Industrial Electronics, 47(4), 932–938.",
+    "html": "<p>[2] Chen, W. H., Ballance, D. J., Gawthrop, P. J., &amp; O'Reilly, J. (2000). “A Nonlinear Disturbance Observer for Robotic Manipulators.” <em>IEEE Transactions on Industrial Electronics</em>, 47(4), 932–938.</p>"
+  },
+  {
+    "id": "source-75-17",
+    "section": 75,
+    "block": 17,
+    "tag": "p",
+    "text": "https://doi.org/10.1109/41.857974",
+    "html": "<p><a href=\"https://doi.org/10.1109/41.857974\">https://doi.org/10.1109/41.857974</a></p>"
+  },
+  {
+    "id": "source-75-18",
+    "section": 75,
+    "block": 18,
+    "tag": "p",
+    "text": "[3] Chen, W. H. (2004). “Disturbance Observer Based Control for Nonlinear Systems.” IEEE/ASME Transactions on Mechatronics, 9(4), 706–710.",
+    "html": "<p>[3] Chen, W. H. (2004). “Disturbance Observer Based Control for Nonlinear Systems.” <em>IEEE/ASME Transactions on Mechatronics</em>, 9(4), 706–710.</p>"
+  },
+  {
+    "id": "source-75-19",
+    "section": 75,
+    "block": 19,
+    "tag": "p",
+    "text": "https://doi.org/10.1109/TMECH.2004.839034",
+    "html": "<p><a href=\"https://doi.org/10.1109/TMECH.2004.839034\">https://doi.org/10.1109/TMECH.2004.839034</a></p>"
+  },
+  {
+    "id": "source-75-20",
+    "section": 75,
+    "block": 20,
+    "tag": "p",
+    "text": "[4] Sariyildiz, E. (2023). “A Stability Analysis for the Reaction Torque Observer-Based Sensorless Force Control Systems.” 2023 IEEE International Conference on Mechatronics (ICM).",
+    "html": "<p>[4] Sariyildiz, E. (2023). “A Stability Analysis for the Reaction Torque Observer-Based Sensorless Force Control Systems.” <em>2023 IEEE International Conference on Mechatronics (ICM)</em>.</p>"
+  },
+  {
+    "id": "source-75-21",
+    "section": 75,
+    "block": 21,
+    "tag": "p",
+    "text": "https://doi.org/10.1109/ICM54990.2023.10101940",
+    "html": "<p><a href=\"https://doi.org/10.1109/ICM54990.2023.10101940\">https://doi.org/10.1109/ICM54990.2023.10101940</a></p>"
+  },
+  {
+    "id": "source-75-22",
+    "section": 75,
+    "block": 22,
+    "tag": "p",
+    "text": "[5] Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2020). Robot Modeling and Control. 2nd ed., John Wiley & Sons.",
+    "html": "<p>[5] Spong, M. W., Hutchinson, S., &amp; Vidyasagar, M. (2020). <em>Robot Modeling and Control</em>. 2nd ed., John Wiley &amp; Sons.</p>"
+  },
+  {
+    "id": "source-75-23",
+    "section": 75,
+    "block": 23,
+    "tag": "p",
+    "text": "[6] Tran, Q. V., Kim, S., Lee, K., Kang, S., & Ryu, J. (2015). “Force/Torque Sensorless Impedance Control for Indirect Driven Robot-Aided Gait Rehabilitation System.” 2015 IEEE International Conference on Advanced Intelligent Mechatronics (AIM), 652–657.",
+    "html": "<p>[6] Tran, Q. V., Kim, S., Lee, K., Kang, S., &amp; Ryu, J. (2015). “Force/Torque Sensorless Impedance Control for Indirect Driven Robot-Aided Gait Rehabilitation System.” <em>2015 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)</em>, 652–657.</p>"
+  },
+  {
+    "id": "source-75-24",
+    "section": 75,
+    "block": 24,
+    "tag": "p",
+    "text": "https://doi.org/10.1109/AIM.2015.7222611",
+    "html": "<p><a href=\"https://doi.org/10.1109/AIM.2015.7222611\">https://doi.org/10.1109/AIM.2015.7222611</a></p>"
+  },
+  {
+    "id": "source-76-0",
+    "section": 76,
+    "block": 0,
+    "tag": "h1",
+    "text": "Development Gallery ",
+    "html": "<h1>Development Gallery </h1>"
+  },
+  {
+    "id": "source-76-1",
+    "section": 76,
+    "block": 1,
+    "tag": "p",
+    "text": "A visual record of MIRACLE's development, capturing the iterative process of mechanical design, component fabrication, assembly, and prototype integration.",
+    "html": "<p><strong>A visual record of MIRACLE's development, capturing the iterative process of mechanical design, component fabrication, assembly, and prototype integration.</strong></p>"
+  },
+  {
+    "id": "source-78-0",
+    "section": 78,
+    "block": 0,
+    "tag": "p",
+    "text": "Email Address : taylor3527eg@gmail.com",
+    "html": "<p><strong>E</strong><strong>m</strong><strong>ail Address : </strong><a href=\"mailto:taylor3527eg@gmail.com\"><strong>taylor3527eg@gmail.com</strong></a></p>"
+  }
+]

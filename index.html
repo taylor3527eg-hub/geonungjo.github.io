@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Geonung Jo — exploring robotics, human–machine interaction, and musical expression.">
+  <title>Geonung Jo — Robotics, sound & expression</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="features/robotic-stompbox/style.css">
+  <script src="site-header.js" defer></script>
+  <script src="image-viewer.js" defer></script>
+  <script src="script.js" type="module"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Geonung Jo, home"><span>WILT</span><span class="wordmark-slash">/</span>GEONUNG JO</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#work" data-work-link>WORK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="vision.html">MY VISION</a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">ENGINEERING MUSICIAN · CREATIVE TECHNOLOGIST</p>
+          <h1 id="hero-title"><span class="hero-line">I build machines.</span><span class="hero-line hero-line-sound">I shape sound.</span></h1>
+          <p class="hero-description">I design robotic hardware, develop control systems, and create audio tools—exploring how engineering can expand musical expression.</p>
+          <a class="project-reference hero-link" href="#work">Explore My Work <span aria-hidden="true">↓</span></a>
+
+        </div>
+        <div class="hero-experiment">
+          <section class="robotic-stompbox" data-robotic-stompbox data-scene-zoom="1.12" aria-labelledby="stompbox-title">
+      <div class="playground">
+        <header class="experiment-intro">
+          <h2 id="stompbox-title">Turn an effect pedal ON and OFF using a robotic leg.</h2>
+          <p>Move your cursor to apply force. No click needed.</p>
+          <div class="force-gauge">
+            <span id="applied-force-label">Applied Force</span>
+            <span class="force-gauge-track" data-force-meter role="meter" aria-labelledby="applied-force-label" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0"><span class="force-gauge-fill" data-force-fill></span></span>
+          </div>
+        </header>
+        <div class="scene-stage">
+        <canvas id="stompbox-scene" data-scene width="1000" height="640" tabindex="0" aria-label="발목 주변에서 커서를 움직여 다리를 밀고, 발로 왼쪽 풋스위치를 누르세요. 다시 누르면 이펙터가 꺼집니다. 터치로 쓸거나, 이 영역에 초점을 맞춘 후 방향키로 힘을 줄 수도 있습니다."></canvas>
+        <section class="parameter-panel" aria-label="임피던스 파라미터 조절">
+          <div class="parameter">
+            <div class="parameter-heading"><label for="stompbox-stiffness">Stiffness</label></div>
+            <input id="stompbox-stiffness" data-parameter="stiffness" type="range" min="0" max="80" step="1" value="18" aria-label="스프링 상수 K" aria-describedby="stompbox-stiffness-help">
+            <p id="stompbox-stiffness-help">Pull back to rest.</p>
+          </div>
+          <div class="parameter">
+            <div class="parameter-heading"><label for="stompbox-damping">Damping</label></div>
+            <input id="stompbox-damping" data-parameter="damping" type="range" min="0" max="12" step="0.1" value="2.4" aria-label="댐핑 상수 B" aria-describedby="stompbox-damping-help">
+            <p id="stompbox-damping-help">Resistance to motion.</p>
+          </div>
+          <div class="parameter">
+            <div class="parameter-heading"><label for="stompbox-mass">Mass</label></div>
+            <input id="stompbox-mass" data-parameter="mass" type="range" min="0.5" max="10" step="0.05" value="3.35" aria-label="전체 질량 m" aria-describedby="stompbox-mass-help">
+            <p id="stompbox-mass-help">Resistance to acceleration.</p>
+          </div>
+        </section>
+        </div>
+      </div>
+    </section>
+        </div>
+      </section>
+      <section class="work section-block" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><h2 id="work-title">ENGINEERING &amp; MUSIC</h2><p class="section-description">Exploring engineering and musical expression.</p></div>
+        </div>
+        <div class="practice-grid">
+          <section class="practice-column" aria-labelledby="engineering-title">
+            <header class="practice-header">
+              <div class="practice-heading"><span class="practice-number">01</span><h3 id="engineering-title">Engineering</h3></div>
+              <p class="practice-summary">CTAG-FX · MIRACLE · UMI-F/T</p>
+            </header>
+            <div class="practice-list">
+              <article class="work-card" id="work-ctag-fx">
+                <button class="work-image work-image-sound" type="button" data-image-zoom data-image-title="CTAG-FX" aria-label="Enlarge CTAG-FX image"><img src="assets/Home/CTAG-FX.png" alt="CTAG-FX character reinterpretation workflow and guitar demonstration" width="1277" height="712" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+                <div class="work-caption">
+                  <h4>CTAG-FX</h4>
+                  <p class="project-category">Audio FX &amp; AI</p>
+                  <p class="project-description">I developed a text-guided audio FX system by reinterpreting synthesizer parameters for expressive tone shaping.</p>
+                  <a class="project-reference" href="ctag-fx.html">View Project ↗</a>
+                </div>
+              </article>
+              <article class="work-card" id="work-miracle">
+                <button class="work-image work-image-robot" type="button" data-image-zoom data-image-title="MIRACLE" aria-label="Enlarge MIRACLE image"><img src="assets/Home/MIRACLE.JPG" alt="MIRACLE exoskeleton hardware on a green support frame" width="3024" height="4032" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+                <div class="work-caption">
+                  <h4>MIRACLE</h4>
+                  <p class="project-category">Robotics &amp; Control</p>
+                  <p class="project-description">I designed pediatric exoskeleton hardware and investigated sensorless impedance control through dynamic modeling and simulation.</p>
+                  <a class="project-reference" href="miracle.html">View Project ↗</a>
+                </div>
+              </article>
+              <article class="work-card" id="work-umi-ft">
+                <button class="work-image work-image-interaction" type="button" data-image-zoom data-image-title="UMI-F/T" aria-label="Enlarge UMI-F/T image"><img src="assets/Home/UMI-FT_Assembly.png" alt="Updated overall CAD assembly of the UMI-F/T gripper, wrist interface and handle frame" width="534" height="476" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+                <div class="work-caption">
+                  <h4>UMI-F/T</h4>
+                  <p class="project-category">Robotic Hardware &amp; Force Sensing</p>
+                  <p class="project-description">I designed and prototyped a wireless two-axis force-sensing extension for the UMI gripper.</p>
+                  <a class="project-reference" href="umi-ft.html">View Project ↗</a>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="practice-column practice-music" aria-labelledby="music-title">
+            <header class="practice-header">
+              <div class="practice-heading"><span class="practice-number">02</span><h3 id="music-title">Music</h3></div>
+              <p class="practice-summary">Performance · My Tone Laboratory</p>
+            </header>
+            <div class="practice-list">
+              <article class="work-card" id="work-performance">
+                <button class="work-image work-image-music" type="button" data-image-zoom data-image-title="Performance Gallery" aria-label="Enlarge Performance Gallery image"><img src="assets/Home/Performance.jpg" alt="Guitarist performing live on stage under colored lights" width="1290" height="2302" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+                <div class="work-caption">
+                  <h4>Performance Gallery</h4>
+                  <p class="project-category">Live Performance &amp; Musical Expression</p>
+                  <p class="project-description">A collection of my live performances, band activities, and musical demonstrations over the years.</p>
+                  <a class="project-reference" href="performance-gallery.html">View Project ↗</a>
+                </div>
+              </article>
+              <article class="work-card" id="work-tone-lab">
+                <button class="work-image work-image-tone" type="button" data-image-zoom data-image-title="My Tone Laboratory" aria-label="Enlarge My Tone Laboratory image"><img src="assets/Home/Tone_Laboratory.JPG" alt="Guitar pedalboard with effects pedals and a switching controller" width="4032" height="2268" data-image-orientation="none" loading="lazy" decoding="async"><span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+                <div class="work-caption">
+                  <h4>My Tone Laboratory</h4>
+                  <p class="project-category">Sound Design &amp; Musical Gear</p>
+                  <p class="project-description">My space for exploring guitar effects, sound design, and programmable signal chains.</p>
+                  <a class="project-reference" href="tone-laboratory.html">View Project ↗</a>
+                </div>
+              </article>
+            </div>
+            <p class="music-note">Music as expression &amp; exploration.</p>
+          </section>
+        </div>
+      </section>
+      <section class="about-vision section-block" id="about-vision" aria-labelledby="about-vision-title">
+        <div class="about-vision-aside">
+          <div class="practice-heading about-vision-heading"><span class="practice-number">03</span><h2 class="section-label" id="about-vision-title">About &amp; Vision</h2></div>
+          <button class="profile-photo" type="button" data-image-zoom data-image-title="Geonung Jo / Wilt" aria-label="Enlarge profile photo">
+            <img src="assets/Home/My_Profile.jpg" alt="Profile portrait of Geonung Jo" width="310" height="532" loading="lazy" decoding="async">
+            <span class="image-zoom-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+        </div>
+        <div class="about-vision-content">
+          <h3 class="vision-statement">Beyond the lab.<br><span>Onto the stage.</span></h3>
+          <section class="bio-block" id="about" aria-labelledby="about-title">
+            <h4 id="about-title">About Me</h4>
+            <p>Hello, my name is <strong>Geonung Jo</strong>, and my artist name is <strong>Wilt</strong>.<br>Alongside my research in robotics, control systems, and audio effects, I've spent over 16 years playing guitar, performing with bands, and exploring sound through musical instruments and gear.</p>
+            <a class="project-reference" href="about.html">View My Background ↗</a>
+          </section>
+          <section class="bio-block" id="vision" aria-labelledby="vision-title">
+            <h4 id="vision-title">My Vision</h4>
+            <p>I want to bring technologies I develop in the lab onto the stage, engage with audiences, and turn those experiences into new research ideas.<br>My goal is to connect sound, movement, and wearable robotics to expand musical expression.</p>
+            <a class="project-reference" href="vision.html">Read My Vision ↗</a>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact" aria-labelledby="contact-title">
+      <div class="contact-block">
+        <div><p class="section-number">GET IN TOUCH</p><h2 id="contact-title">Let’s connect.</h2></div>
+        <div class="contact-copy">
+          <p>For research discussions, creative collaborations, or music-related projects, feel free to reach out.</p>
+          <a class="contact-email" href="mailto:taylor3527eg@gmail.com">taylor3527eg@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="footer-references">
+            <span class="footer-reference"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4zM9.5 2.5V5H12M6 7.5h4M6 10h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>CV <span aria-hidden="true">↗</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-meta"><span>© 2026 Geonung Jo / Wilt</span><a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+    </footer>
+  </div>
+  <dialog class="image-viewer" data-image-viewer aria-labelledby="image-viewer-caption">
+    <button class="image-viewer-close" type="button" data-image-close aria-label="Close image"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    <figure><img data-full-image alt=""><figcaption id="image-viewer-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>

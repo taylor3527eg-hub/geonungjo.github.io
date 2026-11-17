@@ -1,0 +1,137 @@
+.about-page .site-nav [aria-current="page"] { color: #71876a; }
+.about-page .site-nav [aria-current="page"]::after { transform: scaleX(1); background: #a1b19a; }
+.about-introduction { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; gap: 54px; padding: 32px 0 38px; }
+.about-intro-copy { min-width: 0; }
+.about-subtitle { margin: 15px 0 0; color: #71876a; font-size: clamp(23px, 2.3vw, 31px); font-weight: 500; line-height: 1.3; letter-spacing: -.025em; }
+.about-intro-text { max-width: 515px; margin-top: 25px; }
+.about-intro-text p { margin: 0; color: #68776c; font-size: 14px; line-height: 1.9; }
+.about-intro-text p + p { margin-top: 15px; }
+.about-intro-text strong { color: var(--page-ink); font-weight: 600; }
+.about-photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 18px; width: 100%; max-width: 480px; justify-self: end; padding-top: 49px; }
+.about-photo { min-width: 0; margin: 0; }
+.about-photo > .photo-placeholder, .about-photo > img { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; width: 100%; aspect-ratio: 4 / 5; border: 1px solid var(--page-line); border-radius: 8px; background: var(--page-soft); }
+.about-photo > img { display: block; height: auto; object-fit: cover; }
+.about-photo-graduation > img { object-position: center 58%; }
+.about-photo-music > img { object-position: center 55%; }
+.photo-placeholder svg { width: 36px; height: 36px; stroke: #8b9d83; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.photo-placeholder > span { padding: 0 14px; color: #65765f; font-size: 12px; line-height: 1.65; text-align: center; }
+.about-photo figcaption { margin-top: 10px; color: #68776c; font-size: 11px; line-height: 1.6; }
+.about-photo-music { margin-top: 42px; }
+.about-photo-music > .photo-placeholder { background: #f2f5f4; }
+.about-interests .about-explore-title { font-weight: 600; }
+.about-practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 30px; }
+.interest-panel { --panel-ink: var(--page-ink); --panel-copy: #526450; --panel-accent: #526d50; --panel-line: #cbd6c5; min-width: 0; padding: 32px; border: 1px solid #dce4d7; border-radius: 16px; color: var(--panel-ink); background: #eff3eb; }
+.interest-panel-engineering { --panel-ink: #f7f9f4; --panel-copy: #d1ddce; --panel-accent: #b8cfad; --panel-line: #52685a; border-color: var(--page-ink); background: var(--page-ink); }
+.about-field-title { margin: 0; color: var(--panel-ink); font-size: clamp(30px, 3vw, 38px); font-weight: 600; line-height: 1.2; letter-spacing: -.035em; }
+.about-field-intro { max-width: 430px; min-height: 56px; margin: 14px 0 0; color: var(--panel-copy); font-size: 16px; line-height: 1.75; }
+.about-interest-group { margin-top: 27px; }
+.about-interest-group h5, .about-tool-group h5 { margin: 0; color: var(--panel-accent); font-size: 10px; font-weight: 600; line-height: 1.6; letter-spacing: .11em; }
+.about-interests-list { display: grid; gap: 8px; list-style: none; margin: 16px 0 0; padding: 0; color: var(--panel-ink); font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -.015em; }
+.about-tool-group { margin-top: 28px; border-top: 1px solid var(--panel-line); padding-top: 24px; }
+.about-tools { display: grid; gap: 18px; margin: 20px 0 0; }
+.about-tools dt { color: var(--panel-ink); font-size: 14px; font-weight: 600; line-height: 1.6; }
+.about-tools dd { margin: 5px 0 0; color: var(--panel-copy); font-size: 13px; line-height: 1.85; overflow-wrap: anywhere; }
+.about-section-statement { margin: 22px 0 0; font-size: 39px; font-weight: 500; line-height: 1.18; letter-spacing: -.04em; }
+.about-section-statement span { color: #71876a; }
+.about-journey { padding-bottom: 24px; }
+.about-journey-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; margin-top: 35px; }
+.about-timeline { list-style: none; margin: 0; padding: 0 0 0 24px; }
+.about-timeline > li { position: relative; padding: 0 0 30px; }
+.about-timeline > li:last-child { padding-bottom: 0; }
+.about-timeline > li::before { content: ""; position: absolute; z-index: 1; top: 5px; left: -28px; width: 7px; height: 7px; border-radius: 50%; background: #71876a; box-shadow: 0 0 0 4px #ffffff; }
+.about-timeline > li::after { content: ""; position: absolute; top: 9px; bottom: -9px; left: -25px; width: 1px; background: var(--page-line); }
+.about-timeline > li:last-child::after { bottom: -10px; }
+.about-timeline .timeline-date { margin: 0; color: #526d50; font-size: 11px; line-height: 1.7; }
+.about-timeline h4 { margin: 7px 0 0; font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -.015em; }
+.about-timeline p { margin: 8px 0 0; color: #68776c; font-size: 13px; line-height: 1.85; }
+.about-timeline .timeline-role { color: #405b48; font-size: 13px; }
+.timeline-research { margin-top: 16px; padding-left: 15px; border-left: 1px solid var(--page-line); }
+.timeline-research h5 { margin: 5px 0 0; font-size: 14px; font-weight: 600; line-height: 1.5; }
+.timeline-research p { margin-top: 5px; }
+.about-timeline .timeline-note { font-size: 12px; font-style: italic; }
+.journey-photo-stack { position: relative; align-self: start; width: 100%; max-width: 520px; min-width: 0; aspect-ratio: 25 / 36; justify-self: end; }
+/* Independent positions leave intentional space between all four photographs. */
+.journey-photo { position: absolute; }
+.journey-photo > img { aspect-ratio: 3 / 2; border: 0; background: transparent; }
+.journey-photo-umi { top: 0; left: 49%; width: 51%; }
+.journey-photo-umi > img { aspect-ratio: 4 / 3; }
+.journey-photo-guitar { top: 73.3333%; left: 8%; width: 54%; }
+.journey-photo-guitar > img { aspect-ratio: 3 / 2; object-position: center 55%; image-orientation: from-image; filter: brightness(1.25); }
+/* Blend a brighter exposure only around the face, following the same crop. */
+.journey-photo-guitar > .guitar-face-light { position: absolute; inset: 0; height: 100%; pointer-events: none; filter: brightness(1.9) contrast(.98); -webkit-mask-image: radial-gradient(ellipse 13% 24% at 47% 32%, #000 20%, transparent 100%); mask-image: radial-gradient(ellipse 13% 24% at 47% 32%, #000 20%, transparent 100%); }
+.journey-photo-pedals { top: 47.7778%; left: 48%; width: 49%; }
+.journey-photo-pedals > img { object-position: center 53%; }
+.journey-photo-personal { top: 21.1111%; left: 0; width: 44%; }
+.journey-photo-personal > img { aspect-ratio: 4 / 5; object-position: center 45%; }
+.journey-photo-reading > img { object-position: center 43%; }
+.about-closing { display: grid; grid-template-columns: minmax(170px, .58fr) minmax(0, 1.42fr); gap: 70px; padding-top: 46px; padding-bottom: 46px; }
+.about-closing-content { min-width: 0; }
+.about-closing .about-section-statement { margin-top: 0; }
+.about-closing-content > p { max-width: 500px; margin: 22px 0 0; color: #68776c; font-size: 14px; line-height: 1.9; }
+.about-closing-links { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 6px; }
+.about-closing-links .project-reference { font-size: 12px; }
+@keyframes about-photo-enter {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .about-intro-copy > h1,
+  .about-intro-copy > .about-subtitle,
+  .about-intro-copy > .about-intro-text { animation: hero-enter .65s cubic-bezier(.22, 1, .36, 1) backwards; }
+  .about-intro-copy > .about-subtitle { animation-delay: .1s; }
+  .about-intro-copy > .about-intro-text { animation-delay: .3s; }
+  .about-photo-pair > .about-photo { animation: about-photo-enter .65s cubic-bezier(.22, 1, .36, 1) .15s backwards; }
+  .about-photo-pair > .about-photo:nth-child(2) { animation-delay: .3s; }
+  .journey-reveal.is-pending { opacity: 0; transform: translateX(-24px); }
+  .journey-photo.journey-reveal.is-pending { transform: translateY(24px); }
+  .journey-reveal.is-revealed { animation: hero-enter .7s cubic-bezier(.22, 1, .36, 1) var(--reveal-delay, 0s) backwards; }
+  .journey-photo.journey-reveal.is-revealed { animation-name: about-photo-enter; animation-duration: .75s; }
+}
+@media (max-width: 1080px) {
+  .about-introduction { gap: 32px; }
+  .about-photo-pair { gap: 14px; }
+  .about-journey-grid { gap: 40px; }
+}
+@media (max-width: 900px) {
+  .about-introduction { gap: 25px; padding-top: 28px; }
+  .about-subtitle { font-size: 23px; }
+  .about-intro-text p { font-size: 13px; }
+  .about-closing { grid-template-columns: 150px minmax(0, 1fr); gap: 35px; }
+  .about-journey-grid { grid-template-columns: 1fr; gap: 30px; }
+  .journey-photo-stack { justify-self: center; }
+  .about-practice-grid { grid-template-columns: 1fr; gap: 20px; }
+  .about-field-intro { min-height: 0; }
+}
+@media (max-width: 740px) {
+  .about-introduction { grid-template-columns: 1fr; gap: 25px; padding: 25px 0 30px; }
+  .about-subtitle { font-size: clamp(23px, 4vw, 28px); }
+  .about-intro-text { max-width: 100%; margin-top: 22px; }
+  .about-photo-pair { justify-self: start; max-width: 440px; padding-top: 0; }
+  .about-photo-music { margin-top: 25px; }
+  .about-practice-grid { margin-top: 25px; }
+  .interest-panel { padding: 28px; }
+  .about-field-title { font-size: 32px; }
+  .about-section-statement { font-size: 34px; }
+  .about-journey-grid { grid-template-columns: 1fr; gap: 30px; margin-top: 28px; }
+  .journey-photo-stack { justify-self: center; }
+  .about-closing { grid-template-columns: 1fr; gap: 24px; padding-top: 33px; padding-bottom: 35px; }
+}
+@media (max-width: 440px) {
+  .interest-panel { padding: 24px 20px; }
+  .about-field-intro { font-size: 15px; }
+  .about-interests-list { font-size: 17px; }
+  .photo-placeholder > span { padding: 0 9px; font-size: 11px; }
+  .photo-placeholder svg { width: 30px; height: 30px; }
+  .about-photo-pair { gap: 12px; }
+  .about-timeline { padding-left: 20px; }
+  .about-timeline > li::before { left: -24px; }
+  .about-timeline > li::after { left: -21px; }
+  .about-timeline h4 { font-size: 17px; }
+}
+@media (max-width: 600px) {
+  .journey-photo-stack { max-width: 420px; aspect-ratio: 5 / 13; }
+  .journey-photo-umi { top: 0; left: 36%; width: 64%; }
+  .journey-photo-guitar { top: 81.4231%; left: 5%; width: 67%; }
+  .journey-photo-pedals { top: 55.7692%; left: 36%; width: 64%; }
+  .journey-photo-personal { top: 24.5385%; left: 0; width: 58%; }
+}

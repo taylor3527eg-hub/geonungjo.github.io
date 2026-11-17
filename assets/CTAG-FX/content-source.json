@@ -1,0 +1,338 @@
+{
+  "original_portfolio": "https://sites.google.com/view/geonungjo/projectwork/engineering/ctag-fx",
+  "demo": "https://taylor3527eg-hub.github.io/ctag-fx-platform-demo/",
+  "paper": "https://arxiv.org/abs/2610.08182",
+  "paper_version": "2610.08182v1",
+  "source_archive": "C:\\Users\\taylor3527\\Downloads\\ctag-fx-platform-demo-main.zip",
+  "audio": [
+    {
+      "path": "assets/CTAG-FX/audio/RAW 1.wav",
+      "archive_path": "assets/video/RAW 1.wav",
+      "sha256": "315cae3ee7d2a0319cf90f35c51b3ae6c5ba9f9be4b9354dc621d598456b07fc",
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/RAW 2.wav",
+      "archive_path": "assets/video/RAW 2.wav",
+      "sha256": "b4e65539ba456c80092848b087703c58f980df8bf35ca4ad231a992d6d81eab5",
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Clean_1.wav",
+      "archive_path": "assets/video/Clean_1.wav",
+      "sha256": "e6b92756dd391e6663bf0db0a90f5c7d4cf313146e0dc4bd02f6bfec2c33ab04",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Clean_2.wav",
+      "archive_path": "assets/video/Clean_2.wav",
+      "sha256": "ce3788b639f2f0d52f7619d06f28b33ee8c9c4569a00fff98058794e7fc43a47",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Chewy_1.wav",
+      "archive_path": "assets/video/Chewy_1.wav",
+      "sha256": "8c053beb54b7601e7ad808a8f62286dc84f7924852a1b3e7ff5f9dfd1d50ffe7",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Chewy_2.wav",
+      "archive_path": "assets/video/Chewy_2.wav",
+      "sha256": "4a2b28e786b8dd90a29868935ef5242b2779dcc343c2c5d8d7b8a2202219d880",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/RAT_1.wav",
+      "archive_path": "assets/video/RAT_1.wav",
+      "sha256": "130843d28c180d4404ccc24cf1abcaeff5f24370053d9b302b68172921d603e8",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/RAT_2.wav",
+      "archive_path": "assets/video/RAT_2.wav",
+      "sha256": "a0374367a482655b76afc95181badcfb88649482486749435a6682d622d3d673",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Fuzz_1.wav",
+      "archive_path": "assets/video/Fuzz_1.wav",
+      "sha256": "ea463f50362fadc0adbd38905a27c9f3d70f2ea063a5ba280c88151e57bb31ed",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Fuzz_2.wav",
+      "archive_path": "assets/video/Fuzz_2.wav",
+      "sha256": "c42da6f938fc57882bcd96cfadfeb4a254097556e2b0493cb9fec735c81bc3e5",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/bird_1.wav",
+      "archive_path": "assets/video/bird_1.wav",
+      "sha256": "a23e47704a9f307e647311e4e0608eb2c9dbf92dce42a947ca273ab2ce13730e",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Bird_2.wav",
+      "archive_path": "assets/video/Bird_2.wav",
+      "sha256": "8221367d4da9527c26aa28b0469f0e98dbc28768211e0a45d413688135a469a1",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/cow_1.wav",
+      "archive_path": "assets/video/cow_1.wav",
+      "sha256": "270f11c8ebbe1dddb4d2bb5c47b0c4ebd3151867d818080dd465a1a053045a76",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/cow_2.wav",
+      "archive_path": "assets/video/cow_2.wav",
+      "sha256": "8de80e6b7a0012f5ac3e51ae366153762f981912c8b49fddefd9aa8961b7ecb9",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/siren_1.wav",
+      "archive_path": "assets/video/siren_1.wav",
+      "sha256": "12a7b2ce115dade954e43e7d5d7b1cb49378c0099a45e261a69942465714cfce",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/siren_2.wav",
+      "archive_path": "assets/video/siren_2.wav",
+      "sha256": "8426071c90493c02f13bcc3828f917e56bbe485d835603d6af50e0d84f52b79c",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/wooden_box_1.wav",
+      "archive_path": "assets/video/wooden_box_1.wav",
+      "sha256": "37b912ad4d98d2d0dfd0b3506052e3e8d3a75b59c2559a3db5ea5a998060076f",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 11.538458333333333
+    },
+    {
+      "path": "assets/CTAG-FX/audio/wooden_box_2.wav",
+      "archive_path": "assets/video/wooden_box_2.wav",
+      "sha256": "cb9e40a9a05998e9e7f35d5de3eeab0ddff2a73d36fa7d19f11577f7f27ee8d1",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 20.769229166666666
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Little Birds Chirping_Reference.mp3",
+      "archive_path": "assets/video/Little Birds Chirping_Reference.mp3",
+      "sha256": "8dc3794f4e688ab4bd8a493ffdff2bcecd3114ecd433dc9d75c23827913f1da6"
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Cow Moo_Reference.mp3",
+      "archive_path": "assets/video/Cow Moo_Reference.mp3",
+      "sha256": "240915bb6575c2f3a9614b3473dfbc21947e57da2ea25f3eaae5c0c6a16e2fd7"
+    },
+    {
+      "path": "assets/CTAG-FX/audio/Police siren.mp3",
+      "archive_path": "assets/video/Police siren.mp3",
+      "sha256": "293ee00eabd16dc2e4dbaf05234ec74ad6298cd0891ea0293544afd77dadab23"
+    },
+    {
+      "path": "assets/CTAG-FX/audio/wooden box.mp3",
+      "archive_path": "assets/video/wooden box.mp3",
+      "sha256": "d50db5e1965ee1562b22a87074515792be1074c2dcdd12e2fd5b0d21c7985368"
+    },
+    {
+      "path": "assets/CTAG-FX/audio/A_cheerful_chorus_of_delicate_bird_chirps_greeting_576772_000_-0.7963.wav",
+      "archive_path": "assets/video/A_cheerful_chorus_of_delicate_bird_chirps_greeting_576772_000_-0.7963.wav",
+      "sha256": "a54151092f123f70089fc495935cf76072691c11e2e84baf7a5af59053e930d2",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 2.0
+    },
+    {
+      "path": "assets/CTAG-FX/audio/A_gentle_and_friendly_cartoon_cow_moo_constructed_fefaf7_000_-0.7591.wav",
+      "archive_path": "assets/video/A_gentle_and_friendly_cartoon_cow_moo_constructed_fefaf7_000_-0.7591.wav",
+      "sha256": "f05086fee114894e490fbd2b6922a427971768893f517f6996c22521f0873b84",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 2.0
+    },
+    {
+      "path": "assets/CTAG-FX/audio/A_classic_emergency_siren_sound_conveying_urgent_d_c97478_000_-0.7544.wav",
+      "archive_path": "assets/video/A_classic_emergency_siren_sound_conveying_urgent_d_c97478_000_-0.7544.wav",
+      "sha256": "3c8a67ba10935a86ab36d649d982be5e6d6fccb90b528cae6171fbd7010b8601",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 2.0
+    },
+    {
+      "path": "assets/CTAG-FX/audio/A_rustic_wooden_box_being_opened_with_a_creaky_hin_8a0d40_000_-0.6556.wav",
+      "archive_path": "assets/video/A_rustic_wooden_box_being_opened_with_a_creaky_hin_8a0d40_000_-0.6556.wav",
+      "sha256": "7e4e6d18332ae89f78c0ad938bb367e35e7e934fcd760f0530903f400863e3e4",
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 2.0
+    }
+  ],
+  "figures": [
+    {
+      "file": "Figure1.png",
+      "source": "https://arxiv.org/html/2610.08182v1/Figure1.png",
+      "bytes": 143943
+    },
+    {
+      "file": "Figure_AR_CTAG.png",
+      "source": "https://arxiv.org/html/2610.08182v1/Figure_AR_CTAG.png",
+      "bytes": 68571
+    },
+    {
+      "file": "Figure_CTAGFX.png",
+      "source": "https://arxiv.org/html/2610.08182v1/Figure_CTAGFX.png",
+      "bytes": 40572
+    },
+    {
+      "file": "VCO.png",
+      "source": "https://arxiv.org/html/2610.08182v1/VCO.png",
+      "bytes": 47515
+    },
+    {
+      "file": "fig7_spectral_and_scrambled_ablation.svg",
+      "source": "https://arxiv.org/html/2610.08182v1/fig7_spectral_and_scrambled_ablation.svg",
+      "bytes": 356235
+    },
+    {
+      "file": "fig8_nonlinear_descriptors.svg",
+      "source": "https://arxiv.org/html/2610.08182v1/fig8_nonlinear_descriptors.svg",
+      "bytes": 251844
+    }
+  ],
+  "contribution_statements": [
+    "Developed CTAG-FX from initial concept through system design and implementation.",
+    "Extended CTAG into A&R-CTAG through LLM-based prompt refinement and retrieval-enhanced initialization.",
+    "Designed and implemented the role-based synthesizer-to-FX mapping and integrated tone-shaping processor.",
+    "Conducted signal-level analyses and scrambled-mapping ablation experiments.",
+    "Developed the interactive demo website and demonstrated the resulting audio effects through guitar performances and NAM-based implementations."
+  ],
+  "player_data": {
+    "raw": {
+      "melody": "assets/CTAG-FX/audio/RAW 1.wav",
+      "chord": "assets/CTAG-FX/audio/RAW 2.wav"
+    },
+    "tones": [
+      {
+        "name": "Soft Creamy Clean",
+        "kind": "Clean",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/Clean_1.wav",
+          "chord": "assets/CTAG-FX/audio/Clean_2.wav"
+        }
+      },
+      {
+        "name": "Chewy Amp Crunch",
+        "kind": "Crunch",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/Chewy_1.wav",
+          "chord": "assets/CTAG-FX/audio/Chewy_2.wav"
+        }
+      },
+      {
+        "name": "RAT-style Distortion",
+        "kind": "Distortion",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/RAT_1.wav",
+          "chord": "assets/CTAG-FX/audio/RAT_2.wav"
+        }
+      },
+      {
+        "name": "Germanium Fuzz",
+        "kind": "Fuzz",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/Fuzz_1.wav",
+          "chord": "assets/CTAG-FX/audio/Fuzz_2.wav"
+        }
+      }
+    ],
+    "characters": [
+      {
+        "name": "Little Birds Chirping",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/bird_1.wav",
+          "chord": "assets/CTAG-FX/audio/Bird_2.wav"
+        },
+        "reference": "assets/CTAG-FX/audio/Little Birds Chirping_Reference.mp3",
+        "synth": "assets/CTAG-FX/audio/A_cheerful_chorus_of_delicate_bird_chirps_greeting_576772_000_-0.7963.wav"
+      },
+      {
+        "name": "Cow Moo",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/cow_1.wav",
+          "chord": "assets/CTAG-FX/audio/cow_2.wav"
+        },
+        "reference": "assets/CTAG-FX/audio/Cow Moo_Reference.mp3",
+        "synth": "assets/CTAG-FX/audio/A_gentle_and_friendly_cartoon_cow_moo_constructed_fefaf7_000_-0.7591.wav"
+      },
+      {
+        "name": "Emergency Police Siren",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/siren_1.wav",
+          "chord": "assets/CTAG-FX/audio/siren_2.wav"
+        },
+        "reference": "assets/CTAG-FX/audio/Police siren.mp3",
+        "synth": "assets/CTAG-FX/audio/A_classic_emergency_siren_sound_conveying_urgent_d_c97478_000_-0.7544.wav"
+      },
+      {
+        "name": "Wooden Box Open",
+        "files": {
+          "melody": "assets/CTAG-FX/audio/wooden_box_1.wav",
+          "chord": "assets/CTAG-FX/audio/wooden_box_2.wav"
+        },
+        "reference": "assets/CTAG-FX/audio/wooden box.mp3",
+        "synth": "assets/CTAG-FX/audio/A_rustic_wooden_box_being_opened_with_a_creaky_hin_8a0d40_000_-0.6556.wav"
+      }
+    ],
+    "evidence": [
+      {
+        "name": "Spectrum & Ablation",
+        "src": "assets/CTAG-FX/figures/fig7_spectral_and_scrambled_ablation.svg",
+        "caption": "Figure 7 · Spectral responses and the scrambled-mapping comparison. Shading: 95% confidence intervals.",
+        "alt": "Original Figure 7 comparing prompt-conditioned spectral behavior and role-based versus scrambled mappings"
+      },
+      {
+        "name": "Nonlinear Behavior",
+        "src": "assets/CTAG-FX/figures/fig8_nonlinear_descriptors.svg",
+        "caption": "Figure 8 · Nonlinear descriptors under role-based and scrambled mappings. N = 10 configurations per prompt; 95% confidence intervals.",
+        "alt": "Original Figure 8 comparing nonlinear descriptors for role-based and scrambled parameter assignments"
+      }
+    ]
+  },
+  "evaluation_note": "The paper distinguishes the direct-LLM processor operation test from the separate A&R-CTAG synth-side evaluation. The page follows that distinction.",
+  "raw_note": "RAW means the provided baseline input recording, which already includes the original recording chain; it is not a direct unprocessed guitar DI."
+}
