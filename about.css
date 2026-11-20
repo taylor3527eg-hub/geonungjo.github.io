@@ -35,6 +35,11 @@
 .about-section-statement span { color: #71876a; }
 .about-journey { padding-bottom: 24px; }
 .about-journey-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; margin-top: 35px; }
+.about-journey-history { min-width: 0; }
+.journey-subsection + .journey-subsection { margin-top: 34px; }
+.journey-subsection-heading { margin-bottom: 22px; }
+.journey-subsection-heading h4 { margin: 0; color: var(--page-ink); font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -.015em; }
+.about-timeline .timeline-lab-link { margin-top: 12px; }
 .about-timeline { list-style: none; margin: 0; padding: 0 0 0 24px; }
 .about-timeline > li { position: relative; padding: 0 0 30px; }
 .about-timeline > li:last-child { padding-bottom: 0; }
@@ -42,28 +47,31 @@
 .about-timeline > li::after { content: ""; position: absolute; top: 9px; bottom: -9px; left: -25px; width: 1px; background: var(--page-line); }
 .about-timeline > li:last-child::after { bottom: -10px; }
 .about-timeline .timeline-date { margin: 0; color: #526d50; font-size: 11px; line-height: 1.7; }
-.about-timeline h4 { margin: 7px 0 0; font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -.015em; }
-.about-timeline p { margin: 8px 0 0; color: #68776c; font-size: 13px; line-height: 1.85; }
-.about-timeline .timeline-role { color: #405b48; font-size: 13px; }
+.about-timeline h4, .about-timeline h5 { margin: 7px 0 0; font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -.015em; }
+.about-timeline .timeline-lab-affiliation { display: inline-block; margin-left: 8px; color: var(--page-ink); font-size: 14px; font-weight: 500; white-space: nowrap; }
+.about-timeline p { margin: 8px 0 0; color: #68776c; font-size: 14px; line-height: 1.85; }
+.about-timeline .timeline-role { color: #71876a; font-size: 16px; font-weight: 600; line-height: 1.6; }
 .timeline-research { margin-top: 16px; padding-left: 15px; border-left: 1px solid var(--page-line); }
 .timeline-research h5 { margin: 5px 0 0; font-size: 14px; font-weight: 600; line-height: 1.5; }
 .timeline-research p { margin-top: 5px; }
 .about-timeline .timeline-note { font-size: 12px; font-style: italic; }
-.journey-photo-stack { position: relative; align-self: start; width: 100%; max-width: 520px; min-width: 0; aspect-ratio: 25 / 36; justify-self: end; }
-/* Independent positions leave intentional space between all four photographs. */
+.journey-photo-stack { position: relative; align-self: start; width: 100%; max-width: 520px; min-width: 0; aspect-ratio: 10 / 21; justify-self: end; }
+/* Keep the first four positions while extending the collage for the fifth photo. */
 .journey-photo { position: absolute; }
 .journey-photo > img { aspect-ratio: 3 / 2; border: 0; background: transparent; }
 .journey-photo-umi { top: 0; left: 49%; width: 51%; }
 .journey-photo-umi > img { aspect-ratio: 4 / 3; }
-.journey-photo-guitar { top: 73.3333%; left: 8%; width: 54%; }
+.journey-photo-guitar { top: 50.2857%; left: 8%; width: 54%; }
 .journey-photo-guitar > img { aspect-ratio: 3 / 2; object-position: center 55%; image-orientation: from-image; filter: brightness(1.25); }
 /* Blend a brighter exposure only around the face, following the same crop. */
 .journey-photo-guitar > .guitar-face-light { position: absolute; inset: 0; height: 100%; pointer-events: none; filter: brightness(1.9) contrast(.98); -webkit-mask-image: radial-gradient(ellipse 13% 24% at 47% 32%, #000 20%, transparent 100%); mask-image: radial-gradient(ellipse 13% 24% at 47% 32%, #000 20%, transparent 100%); }
-.journey-photo-pedals { top: 47.7778%; left: 48%; width: 49%; }
+.journey-photo-pedals { top: 32.7619%; left: 48%; width: 49%; }
 .journey-photo-pedals > img { object-position: center 53%; }
-.journey-photo-personal { top: 21.1111%; left: 0; width: 44%; }
+.journey-photo-personal { top: 14.4762%; left: 0; width: 44%; }
 .journey-photo-personal > img { aspect-ratio: 4 / 5; object-position: center 45%; }
 .journey-photo-reading > img { object-position: center 43%; }
+.journey-photo-additional { top: calc(67.4286% + 24px); left: 53%; width: 44%; }
+.journey-photo-additional > img { aspect-ratio: 4 / 5; object-position: center 65%; }
 .about-closing { display: grid; grid-template-columns: minmax(170px, .58fr) minmax(0, 1.42fr); gap: 70px; padding-top: 46px; padding-bottom: 46px; }
 .about-closing-content { min-width: 0; }
 .about-closing .about-section-statement { margin-top: 0; }
@@ -126,12 +134,14 @@
   .about-timeline { padding-left: 20px; }
   .about-timeline > li::before { left: -24px; }
   .about-timeline > li::after { left: -21px; }
-  .about-timeline h4 { font-size: 17px; }
+  .about-timeline h4, .about-timeline h5 { font-size: 17px; }
+  .about-timeline .timeline-role { font-size: 15px; }
 }
 @media (max-width: 600px) {
-  .journey-photo-stack { max-width: 420px; aspect-ratio: 5 / 13; }
+  .journey-photo-stack { max-width: 420px; aspect-ratio: 5 / 17; }
   .journey-photo-umi { top: 0; left: 36%; width: 64%; }
-  .journey-photo-guitar { top: 81.4231%; left: 5%; width: 67%; }
-  .journey-photo-pedals { top: 55.7692%; left: 36%; width: 64%; }
-  .journey-photo-personal { top: 24.5385%; left: 0; width: 58%; }
+  .journey-photo-guitar { top: 62.2647%; left: 5%; width: 67%; }
+  .journey-photo-pedals { top: 42.6471%; left: 36%; width: 64%; }
+  .journey-photo-personal { top: 18.7647%; left: 0; width: 58%; }
+  .journey-photo-additional { top: calc(75.402% + 24px); left: 39%; width: 58%; }
 }

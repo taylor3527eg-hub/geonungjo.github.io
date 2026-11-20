@@ -31,36 +31,35 @@
   const workLink = header.querySelector('[data-work-link]');
   if (!workLink) return;
 
-  // All pages use the same navigation; WORK itself keeps its original link.
+  // One shared disclosure keeps every project directly accessible.
   const workNav = document.createElement('div');
   workNav.className = 'work-nav';
   workLink.before(workNav);
   workNav.innerHTML = `
     <div class="work-nav-trigger">
-      <button class="work-toggle" type="button" aria-label="Toggle work navigation" aria-expanded="false" aria-controls="work-menu">
+      <button class="work-toggle" type="button" aria-label="Toggle Music &amp; Tech navigation" aria-expanded="false" aria-controls="work-menu">
         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
     <ul class="work-menu" id="work-menu" hidden>
       <li class="work-category">
-        <div class="work-category-row" role="group" tabindex="0" aria-label="Engineering projects" aria-expanded="false" aria-controls="work-engineering">
-          <span>Engineering</span>
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <ul class="work-submenu" id="work-engineering" aria-label="Engineering projects" hidden>
+        <p class="work-category-heading" id="nav-music-technology">Music Technology</p>
+        <ul class="work-category-links" aria-labelledby="nav-music-technology">
           <li><a href="ctag-fx.html">CTAG-FX</a></li>
+          <li><a href="tone-laboratory.html">My Tone Laboratory</a></li>
+        </ul>
+      </li>
+      <li class="work-category">
+        <p class="work-category-heading" id="nav-robotics">Robotics</p>
+        <ul class="work-category-links" aria-labelledby="nav-robotics">
           <li><a href="miracle.html">MIRACLE</a></li>
           <li><a href="umi-ft.html">UMI-F/T</a></li>
         </ul>
       </li>
       <li class="work-category">
-        <div class="work-category-row" role="group" tabindex="0" aria-label="Music projects" aria-expanded="false" aria-controls="work-music">
-          <span>Music</span>
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <ul class="work-submenu" id="work-music" aria-label="Music projects" hidden>
+        <p class="work-category-heading" id="nav-performance">Performance &amp; Teaching</p>
+        <ul class="work-category-links" aria-labelledby="nav-performance">
           <li><a href="performance-gallery.html">Performance Gallery</a></li>
-          <li><a href="tone-laboratory.html">My Tone Laboratory</a></li>
         </ul>
       </li>
     </ul>`;
@@ -68,22 +67,18 @@
 
   const toggle = workNav.querySelector('.work-toggle');
   const menu = workNav.querySelector('.work-menu');
-  const categories = [...workNav.querySelectorAll('.work-category')];
+  const projectLinks = [...menu.querySelectorAll('a')];
+  projectLinks.forEach(link => {
+    if (new URL(link.href, document.baseURI).pathname !== window.location.pathname) return;
+    link.setAttribute('aria-current', 'page');
+    workNav.classList.add('has-active-project');
+  });
   let closeTimer;
 
-  const setCategory = (category, open) => {
-    category.querySelector('.work-category-row').setAttribute('aria-expanded', String(open));
-    category.querySelector('.work-submenu').hidden = !open;
-  };
   const setMenu = open => {
     window.clearTimeout(closeTimer);
     toggle.setAttribute('aria-expanded', String(open));
     menu.hidden = !open;
-    if (!open) categories.forEach(category => setCategory(category, false));
-  };
-  const openCategory = category => {
-    setMenu(true);
-    categories.forEach(item => setCategory(item, item === category));
   };
 
   workNav.addEventListener('pointerenter', event => {
@@ -108,25 +103,21 @@
       event.preventDefault();
       setMenu(false);
       toggle.focus();
-    } else if (event.key === 'ArrowDown' && (event.target === toggle || event.target === workLink)) {
+    } else if ((event.key === 'ArrowDown' || event.key === 'ArrowUp') && (event.target === toggle || event.target === workLink)) {
       event.preventDefault();
       setMenu(true);
-      categories[0].querySelector('.work-category-row').focus();
-    }
-  });
-
-  categories.forEach(category => {
-    const submenu = category.querySelector('.work-submenu');
-    category.addEventListener('pointerenter', event => {
-      if (event.pointerType !== 'touch') openCategory(category);
-    });
-    category.addEventListener('focusin', () => openCategory(category));
-    category.addEventListener('keydown', event => {
-      if ((event.key === 'ArrowRight' || event.key === 'ArrowDown') && event.target.closest('.work-category-row')) {
+      projectLinks[event.key === 'ArrowUp' ? projectLinks.length - 1 : 0]?.focus();
+    } else if (menu.contains(event.target)) {
+      const index = projectLinks.indexOf(event.target);
+      let next;
+      if (event.key === 'ArrowDown') next = (index + 1) % projectLinks.length;
+      if (event.key === 'ArrowUp') next = (index + projectLinks.length - 1) % projectLinks.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = projectLinks.length - 1;
+      if (next !== undefined) {
         event.preventDefault();
-        openCategory(category);
-        submenu.querySelector('a').focus();
+        projectLinks[next]?.focus();
       }
-    });
+    }
   });
 })();

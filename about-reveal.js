@@ -10,6 +10,10 @@
     targets.push(element);
   };
 
+  section.querySelectorAll('.journey-subsection-heading').forEach(heading => {
+    prepare(heading, 0);
+  });
+
   // Keep timeline dots and connecting lines still while the text slides in.
   section.querySelectorAll('.about-timeline > li').forEach((item, index) => {
     const text = document.createElement('div');

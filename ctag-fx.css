@@ -20,6 +20,12 @@
 .ctag-section-intro { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px 30px; margin: 21px 0 26px; }
 .ctag-section-intro > p { max-width: 660px; margin: 0; color: #68776c; font-size: 14px; line-height: 1.85; }
 .ctag-small-label { margin: 0; color: #526d50; font-size: 10px; font-weight: 500; line-height: 1.6; letter-spacing: .08em; }
+.ctag-page .ctag-audio-demo { margin-block: 16px 28px; padding: 30px clamp(16px, 2.4vw, 30px); border: 1px solid var(--page-line); border-radius: 12px; background: var(--page-soft); }
+.ctag-audio-demo-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 24px; }
+.ctag-audio-demo-header > .practice-heading { flex: 1 1 220px; min-width: 0; }
+.ctag-audio-demo-label { display: inline-flex; align-items: center; gap: 7px; max-width: 100%; margin: 0 0 0 auto; padding: 5px 10px; border: 1px solid #d5ddd0; border-radius: 999px; color: #526d50; background: var(--ctag-card-sage); font-size: 11px; font-weight: 600; line-height: 1.6; letter-spacing: .05em; }
+.ctag-audio-demo-label > svg { display: block; flex: 0 0 18px; width: 18px; height: 18px; }
+.ctag-page .ctag-audio-demo .ctag-listening-deck { border-color: #d5ddd0; background: #ffffff; }
 .ctag-listener { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: 26px; align-items: start; }
 .ctag-preset-list { display: grid; gap: 8px; }
 .ctag-preset-list button { display: flex; align-items: baseline; gap: 14px; width: 100%; padding: 18px 17px; border: 1px solid var(--page-line); border-radius: 7px; background: #ffffff; color: var(--page-ink); font-size: 14px; line-height: 1.5; text-align: left; cursor: pointer; }
@@ -177,6 +183,7 @@
   .ctag-contribution-layout { grid-template-columns: 1fr; gap: 25px; }
 }
 @media (max-width: 740px) {
+  .ctag-page .ctag-audio-demo { padding-top: 24px; padding-bottom: 24px; }
   .ctag-contributions { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .ctag-contributions > * { grid-column: 1; grid-row: auto; }
   .ctag-contribution-arrow-to-engineer { transform: rotate(90deg); }
@@ -206,6 +213,7 @@
   .ctag-closing-links { justify-content: flex-start; }
 }
 @media (max-width: 400px) {
+  .ctag-audio-demo .ctag-preset-list { grid-template-columns: 1fr; }
   .ctag-pipeline { grid-template-columns: 1fr; padding: 22px; }
   .ctag-listening-deck { padding: 17px; }
   .ctag-segmented button { padding: 7px 9px; font-size: 10px; }
