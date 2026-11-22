@@ -6,11 +6,11 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Geonung Jo — exploring robotics, human–machine interaction, and musical expression.">
   <title>Geonung Jo — Robotics, sound & expression</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="features/robotic-stompbox/style.css">
-  <script src="site-header.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=b737ef27611e">
+  <link rel="stylesheet" href="features/robotic-stompbox/style.css?v=09fa48d356e6">
+  <script src="site-header.js?v=13758c494b7e" defer></script>
   <script src="image-viewer.js" defer></script>
-  <script src="script.js" type="module"></script>
+  <script src="script.js?v=c11e6ecdcc3e" type="module"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -33,36 +33,49 @@
 
         </div>
         <div class="hero-experiment">
-          <section class="robotic-stompbox" data-robotic-stompbox data-scene-zoom="1.12" aria-labelledby="stompbox-title">
+          <section class="robotic-stompbox" data-robotic-stompbox data-scene-zoom="1.12" data-audio-src="assets/Home/star.mp3" aria-labelledby="stompbox-title">
       <div class="playground">
         <header class="experiment-intro">
           <h2 id="stompbox-title">Turn an effect pedal ON and OFF using a robotic leg.</h2>
-          <p>Move your cursor to apply force. No click needed.</p>
+          <p class="experiment-instruction"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6" stroke="currentColor"/><path d="M8 4.5v4M8 11v.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg><span>Move near the orange ankle to apply force. No click needed to push.</span></p>
+          <div class="experiment-toolbar">
           <div class="force-gauge">
             <span id="applied-force-label">Applied Force</span>
             <span class="force-gauge-track" data-force-meter role="meter" aria-labelledby="applied-force-label" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0"><span class="force-gauge-fill" data-force-fill></span></span>
           </div>
+          <button class="audio-toggle" type="button" data-enable-audio aria-pressed="true">Mute Audio</button>
+          </div>
+          <p class="audio-status" data-audio-status role="status" aria-live="polite">Audio ON · click or tap once to unlock sound.</p>
         </header>
         <div class="scene-stage">
         <canvas id="stompbox-scene" data-scene width="1000" height="640" tabindex="0" aria-label="발목 주변에서 커서를 움직여 다리를 밀고, 발로 왼쪽 풋스위치를 누르세요. 다시 누르면 이펙터가 꺼집니다. 터치로 쓸거나, 이 영역에 초점을 맞춘 후 방향키로 힘을 줄 수도 있습니다."></canvas>
         <section class="parameter-panel" aria-label="임피던스 파라미터 조절">
           <div class="parameter">
-            <div class="parameter-heading"><label for="stompbox-stiffness">Stiffness</label></div>
+            <div class="parameter-heading"><label for="stompbox-stiffness">Stiffness</label><span class="parameter-audio-label">High-Pass</span></div>
             <input id="stompbox-stiffness" data-parameter="stiffness" type="range" min="0" max="80" step="1" value="18" aria-label="스프링 상수 K" aria-describedby="stompbox-stiffness-help">
             <p id="stompbox-stiffness-help">Pull back to rest.</p>
           </div>
           <div class="parameter">
-            <div class="parameter-heading"><label for="stompbox-damping">Damping</label></div>
+            <div class="parameter-heading"><label for="stompbox-damping">Damping</label><span class="parameter-audio-label">Reverb</span></div>
             <input id="stompbox-damping" data-parameter="damping" type="range" min="0" max="12" step="0.1" value="2.4" aria-label="댐핑 상수 B" aria-describedby="stompbox-damping-help">
             <p id="stompbox-damping-help">Resistance to motion.</p>
           </div>
           <div class="parameter">
-            <div class="parameter-heading"><label for="stompbox-mass">Mass</label></div>
+            <div class="parameter-heading"><label for="stompbox-mass">Mass</label><span class="parameter-audio-label">Low-Pass</span></div>
             <input id="stompbox-mass" data-parameter="mass" type="range" min="0.5" max="10" step="0.05" value="3.35" aria-label="전체 질량 m" aria-describedby="stompbox-mass-help">
             <p id="stompbox-mass-help">Resistance to acceleration.</p>
           </div>
         </section>
         </div>
+        <aside class="how-to-play" aria-labelledby="how-to-play-title">
+          <h3 id="how-to-play-title">HOW TO PLAY</h3>
+          <ol>
+            <li><strong>Move your cursor to apply force.</strong><span>Move near “Push!” without clicking.<br>Touch: swipe.<br>Keyboard: arrow keys on the scene.</span></li>
+            <li><strong>Push the pedal to play or pause.</strong><span>Click or tap once anywhere to unlock sound, then use the robot leg to control guitar playback.</span></li>
+            <li><strong>Experiment with the sliders.</strong><span>Change Mass, Damping, and Stiffness to reshape motion and guitar tone.</span></li>
+          </ol>
+          <p class="audio-reference-note">Starting settings keep the original tone. Raise Mass or Stiffness for filtering; lower Damping for reverb. Damping at or above its starting value stays dry.</p>
+        </aside>
       </div>
     </section>
         </div>

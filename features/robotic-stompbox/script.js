@@ -1,3 +1,5 @@
+import { createStompboxAudio } from './audio.js?v=10a92e424b69';
+
 /* Two-link planar dynamics, SI units. Angles are relative to the downward
    vertical; q2 is relative to q1. Gravity is assumed fully compensated.
    M(q) q'' + C(q,q')q' + B q' + K(q-q0) = J(q)^T F.
@@ -40,6 +42,7 @@ export function initRoboticStompbox(root) {
   // Total mass scales both link masses and inertias at a fixed mass ratio.
   const defaults = Object.freeze({ stiffness: 18, damping: 2.4, mass: 3.35 });
   const parameters = { ...defaults };
+  let sound;
   // Pedal bearing from the hip: 0° is vertically down; negative is left.
   const pedalAngle = -55 * Math.PI / 180;
   const parameterControls = Object.keys(defaults).map(name => ({
@@ -51,6 +54,7 @@ export function initRoboticStompbox(root) {
       parameters[name] = Number.isFinite(value) ? value : defaults[name];
       input.setAttribute('aria-valuetext', String(parameters[name]));
     }
+    sound?.setParameters(parameters);
   }
   const state = { q: [...P.rest], dq: [0, 0], force: { x: 0, y: 0 } };
   const fx = { on: false, pressed: false, releaseTime: 0, emissionTime: 0, notes: [] };
@@ -74,7 +78,10 @@ export function initRoboticStompbox(root) {
     const angle = q[0] + q[1];
     return { x: ankle.x - length * Math.cos(angle), y: ankle.y + length * Math.sin(angle) };
   }
-  function resetInput() { pointer.inside = false; pointer.vx = pointer.vy = 0; pointer.time = 0; keys.clear(); }
+  function resetInput() {
+    pointer.inside = false; pointer.vx = pointer.vy = 0; pointer.time = 0; keys.clear();
+    sound?.setForce(0);
+  }
   function reset() {
     state.q = [...P.rest]; state.dq = [0, 0]; state.force = { x: 0, y: 0 };
     accumulator = 0; resetInput();
@@ -249,6 +256,7 @@ export function initRoboticStompbox(root) {
   function toggleEffect() {
     fx.on = !fx.on; fx.emissionTime = 0;
     if (fx.on) for (let i = 0; i < 2; i++) spawnNote();
+    sound?.setPedal(fx.on);
   }
   function updatePedalContact(previous, dt) {
     const target = radialPosition(pedalAngle);
@@ -337,6 +345,12 @@ export function initRoboticStompbox(root) {
     ctx.clearRect(0, 0, width, height);
     const pose = joints(), knee = screen(pose.knee), ankle = screen(pose.ankle);
     ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    // This is the actual force radius, following the ankle; it never drives motion.
+    if (pointer.inside || keys.size) {
+      ctx.save(); ctx.setLineDash([3 * visualUnit(), 5 * visualUnit()]);
+      circle(ankle, P.radius * view.scale, null, '#8b9d8059', 1);
+      ctx.restore();
+    }
     drawPedal();
     drawGuitar();
     drawNotes();
@@ -374,6 +388,7 @@ export function initRoboticStompbox(root) {
     }
     updateEffects(elapsed);
     updateForceGauge(elapsed);
+    sound?.setForce(Math.hypot(state.force.x, state.force.y) / P.maxForce);
     draw(); animationFrame = requestAnimationFrame(frame);
   }
   listen(canvas, 'pointermove', movePointer);
@@ -389,6 +404,12 @@ export function initRoboticStompbox(root) {
   listen(document, 'visibilitychange', () => { resetInput(); lastFrame = 0; accumulator = 0; });
   for (const { input } of parameterControls) listen(input, 'input', updateParameters);
   updateParameters();
+  if (root.dataset.audioSrc) sound = createStompboxAudio({
+    root,
+    sourceUrl: new URL(root.dataset.audioSrc, document.baseURI).href,
+    reference: { ...parameters },
+    ranges: Object.fromEntries(parameterControls.map(({ name, input }) => [name, { min: Number(input.min), max: Number(input.max) }])),
+  });
   const resizeObserver = new ResizeObserver(resize);
   resizeObserver.observe(canvas);
   resize(); animationFrame = requestAnimationFrame(frame);
@@ -398,6 +419,7 @@ export function initRoboticStompbox(root) {
       cancelAnimationFrame(animationFrame);
       resizeObserver.disconnect();
       eventController.abort();
+      sound?.destroy();
       resetInput();
     },
   };
