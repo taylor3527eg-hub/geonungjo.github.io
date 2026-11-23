@@ -7,10 +7,10 @@
   <meta name="description" content="Geonung Jo — exploring robotics, human–machine interaction, and musical expression.">
   <title>Geonung Jo — Robotics, sound & expression</title>
   <link rel="stylesheet" href="style.css?v=b737ef27611e">
-  <link rel="stylesheet" href="features/robotic-stompbox/style.css?v=09fa48d356e6">
+  <link rel="stylesheet" href="features/robotic-stompbox/style.css?v=33b346a04458">
   <script src="site-header.js?v=13758c494b7e" defer></script>
   <script src="image-viewer.js" defer></script>
-  <script src="script.js?v=c11e6ecdcc3e" type="module"></script>
+  <script src="script.js?v=30d5f251ab0b" type="module"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -45,7 +45,7 @@
           </div>
           <button class="audio-toggle" type="button" data-enable-audio aria-pressed="true">Mute Audio</button>
           </div>
-          <p class="audio-status" data-audio-status role="status" aria-live="polite">Audio ON · click or tap once to unlock sound.</p>
+          <p class="audio-status" data-audio-status data-audio-state="off" role="status" aria-live="polite">Click or tap once to unlock sound.</p>
         </header>
         <div class="scene-stage">
         <canvas id="stompbox-scene" data-scene width="1000" height="640" tabindex="0" aria-label="발목 주변에서 커서를 움직여 다리를 밀고, 발로 왼쪽 풋스위치를 누르세요. 다시 누르면 이펙터가 꺼집니다. 터치로 쓸거나, 이 영역에 초점을 맞춘 후 방향키로 힘을 줄 수도 있습니다."></canvas>

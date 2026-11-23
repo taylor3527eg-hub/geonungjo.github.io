@@ -1,4 +1,4 @@
-import { initRoboticStompbox } from './features/robotic-stompbox/script.js?v=c8c9db15b571';
+import { initRoboticStompbox } from './features/robotic-stompbox/script.js?v=4afd379c80a2';
 
 // Homepage features are initialized here, inside the same document.
 initRoboticStompbox(document.querySelector('[data-robotic-stompbox]'));

@@ -20,12 +20,18 @@ export function createStompboxAudio({ root, sourceUrl, reference, ranges }) {
     button.textContent = !AudioContextClass ? 'Audio unavailable'
       : enabled && context && !running && !loading ? 'Resume Audio' : enabled ? 'Mute Audio' : 'Unmute Audio';
     button.setAttribute('aria-pressed', String(enabled && Boolean(AudioContextClass)));
-    if (status) status.textContent = message || (!AudioContextClass ? 'This browser does not support Web Audio.'
-      : !enabled ? 'Audio muted.' : loading ? 'Loading your guitar recording…'
-      : failed ? 'Audio could not start. Click or tap the scene to retry.'
-      : !context ? 'Audio ON · click or tap once to unlock sound.'
-      : !running ? 'Audio suspended. Click Resume Audio.'
-      : pedalOn ? 'Pedal ON · guitar playing' : 'Pedal OFF · audio ready');
+    if (status) {
+      const ready = Boolean(AudioContextClass && enabled && !destroyed && !loading && !failed && running && buffer);
+      const playing = ready && Boolean(voice);
+      status.dataset.audioState = playing ? 'on' : ready ? 'ready' : 'off';
+      status.textContent = message || (!AudioContextClass ? 'This browser does not support Web Audio.'
+        : !enabled || destroyed ? 'AUDIO OFF · Audio muted.' : loading ? 'Loading your guitar recording…'
+        : failed ? 'Audio could not start. Click or tap the scene to retry.'
+        : !context ? 'Click or tap once to unlock sound.'
+        : !running ? 'Audio suspended. Click Resume Audio.'
+        : !buffer ? 'Loading your guitar recording…'
+        : playing ? 'AUDIO ON · Pedal ON · guitar playing' : 'AUDIO READY · Pedal OFF');
+    }
   }
 
   function smooth(param, value, seconds = 0.045) {

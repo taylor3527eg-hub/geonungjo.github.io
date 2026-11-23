@@ -24,7 +24,9 @@
 .robotic-stompbox .audio-toggle:hover { border-color: #71876a; }
 .robotic-stompbox .audio-toggle:focus-visible { outline: 2px solid #8caa7d; outline-offset: 3px; }
 .robotic-stompbox .audio-toggle:disabled { opacity: .7; cursor: default; }
-.robotic-stompbox .experiment-intro .audio-status { min-height: 17px; margin-top: 7px; font-size: 10.5px; color: #526d50; }
+.robotic-stompbox .experiment-intro .audio-status { min-height: 17px; margin-top: 7px; font-size: 10.5px; color: #1d4ed8; }
+.robotic-stompbox .experiment-intro .audio-status:is([data-audio-state="ready"], [data-audio-state="on"]) { color: #b91c1c; }
+.robotic-stompbox .experiment-intro .audio-status * { color: inherit; }
 .robotic-stompbox .force-gauge { display: flex; align-items: center; gap: 9px; margin-top: 10px; color: var(--muted); font: 9px Consolas, monospace; }
 .robotic-stompbox .force-gauge-track { display: block; flex: 0 0 68px; height: 3px; overflow: hidden; border-radius: 2px; background: #eceee8; }
 .robotic-stompbox .force-gauge-fill { display: block; width: 100%; height: 100%; background: #e6753e; transform: scaleX(0); transform-origin: left center; }

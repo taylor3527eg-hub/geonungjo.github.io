@@ -1,4 +1,4 @@
-import { createStompboxAudio } from './audio.js?v=10a92e424b69';
+import { createStompboxAudio } from './audio.js?v=ccb56050337d';
 
 /* Two-link planar dynamics, SI units. Angles are relative to the downward
    vertical; q2 is relative to q1. Gravity is assumed fully compensated.
