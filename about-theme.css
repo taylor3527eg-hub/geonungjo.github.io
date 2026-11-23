@@ -1,0 +1,80 @@
+/* About-only palette overrides. Layout, typography, photos and motion stay in
+   style.css / about.css; no geometry or animation properties belong here. */
+html:has(> body.about-theme) { color-scheme: dark; background-color: #080910; }
+body.about-theme {
+  --about-background: #080910;
+  --about-surface: #101520;
+  --engineering-accent: #4cdeff;
+  --music-accent: #d04fff;
+  --page-ink: #eef2f8;
+  --page-muted: #a7b0c2;
+  --page-line: #293040;
+  --page-soft: #121c29;
+  color-scheme: dark;
+  color: var(--page-ink);
+  background-color: var(--about-background);
+}
+
+.about-theme ::selection { color: #ffffff; background-color: #274b60; }
+.about-theme .page-shell,
+.about-theme .site-header { background-color: var(--about-background); }
+.about-theme .page-shell { border-color: rgba(255, 255, 255, 0.4); }
+.about-theme .wordmark { color: var(--engineering-accent); }
+.about-theme .wordmark > span:first-child { color: var(--music-accent); }
+.about-theme .wordmark-slash { color: #8391aa; }
+.about-theme .site-nav a::after { background-color: var(--engineering-accent); }
+.about-theme .site-nav [aria-current="page"] { color: var(--engineering-accent); }
+.about-theme .site-nav [aria-current="page"]::after { background-color: var(--engineering-accent); }
+.about-theme .work-menu { border-color: #344056; background-color: var(--about-surface); }
+.about-theme .work-category-heading { color: var(--engineering-accent); }
+.about-theme .work-category:last-child .work-category-heading { color: var(--music-accent); }
+.about-theme .music-word { color: var(--music-accent); }
+.about-theme .technology-word { color: var(--engineering-accent); }
+.about-theme .site-nav .work-menu a[aria-current="page"] { color: var(--engineering-accent); }
+.about-theme .skip-link { background-color: var(--about-surface); }
+.about-theme :is(a, button):focus-visible { outline-color: var(--engineering-accent); }
+
+.about-theme .about-subtitle { color: var(--page-ink); }
+.about-theme .about-intro-text p,
+.about-theme .about-photo figcaption,
+.about-theme .about-timeline p,
+.about-theme .about-closing-content > p,
+.about-theme .contact-copy p { color: #b4bfd0; }
+.about-theme .about-intro-text p:first-child strong:first-of-type { color: var(--engineering-accent); }
+.about-theme .about-intro-text p:first-child strong:last-of-type { color: var(--music-accent); }
+
+/* Recolor the two existing panels without changing their borders or padding. */
+.about-theme .interest-panel {
+  --panel-ink: #eef2f8;
+  --panel-copy: #bac3d3;
+  --panel-accent: var(--music-accent);
+  --panel-line: #48304f;
+  border-color: #573268;
+  background-color: #160f1e;
+}
+.about-theme .interest-panel-engineering {
+  --panel-accent: var(--engineering-accent);
+  --panel-line: #2b4c5a;
+  border-color: #28576a;
+  background-color: #0b151e;
+}
+.about-theme .about-field-title { color: var(--panel-accent); }
+
+/* Education and general experience remain neutral; accents identify research
+   and the existing Digital Audio Effects teaching activity. */
+.about-theme .about-section-statement span,
+.about-theme .about-timeline .timeline-role { color: #adb8cb; }
+.about-theme .about-timeline .timeline-date { color: var(--page-muted); }
+.about-theme .about-timeline > li::before {
+  background-color: #8491a5;
+  box-shadow: 0 0 0 4px #080910;
+}
+.about-theme [aria-labelledby="journey-experience-title"] .about-timeline > li::before { background-color: var(--engineering-accent); }
+.about-theme [aria-labelledby="journey-experience-title"] .about-timeline > li:nth-child(2)::before { background-color: var(--music-accent); }
+.about-theme .project-reference { color: var(--engineering-accent); }
+.about-theme .timeline-lab-link[href="performance-gallery.html#teaching"] { color: var(--music-accent); }
+.about-theme .about-closing .about-section-statement span { color: var(--engineering-accent); }
+.about-theme .about-closing-links [href="vision.html"] { color: var(--music-accent); }
+.about-theme .contact-email { color: var(--engineering-accent); text-decoration-color: #487588; }
+.about-theme .contact-email:hover { text-decoration-color: var(--engineering-accent); }
+.about-theme .footer-meta a:hover { color: var(--engineering-accent); }

@@ -1,0 +1,126 @@
+/* Homepage palette. All overrides are scoped to the homepage. */
+html:has(> body.home-theme) { color-scheme: dark; background: #080910; }
+body.home-theme {
+  --home-background: #080910;
+  --home-surface: #101520;
+  --engineering-accent: #4cdeff;
+  --music-accent: #d04fff;
+  --page-ink: #eef2f8;
+  --page-muted: #a7b0c2;
+  --page-line: #293040;
+  --page-soft: #121c29;
+  min-height: 100svh;
+  color-scheme: dark;
+  color: var(--page-ink);
+  background: var(--home-background);
+}
+
+.home-theme ::selection { color: #ffffff; background: #274b60; }
+.home-theme .page-shell,
+.home-theme .site-header { background: var(--home-background); }
+.home-theme .page-shell { border: 1px solid rgba(255, 255, 255, 0.4); }
+.home-theme .wordmark { color: var(--engineering-accent); }
+.home-theme .wordmark > span:first-child { color: var(--music-accent); }
+.home-theme .wordmark-slash { color: #8391aa; }
+.home-theme .site-nav a::after { background: var(--engineering-accent); }
+.home-theme .work-menu { border-color: #344056; background: var(--home-surface); box-shadow: none; }
+.home-theme .work-category-heading { color: var(--engineering-accent); }
+.home-theme .work-category:last-child .work-category-heading { color: var(--music-accent); }
+.home-theme .music-word { color: var(--music-accent); }
+.home-theme .technology-word { color: var(--engineering-accent); }
+.home-theme .site-nav .work-menu a[aria-current="page"] { color: var(--engineering-accent); }
+.home-theme .skip-link { background: var(--home-surface); }
+.home-theme :is(a, button):focus-visible { outline-color: var(--engineering-accent); }
+
+.home-theme .hero-line { color: var(--engineering-accent); }
+.home-theme .hero-line-sound { color: var(--music-accent); }
+.home-theme .hero-description { color: #bac3d3; }
+.home-theme .hero-link { color: var(--engineering-accent); }
+.home-theme .work-categories { color: var(--engineering-accent); }
+.home-theme .work-categories > li:last-child { color: var(--music-accent); }
+.home-theme .work-categories > li + li::before { color: #748198; }
+
+/* Each existing category is one frame; individual projects remain unboxed. */
+.home-theme .practice-grid { gap: 24px; }
+.home-theme .practice-column {
+  --practice-accent: var(--engineering-accent);
+  --practice-frame: #28576a;
+  --practice-fill: #0b151e;
+  padding: 22px;
+  border: 1px solid var(--practice-frame);
+  border-radius: 12px;
+  background: var(--practice-fill);
+}
+.home-theme .practice-music {
+  --practice-accent: var(--music-accent);
+  --practice-frame: #573268;
+  --practice-fill: #160f1e;
+}
+.home-theme .practice-column + .practice-column { padding: 22px; border: 1px solid var(--practice-frame); }
+.home-theme .practice-header h3,
+.home-theme .practice-column .project-reference { color: var(--practice-accent); }
+.home-theme .practice-column :is(a, button):focus-visible { outline-color: var(--practice-accent); }
+.home-theme .work-caption .project-category { color: #adb8cb; }
+.home-theme .work-caption .project-description { color: #bac3d3; }
+.home-theme .music-note { color: #b6a8c5; }
+
+.home-theme .publication-meta,
+.home-theme .publication-authors,
+.home-theme .bio-block p,
+.home-theme .contact-copy p { color: #b4bfd0; }
+.home-theme .publication-links .project-reference { color: var(--engineering-accent); }
+.home-theme #about-title,
+.home-theme #vision-title { color: var(--page-ink); }
+.home-theme #about .project-reference { color: var(--engineering-accent); }
+.home-theme #vision .project-reference { color: var(--music-accent); }
+.home-theme .vision-statement span { color: var(--music-accent); }
+.home-theme .contact-email { color: var(--engineering-accent); text-decoration-color: #487588; }
+.home-theme .contact-email:hover { text-decoration-color: var(--engineering-accent); }
+.home-theme .footer-meta a:hover { color: var(--engineering-accent); }
+.home-theme .image-viewer { border-color: #344056; color: var(--page-ink); background: var(--home-surface); }
+.home-theme .image-viewer::backdrop { background: #03050bd9; }
+.home-theme .image-viewer figure > img { background: #0c121c; }
+.home-theme .image-viewer figcaption { color: #b4bfd0; }
+
+/* Engineering chrome surrounds the original hand-drawn artwork on light paper. */
+.home-theme .hero-experiment { border-color: #28576a; background: #0c1620; }
+.home-theme .robotic-stompbox { --ink: #e3f4fa; --muted: #aabdc9; --page-soft: #0f1d28; }
+.home-theme .robotic-stompbox .experiment-intro h2 { color: #e3f4fa; }
+.home-theme .robotic-stompbox .experiment-instruction { color: #b8d8e4; }
+.home-theme .robotic-stompbox .audio-toggle { border-color: #3d6476; color: var(--engineering-accent); background: #102430; }
+.home-theme .robotic-stompbox .audio-toggle[aria-pressed="true"] { border-color: var(--engineering-accent); color: #092330; background: var(--engineering-accent); }
+.home-theme .robotic-stompbox .audio-toggle:hover { border-color: var(--engineering-accent); }
+.home-theme .robotic-stompbox .force-gauge-track { background: #2d4351; }
+/* Preserve blue OFF / red READY-ON semantics, with readable dark-theme shades. */
+.home-theme .robotic-stompbox .experiment-intro .audio-status { color: #8bb8ff; }
+.home-theme .robotic-stompbox .experiment-intro .audio-status:is([data-audio-state="ready"], [data-audio-state="on"]) { color: #ff949a; }
+.home-theme .robotic-stompbox .scene-stage {
+  --ink: #213c49;
+  --muted: #4e6572;
+  color-scheme: light;
+  color: var(--ink);
+  border-top-color: #b9d1dd;
+  background: #e8f3f8;
+}
+.home-theme .robotic-stompbox .scene-stage:has(canvas:focus-visible) { outline-color: #08758e; }
+.home-theme .robotic-stompbox .parameter-audio-label { color: #365968; }
+.home-theme .robotic-stompbox .parameter input[type="range"] { accent-color: #146b86; }
+.home-theme .robotic-stompbox .how-to-play { border-top-color: #28576a; }
+.home-theme .robotic-stompbox .how-to-play li::before { color: var(--engineering-accent); }
+.home-theme .robotic-stompbox .how-to-play li span { color: #b5c6d0; }
+.home-theme .robotic-stompbox .audio-reference-note { color: #a7bcc9; }
+
+@media (max-width: 1080px) {
+  .home-theme .practice-grid { gap: 20px; }
+  .home-theme .practice-column,
+  .home-theme .practice-column + .practice-column { padding: 16px; }
+}
+@media (max-width: 740px) {
+  .home-theme .practice-grid { gap: 24px; }
+  .home-theme .practice-column,
+  .home-theme .practice-column + .practice-column { padding: 20px; }
+}
+@media (max-width: 440px) {
+  .home-theme .practice-column,
+  .home-theme .practice-column + .practice-column { padding: 14px; }
+}

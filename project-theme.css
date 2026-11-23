@@ -1,0 +1,295 @@
+/* Category-scoped project palette. Existing page CSS owns layout, media,
+   typography and motion. Research = cyan; Performance & Sound = magenta. */
+html:has(> body.project-theme) { color-scheme: dark; background-color: #080910; }
+body.project-theme {
+  --project-background: #080910;
+  --project-panel: #101520;
+  --project-copy: #b4bfd0;
+  --page-ink: #eef2f8;
+  --page-muted: #a7b0c2;
+  --page-line: #293040;
+  --page-soft: var(--project-surface);
+  color-scheme: dark;
+  color: var(--page-ink);
+  background-color: var(--project-background);
+}
+body.project-research {
+  --project-accent: #4cdeff;
+  --project-surface: #0b151e;
+  --project-border: #28576a;
+  --project-hover: #142b38;
+  --project-button-ink: #092330;
+}
+body.project-performance {
+  --project-accent: #d04fff;
+  --project-surface: #160f1e;
+  --project-border: #573268;
+  --project-hover: #30153b;
+  --project-button-ink: #16091e;
+}
+.project-theme ::selection { color: var(--page-ink); background-color: var(--project-hover); }
+.project-theme .page-shell,
+.project-theme .site-header,
+.project-theme .section-navigation { background-color: var(--project-background); }
+.project-theme .page-shell { border-color: rgba(255, 255, 255, 0.4); }
+.project-theme .wordmark > span:first-child { color: var(--project-accent); }
+.project-theme .wordmark-slash { color: #8391aa; }
+.project-theme .site-nav a::after,
+.project-theme .work-nav.has-active-project [data-work-link]::after { background-color: var(--project-accent); }
+.project-theme .work-menu { border-color: #344056; background-color: var(--project-panel); }
+.project-theme .work-category-heading,
+.project-theme .site-nav .work-menu a[aria-current="page"] { color: var(--project-accent); }
+.project-theme .skip-link { background-color: var(--project-panel); }
+.project-theme :is(a, button, input, summary, [tabindex]):focus-visible { outline-color: var(--project-accent); }
+.project-theme .section-navigation a { color: var(--page-muted); text-decoration-color: #62728b; }
+.project-theme .section-navigation a:hover,
+.project-theme .section-navigation a[aria-current="location"] { color: var(--project-accent); text-decoration-color: var(--project-accent); }
+.project-theme .hero-line-sound,
+.project-theme .project-reference,
+.project-theme .inline-reference,
+.project-theme .media-original { color: var(--project-accent); }
+.project-theme .inline-reference { text-decoration-color: var(--project-border); }
+.project-theme .contact-copy p { color: var(--project-copy); }
+.project-theme .contact-email { color: var(--project-accent); text-decoration-color: var(--project-border); }
+.project-theme .contact-email:hover { text-decoration-color: var(--project-accent); }
+.project-theme .footer-meta a:hover { color: var(--project-accent); }
+.project-theme .image-viewer { color: var(--page-ink); border-color: #344056; background-color: var(--project-panel); }
+.project-theme .image-viewer::backdrop { background-color: #03050bd9; }
+.project-theme .image-viewer figcaption { color: var(--project-copy); }
+.project-theme .image-viewer-close,
+.project-theme .image-zoom-mark { color: #eef2f8; background-color: #203040dd; }
+.project-performance .image-viewer figure > img { background-color: var(--project-panel); }
+/* Existing scientific figures keep light paper so original black labels and
+   scientific data colors stay legible. No filters or source edits are used. */
+.project-research .image-viewer figure > img { background-color: #f5f6f3; }
+.project-theme.miracle-page :is(#dynamics, #control, #evaluation) .miracle-image { background-color: #ffffff; }
+.project-theme.ctag-page {
+  --ctag-card-sage: #0d202a;
+  --ctag-card-sand: #122633;
+  --ctag-card-slate: #15212d;
+}
+
+/* umi-ft.css palette overrides. */
+.project-theme .project-subtitle { color: var(--project-accent); }
+.project-theme .project-body { color: var(--project-copy); }
+.project-theme .project-disciplines { color: var(--project-accent); }
+.project-theme .project-disciplines li:not(:last-child)::after { color: var(--page-muted); }
+.project-theme .project-image:focus-visible { outline-color: var(--project-accent); }
+.project-theme .project-hero-figure figcaption,
+.project-theme .project-figure figcaption,
+.project-theme .project-video figcaption { color: var(--project-copy); }
+.project-theme .project-section-title span { color: var(--project-accent); }
+.project-theme .project-prose p { color: var(--project-copy); }
+.project-theme .inline-reference { text-decoration-color: var(--project-border); }
+.project-theme .demo-intro p { color: var(--project-copy); }
+.project-theme .verification-note { border-left-color: var(--project-border); }
+.project-theme .verification-note p { color: var(--project-copy); }
+.project-theme .platform-demos .platform-kicker { color: var(--project-accent); }
+.project-theme .contribution-list dd { color: var(--project-copy); }
+.project-theme .contribution-scope { border-left-color: var(--project-border); color: var(--project-copy); }
+.project-theme .reference-list { color: var(--project-copy); }
+.project-theme .reference-list a { text-decoration-color: var(--project-border); }
+
+/* ctag-fx.css palette overrides. */
+.project-theme.ctag-page .ctag-pipeline { border: 1px solid var(--project-border); }
+.project-theme.ctag-page .ctag-audio-demo { border-color: var(--project-accent); }
+.project-theme .ctag-research-title { color: var(--project-accent); }
+.project-theme .ctag-hero-copy { color: var(--project-copy); }
+.project-theme .ctag-research-credit { color: var(--project-copy); }
+.project-theme .ctag-section-title span { color: var(--project-accent); }
+.project-theme .ctag-section-intro > p { color: var(--project-copy); }
+.project-theme .ctag-small-label { color: var(--project-accent); }
+.project-theme .ctag-audio-demo-label { border-color: var(--project-border); color: var(--project-accent); }
+.project-theme.ctag-page .ctag-audio-demo .ctag-listening-deck { border-color: var(--project-border); background-color: var(--project-panel); }
+.project-theme .ctag-preset-list button { background-color: var(--project-panel); }
+.project-theme .ctag-preset-list button[aria-pressed="true"] { border-color: var(--project-border); background-color: var(--project-hover); }
+.project-theme .ctag-preset-list button:hover { border-color: var(--project-border); }
+.project-theme .ctag-preset-number { color: var(--project-copy); }
+.project-theme .ctag-track-label { color: var(--project-copy); }
+.project-theme .ctag-segmented { border-color: var(--project-border); }
+.project-theme .ctag-segmented button { color: var(--project-accent); }
+.project-theme .ctag-segmented button:hover { box-shadow: inset 0 0 0 1px var(--project-border); }
+.project-theme .ctag-listener button:focus-visible,
+.project-theme.ctag-page input:focus-visible,
+.project-theme .ctag-details > summary:focus-visible,
+.project-theme .ctag-evidence-tabs button:focus-visible { outline-color: var(--project-accent); }
+.project-theme.ctag-page input[type="range"] { accent-color: var(--project-accent); }
+.project-theme .ctag-time { color: var(--project-copy); }
+.project-theme .ctag-volume { color: var(--project-copy); }
+.project-theme .ctag-deck-footer [role="status"] { color: var(--project-copy); }
+.project-theme .ctag-file-link { color: var(--project-accent); }
+.project-theme .ctag-listening-note { color: var(--project-copy); }
+.project-theme .ctag-details > summary { color: var(--project-accent); }
+.project-theme .ctag-details > p { color: var(--project-copy); }
+.project-theme #listen .ctag-player-label { color: var(--project-copy); }
+.project-theme #listen .ctag-session-notes p:not(.ctag-small-label) { color: var(--project-copy); }
+.project-theme #listen .ctag-recording-chain li { color: var(--project-accent); }
+.project-theme #listen .ctag-recording-chain li:not(:last-child)::after { color: var(--project-accent); }
+.project-theme .ctag-idea-intro > p,
+.project-theme .ctag-prose p { color: var(--project-copy); }
+.project-theme .ctag-pipeline li:not(:last-child)::after { color: var(--project-accent); }
+.project-theme .ctag-pipeline li > span { color: var(--project-accent); }
+.project-theme .ctag-image:focus-visible { outline-color: var(--project-accent); }
+.project-theme .ctag-figure figcaption { color: var(--project-copy); }
+.project-theme .ctag-synth-role { color: var(--project-accent); }
+.project-theme .ctag-role-arrow { color: var(--project-accent); }
+.project-theme .ctag-mapping-notes p { color: var(--project-copy); }
+.project-theme .ctag-processor-copy h4 > span { color: var(--project-accent); }
+.project-theme .ctag-processor-copy p { color: var(--project-copy); }
+.project-theme .ctag-exploration .ctag-listening-deck { background-color: var(--project-panel); }
+.project-theme .ctag-table-scroll caption { color: var(--project-accent); }
+.project-theme .ctag-research-scope { color: var(--project-copy); }
+.project-theme .ctag-deployment p { color: var(--project-copy); }
+.project-theme .ctag-contribution-arrow { color: var(--project-accent); }
+.project-theme .ctag-contribution-card ul { color: var(--project-copy); }
+
+/* The two three-role compositions use their own cyan / magenta / amber key;
+   CTAG-FX navigation, audio controls and other accents remain research cyan. */
+.project-theme.ctag-page .ctag-mapping-notes > article:nth-child(1),
+.project-theme.ctag-page .ctag-role-creator {
+  --ctag-card-accent: #4CDEFF;
+  --ctag-card-background: #0b202a;
+}
+.project-theme.ctag-page .ctag-mapping-notes > article:nth-child(2),
+.project-theme.ctag-page .ctag-role-engineer {
+  --ctag-card-accent: #D04FFF;
+  --ctag-card-background: #211129;
+}
+.project-theme.ctag-page .ctag-mapping-notes > article:nth-child(3),
+.project-theme.ctag-page .ctag-role-musician {
+  --ctag-card-accent: #FFC857;
+  --ctag-card-background: #241c0d;
+}
+.project-theme.ctag-page .ctag-mapping-notes > article {
+  background-color: var(--ctag-card-background);
+  box-shadow: inset 0 0 0 1px var(--ctag-card-accent);
+}
+.project-theme.ctag-page .ctag-contribution-card {
+  background-color: var(--ctag-card-background);
+  border-color: var(--ctag-card-accent);
+}
+.project-theme.ctag-page .ctag-mapping-notes :is(.ctag-synth-role, .ctag-role-arrow),
+.project-theme.ctag-page .ctag-contribution-card .ctag-small-label { color: var(--ctag-card-accent); }
+
+/* miracle.css palette overrides. */
+.project-theme .miracle-subtitle { color: var(--project-accent); }
+.project-theme .miracle-disciplines { color: var(--project-accent); }
+.project-theme .miracle-prose p { color: var(--project-copy); }
+.project-theme .miracle-kicker { color: var(--project-accent); }
+.project-theme .miracle-prose .miracle-kicker { color: var(--project-accent); }
+.project-theme .miracle-image:focus-visible,
+.project-theme .miracle-details > summary:focus-visible,
+.project-theme .miracle-tabs button:focus-visible { outline-color: var(--project-accent); }
+.project-theme .miracle-figure figcaption,
+.project-theme .miracle-video figcaption { color: var(--project-copy); }
+.project-theme .miracle-section-title span { color: var(--project-accent); }
+.project-theme .miracle-prose p.miracle-scope-note { color: var(--project-copy); }
+.project-theme #mechanical .miracle-cad-choice-button:hover { outline-color: var(--project-accent); }
+.project-theme #mechanical .miracle-cad-choice-button:focus-visible { outline-color: var(--project-accent); }
+.project-theme #dynamics .miracle-motion-equation:focus-visible { outline-color: var(--project-accent); }
+.project-theme .miracle-details > summary { color: var(--project-accent); }
+.project-theme .miracle-accordion-close { color: var(--project-accent); text-decoration-color: var(--project-border); }
+.project-theme .miracle-accordion-close:focus-visible { outline-color: var(--project-accent); }
+.project-theme #dynamics .miracle-derivation-math:focus-visible { outline-color: var(--project-accent); }
+.project-theme #control .miracle-observer-derivation .miracle-derivation-math:focus-visible { outline-color: var(--project-accent); }
+.project-theme #dynamics .miracle-linkage-intro { color: var(--project-copy); }
+.project-theme #dynamics .miracle-linkage-row:focus-visible { outline-color: var(--project-accent); }
+.project-theme #dynamics .miracle-scroll-hint { color: var(--project-copy); }
+.project-theme #dynamics .miracle-linkage-properties-scroll:focus-visible { outline-color: var(--project-accent); }
+.project-theme #control > .miracle-control-comparison figcaption { color: var(--project-copy); }
+.project-theme .miracle-tabs { border-color: var(--project-border); }
+.project-theme .miracle-tabs button { color: var(--project-accent); }
+.project-theme .miracle-simulation-panel:focus-visible { outline-color: var(--project-accent); }
+.project-theme .miracle-table-scroll table { color: var(--project-copy); }
+.project-theme .miracle-evaluation-summary { border-left-color: var(--project-border); }
+.project-theme #evaluation .miracle-impedance-panel:focus-visible { outline-color: var(--project-accent); }
+.project-theme #evaluation .miracle-parameter-unit { color: var(--project-copy); }
+.project-theme #contribution .contribution-list dd { color: var(--project-copy); }
+.project-theme #contribution .contribution-scope { border-left-color: var(--project-border); color: var(--project-copy); }
+.project-theme .miracle-materials-grid a,
+.project-theme .miracle-original-contact a { text-decoration-color: var(--project-border); }
+.project-theme #materials .miracle-materials-grid > .miracle-prose { background-color: #0d202a; }
+.project-theme #materials .miracle-materials-grid > .miracle-references {
+  --reference-accent: #D04FFF;
+  background-color: #211129;
+}
+.project-theme #materials .miracle-materials-grid > .miracle-references a { color: var(--reference-accent); text-decoration-color: var(--reference-accent); }
+
+/* tone-laboratory.css palette overrides. */
+.project-theme .tone-welcome { color: var(--project-accent); }
+.project-theme .tone-prose p { color: var(--project-copy); }
+.project-theme .tone-intro-body p { color: var(--project-copy); }
+.project-theme .tone-image:focus-visible { outline-color: var(--project-accent); }
+.project-theme .tone-system > .practice-heading > .section-label span,
+.project-theme .tone-bass > .practice-heading > .section-label span,
+.project-theme .tone-routing > .practice-heading > .section-label span,
+.project-theme #guitar-components > .practice-heading > .section-label span,
+.project-theme #bass-components > .practice-heading > .section-label span,
+.project-theme #my-guitars > .practice-heading > .section-label span,
+.project-theme #my-bass-guitars > .practice-heading > .section-label span,
+.project-theme .other-gear-heading .section-label span { color: var(--project-accent); }
+.project-theme .tone-system-layout > .tone-prose p,
+.project-theme .tone-bass-layout .tone-prose p { color: var(--project-copy); }
+.project-theme .tone-routing-point h3 { color: var(--project-accent); }
+.project-theme .tone-flow,
+.project-theme .tone-bass-flow { border-left-color: var(--project-border); }
+.project-theme .tone-routing-intro,
+.project-theme .tone-routing-row > p { color: var(--project-copy); }
+.project-theme .tone-routing-label { color: var(--project-accent); }
+.project-theme .tone-routing-row > h4::before { color: var(--project-accent); }
+.project-theme .gear-name-part:not(:last-child) { color: var(--project-accent); }
+.project-theme .gear-zigzag .gear-brand { color: var(--project-accent); }
+.project-theme .gear-zigzag .gear-variant { color: var(--project-copy); }
+.project-theme .tone-instrument-intro { border-left-color: var(--project-border); }
+.project-theme .instrument-sequence .gear-name-part:first-child::before { color: var(--project-copy); }
+.project-theme .tone-bass-copy-label { color: var(--project-accent); }
+.project-theme .tone-video-frame { background-color: var(--project-panel); }
+.project-theme .gear-rail-toggle { color: var(--project-accent); }
+.project-theme .gear-rail-toggle:focus-visible,
+.project-theme .other-gear-viewport:focus-visible { outline-color: var(--project-accent); }
+.project-theme .other-gear-track .gear-brand { color: var(--project-accent); }
+.project-theme .tone-original-contact { color: var(--project-copy); }
+
+/* performance-gallery.css palette overrides. */
+.project-theme .performance-prose p { color: var(--project-copy); }
+.project-theme .performance-prose .performance-welcome { color: var(--project-accent); }
+.project-theme .performance-memory-caption { color: var(--project-copy); }
+.project-theme .performance-image:focus-visible,
+.project-theme .performance-tabs button:focus-visible,
+.project-theme .performance-pause:focus-visible,
+.project-theme .photo-thumbnail:focus-visible { outline-color: var(--project-accent); }
+.project-theme.performance-page .section-label span { color: var(--project-accent); }
+.project-theme .performance-tabs button { color: var(--project-copy); }
+.project-theme .performance-tabs button[aria-selected="true"] { background-color: var(--project-hover); }
+.project-theme .performance-tabs button[aria-selected="true"]:hover { background-color: var(--project-hover); }
+.project-theme .performance-theme-heading { color: var(--project-accent); }
+.project-theme .performance-photo-archive summary { color: var(--project-accent); }
+.project-theme .performance-photo-archive summary:focus-visible,
+.project-theme .archive-thumbnail:focus-visible { outline-color: var(--project-accent); }
+.project-theme .performance-photo-archive [data-archive-count] { color: var(--project-copy); }
+.project-theme .archive-thumbnail:hover { border-color: var(--project-border); }
+.project-theme .archive-thumbnail[aria-pressed="true"] { border-color: var(--project-border); background-color: var(--project-hover); }
+.project-theme .performance-counter { color: var(--project-copy); }
+.project-theme .performance-pause { color: var(--project-accent); text-decoration-color: var(--project-border); }
+.project-theme .photo-thumbnail[aria-pressed="true"] { border-color: var(--project-border); }
+.project-theme .photo-thumbnail:hover { border-color: var(--project-border); }
+.project-theme .performance-media-label { color: var(--project-copy); }
+.project-theme .teaching-recording figcaption { color: var(--project-copy); }
+
+/* Retain pressed/selected meaning with a filled category accent and dark ink. */
+.project-theme .ctag-play,
+.project-theme .ctag-segmented button[aria-pressed="true"],
+.project-theme .miracle-tabs button[aria-selected="true"],
+.project-theme .performance-tabs button[aria-selected="true"],
+.project-theme .performance-tabs button[aria-selected="true"]:hover {
+  color: var(--project-button-ink);
+  background-color: var(--project-accent);
+}
+.project-theme .ctag-preset-list button[aria-pressed="true"],
+.project-theme .ctag-preset-list button:hover,
+.project-theme .photo-thumbnail[aria-pressed="true"],
+.project-theme .photo-thumbnail:hover,
+.project-theme .archive-thumbnail[aria-pressed="true"],
+.project-theme .archive-thumbnail:hover { border-color: var(--project-accent); }
+.project-theme .ctag-audio-demo-label { color: var(--project-accent); border-color: var(--project-border); }
+.project-theme #materials .miracle-materials-grid a { color: var(--project-accent); text-decoration-color: var(--project-border); }

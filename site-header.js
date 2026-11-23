@@ -43,7 +43,7 @@
     </div>
     <ul class="work-menu" id="work-menu" hidden>
       <li class="work-category">
-        <p class="work-category-heading" id="nav-music-technology">Music Technology</p>
+        <p class="work-category-heading" id="nav-music-technology"><span class="music-word">Music</span> <span class="technology-word">Technology</span></p>
         <ul class="work-category-links" aria-labelledby="nav-music-technology">
           <li><a href="ctag-fx.html">CTAG-FX</a></li>
           <li><a href="tone-laboratory.html">My Tone Laboratory</a></li>

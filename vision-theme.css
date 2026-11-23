@@ -1,0 +1,89 @@
+/* My Vision palette and compact wordplay styling. Original section/diagram
+   geometry and roadmap artwork remain unchanged. */
+html:has(> body.vision-theme) { color-scheme: dark; background-color: #080910; }
+body.vision-theme {
+  --vision-background: #080910;
+  --vision-surface: #101520;
+  --engineering-accent: #4cdeff;
+  --music-accent: #d04fff;
+  --page-ink: #eef2f8;
+  --page-muted: #a7b0c2;
+  --page-line: #293040;
+  --page-soft: #121c29;
+  color-scheme: dark;
+  color: var(--page-ink);
+  background-color: var(--vision-background);
+}
+
+.vision-theme ::selection { color: #ffffff; background-color: #274b60; }
+.vision-theme .page-shell,
+.vision-theme .site-header { background-color: var(--vision-background); }
+.vision-theme .page-shell { border-color: rgba(255, 255, 255, 0.4); }
+.vision-theme .wordmark { color: var(--engineering-accent); }
+.vision-theme .wordmark > span:first-child { color: var(--music-accent); }
+.vision-theme .wordmark-slash { color: #8391aa; }
+.vision-theme .site-nav a::after,
+.vision-theme .site-nav [aria-current="page"]::after { background-color: var(--engineering-accent); }
+.vision-theme .site-nav [aria-current="page"] { color: var(--engineering-accent); }
+.vision-theme .work-menu { border-color: #344056; background-color: var(--vision-surface); }
+.vision-theme .work-category-heading { color: var(--engineering-accent); }
+.vision-theme .work-category:last-child .work-category-heading { color: var(--music-accent); }
+.vision-theme .music-word { color: var(--music-accent); }
+.vision-theme .technology-word { color: var(--engineering-accent); }
+.vision-theme .site-nav .work-menu a[aria-current="page"] { color: var(--engineering-accent); }
+.vision-theme .skip-link { background-color: var(--vision-surface); }
+.vision-theme :is(a, button):focus-visible { outline-color: var(--engineering-accent); }
+
+.vision-theme .hero-line-sound { color: var(--page-ink); }
+.vision-theme .vision-engineering { color: var(--engineering-accent); }
+.vision-theme .vision-music { color: var(--music-accent); }
+.vision-theme .vision-intro .hero-line-sound { white-space: normal; }
+.vision-theme .vision-wordplay { margin-top: 14px; color: var(--page-muted); font-size: 12px; line-height: 1.65; }
+.vision-theme .vision-wordplay-formula { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 7px; margin: 0; font-weight: 500; }
+.vision-theme .vision-wordplay-result { color: #FFC857; }
+.vision-theme .vision-wordplay-aside { margin: 3px 0 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .vision-theme .vision-wordplay { animation: hero-enter .65s cubic-bezier(.22, 1, .36, 1) .25s backwards; }
+}
+.vision-theme .vision-body,
+.vision-theme .bio-block p,
+.vision-theme .contact-copy p { color: #b4bfd0; }
+.vision-theme .vision-intro > .project-reference,
+.vision-theme .journey-links .project-reference { color: var(--engineering-accent); }
+.vision-theme .vision-statement span { color: var(--music-accent); }
+
+/* Existing LAB -> STAGE -> AUDIENCE -> LAB paths and arrow geometry are intact. */
+.vision-theme .feedback-loop { border-color: #344056; background-color: var(--vision-surface); }
+.vision-theme .loop-caption,
+.vision-theme .loop-step { color: #b4bfd0; fill: #b4bfd0; }
+.vision-theme .loop-orbit { stroke: #697b92; }
+.vision-theme .loop-path,
+.vision-theme #loop-arrow path { stroke: #9baac0; }
+.vision-theme .loop-node { fill: #141923; stroke: #b7c2d4; }
+.vision-theme .loop-label { fill: var(--page-ink); }
+.vision-theme .loop-lab .loop-node { fill: #0b202a; stroke: var(--engineering-accent); }
+.vision-theme .loop-lab .loop-label { fill: var(--engineering-accent); }
+.vision-theme .loop-stage .loop-node { fill: #211129; stroke: var(--music-accent); }
+.vision-theme .loop-stage .loop-label { fill: var(--music-accent); }
+.vision-theme .loop-audience .loop-node { fill: #241c0d; stroke: #FFC857; }
+.vision-theme .loop-audience .loop-label { fill: #FFC857; }
+.vision-theme .loop-times { fill: #FFC857; }
+.vision-theme .loop-center-label,
+.vision-theme .loop-infinity { fill: var(--page-ink); }
+.vision-theme .loop-center-label text:first-child { fill: var(--engineering-accent); }
+.vision-theme .loop-center-label text:last-child { fill: var(--music-accent); }
+.vision-theme .loop-dots { fill: #9baac0; }
+.vision-theme .loop-dots > circle:nth-child(1) { fill: #FFC857; }
+.vision-theme .loop-dots > circle:nth-child(2) { fill: var(--music-accent); }
+.vision-theme .loop-dots > circle:nth-child(3) { fill: var(--engineering-accent); }
+
+.vision-theme .roadmap-heading .section-label > span { color: var(--engineering-accent); }
+.vision-theme .research-roadmap figcaption { color: #b4bfd0; }
+.vision-theme .image-viewer { border-color: #344056; color: var(--page-ink); background-color: var(--vision-surface); }
+.vision-theme .image-viewer::backdrop { background-color: #03050bd9; }
+.vision-theme .image-viewer figcaption { color: #b4bfd0; }
+.vision-theme .roadmap-viewer .image-viewer-close { color: #eef2f8; background-color: #20384a; }
+.vision-theme .roadmap-zoom-viewport:focus-visible { outline-color: #146b86; }
+.vision-theme .contact-email { color: var(--engineering-accent); text-decoration-color: #487588; }
+.vision-theme .contact-email:hover { text-decoration-color: var(--engineering-accent); }
+.vision-theme .footer-meta a:hover { color: var(--engineering-accent); }
