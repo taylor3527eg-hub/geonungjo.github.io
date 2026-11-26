@@ -49,21 +49,21 @@
           <p class="audio-status" data-audio-status data-audio-state="off" role="status" aria-live="polite">Click or tap once to unlock sound.</p>
         </header>
         <div class="scene-stage">
-        <canvas id="stompbox-scene" data-scene width="1000" height="640" tabindex="0" aria-label="발목 주변에서 커서를 움직여 다리를 밀고, 발로 왼쪽 풋스위치를 누르세요. 다시 누르면 이펙터가 꺼집니다. 터치로 쓸거나, 이 영역에 초점을 맞춘 후 방향키로 힘을 줄 수도 있습니다."></canvas>
-        <section class="parameter-panel" aria-label="임피던스 파라미터 조절">
+        <canvas id="stompbox-scene" data-scene width="1000" height="640" tabindex="0" aria-label="Move the cursor near the ankle to push the leg and press the footswitch on the left with the foot. Press it again to turn the effect off. You can also swipe on touch devices, or focus this scene and use the arrow keys to apply force."></canvas>
+        <section class="parameter-panel" aria-label="Impedance parameter controls">
           <div class="parameter">
             <div class="parameter-heading"><label for="stompbox-stiffness">Stiffness</label><span class="parameter-audio-label">High-Pass</span></div>
-            <input id="stompbox-stiffness" data-parameter="stiffness" type="range" min="0" max="80" step="1" value="18" aria-label="스프링 상수 K" aria-describedby="stompbox-stiffness-help">
+            <input id="stompbox-stiffness" data-parameter="stiffness" type="range" min="0" max="80" step="1" value="18" aria-label="Spring stiffness K" aria-describedby="stompbox-stiffness-help">
             <p id="stompbox-stiffness-help">Pull back to rest.</p>
           </div>
           <div class="parameter">
             <div class="parameter-heading"><label for="stompbox-damping">Damping</label><span class="parameter-audio-label">Reverb</span></div>
-            <input id="stompbox-damping" data-parameter="damping" type="range" min="0" max="12" step="0.1" value="2.4" aria-label="댐핑 상수 B" aria-describedby="stompbox-damping-help">
+            <input id="stompbox-damping" data-parameter="damping" type="range" min="0" max="12" step="0.1" value="2.4" aria-label="Damping coefficient B" aria-describedby="stompbox-damping-help">
             <p id="stompbox-damping-help">Resistance to motion.</p>
           </div>
           <div class="parameter">
             <div class="parameter-heading"><label for="stompbox-mass">Mass</label><span class="parameter-audio-label">Low-Pass</span></div>
-            <input id="stompbox-mass" data-parameter="mass" type="range" min="0.5" max="10" step="0.05" value="3.35" aria-label="전체 질량 m" aria-describedby="stompbox-mass-help">
+            <input id="stompbox-mass" data-parameter="mass" type="range" min="0.5" max="10" step="0.05" value="3.35" aria-label="Total mass m" aria-describedby="stompbox-mass-help">
             <p id="stompbox-mass-help">Resistance to acceleration.</p>
           </div>
         </section>
