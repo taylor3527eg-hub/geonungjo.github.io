@@ -169,9 +169,12 @@
   .ctag-performance { animation: hero-visual-enter .8s cubic-bezier(.22, 1, .36, 1) .15s backwards; }
 }
 @media (max-width: 1000px) {
+  /* Give both audio comparisons usable player widths in half-width windows. */
+  .ctag-listener { grid-template-columns: 1fr; }
+  .ctag-preset-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #explore .ctag-character-group-header { min-height: 72px; align-items: flex-start; align-content: flex-start; }
   .ctag-hero-layout { gap: 30px; }
-  .ctag-listener { grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: 20px; }
+  .ctag-listener { gap: 20px; }
   .ctag-listening-deck { padding: 22px; }
   .ctag-transport { grid-template-columns: auto minmax(0, 1fr); gap: 15px; }
   .ctag-volume { grid-column: 2; grid-template-columns: auto minmax(0, 85px); align-items: center; margin-top: -3px; }

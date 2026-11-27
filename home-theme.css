@@ -110,6 +110,36 @@ body.home-theme {
 .home-theme .robotic-stompbox .how-to-play li span { color: #b5c6d0; }
 .home-theme .robotic-stompbox .audio-reference-note { color: #a7bcc9; }
 
+/* Keep controls in the scene's layout, even when the hero column narrows. */
+.home-theme .hero-experiment .robotic-stompbox .scene-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--controls-width);
+  column-gap: var(--scene-gap);
+  align-items: center;
+  padding: 16px 12px;
+}
+.home-theme .hero-experiment .robotic-stompbox canvas { width: 100%; min-width: 0; }
+.home-theme .hero-experiment .robotic-stompbox .parameter-panel {
+  position: static;
+  width: 100%;
+  min-width: 0;
+  transform: none;
+  gap: 18px;
+}
+.home-theme .hero-experiment .robotic-stompbox .parameter-heading { flex-direction: column; flex-wrap: nowrap; align-items: flex-start; justify-content: flex-start; gap: 4px; }
+.home-theme .hero-experiment .robotic-stompbox .parameter input[type="range"] { min-width: 0; margin-inline: 0; }
+
+@media (max-width: 1000px) {
+  .home-theme .hero { grid-template-columns: 1fr; }
+  .home-theme .practice-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .home-theme .hero-experiment .robotic-stompbox .scene-stage { grid-template-columns: minmax(0, 1fr); row-gap: 18px; }
+  .home-theme .hero-experiment .robotic-stompbox .parameter-panel { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .home-theme .hero-experiment .robotic-stompbox .parameter { min-width: 0; }
+  .home-theme .hero-experiment .robotic-stompbox .parameter-heading { min-height: 36px; }
+}
+
 @media (max-width: 1080px) {
   .home-theme .practice-grid { gap: 20px; }
   .home-theme .practice-column,
